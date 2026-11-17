@@ -21,14 +21,17 @@ pip install -q -r requirements.txt
 python pipeline/scout.py            # Spiele und Zeitraum aus config/kanal.json
 ```
 
-Ergebnis: `arbeit/kandidaten.json`, nach Views sortiert, schon verwendete Clips sind ausgeschlossen.
+Ergebnis: `arbeit/kandidaten.json`, nach Views sortiert, schon verwendete Clips sind ausgeschlossen. Quellen: Twitch (yt-dlp) und Kick (öffentliche API), je nach `plattform` in der Config.
 Bei weniger als 5 Kandidaten: mit `--zeitraum 7d` erneut laufen lassen.
+Gibt es auch dann keine Clips zum Spiel (z. B. vor dem Release), nicht auf ein anderes Spiel ausweichen: dem Nutzer kurz melden und den Lauf beenden.
 
 ## 2. Kurator: Auswahl
 
 Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Regeln:
 
 - Höchstens 2 Clips pro Streamer und Tag. Lieber Abwechslung als nur der Clip mit den meisten Views.
+- Beide Sprachen mischen: ungefähr die Hälfte deutsche, die Hälfte englische Streamer, solange beide genug gute Clips haben.
+- Kick-Titel sind oft Tastatur-Gebrabbel. Dann zählen nur Views und das Quellbild.
 - Bevorzugen: Reaktion + Ereignis im selben Clip (Unfall, Tod, Schreck, Bug, Lachkrampf, Streit).
 - Aussortieren: Ton kaputt, nur Chat-Lesen, Werbung, Ladebildschirm, nichts passiert in den ersten 3 s.
 - Beim Kurator reicht der Twitch-Titel nicht immer. Im Zweifel `--nur-quellbild` laufen lassen und die Bilder ansehen.
@@ -47,7 +50,8 @@ Ordner: `ausgabe/JJJJ-MM-TT/NN-kurzname/`.
    ```bash
    python pipeline/schneiden.py --url URL --out ORDNER --sprache de --facecam 0.797,0.33,0.177,0.267
    ```
-3. `ORDNER/worte.json` lesen. Wenn der Clip mit Leerlauf beginnt oder nach der Pointe weiterläuft: mit `--start`/`--ende` neu schneiden (die Quelle wird wiederverwendet). Ziel: der Moment beginnt in den ersten 2 s, die Pointe sitzt am Ende.
+3. `ORDNER/worte.json` lesen. Wenn der Clip mit Leerlauf beginnt oder nach der Pointe weiterläuft: mit `--start`/`--ende` neu schneiden (die Quelle wird wiederverwendet). Ziel: der Moment beginnt in den ersten 2 s, die Pointe sitzt am Ende. Shorts sind höchstens 60 s lang; längere Clips (oft bei Kick) immer kürzen.
+   `--sprache` ist die Sprache des Streamers aus der Config (`de` oder `en`).
 4. Neue Facecam-Boxen in `config/kanal.json` beim Streamer eintragen.
 
 ## 4. Prüfer
@@ -66,8 +70,8 @@ Bei einem Fehler: korrigieren und neu schneiden. Nach 2 Fehlversuchen den Clip v
 ```markdown
 # <Titel>
 
-- Quelle: <Twitch-URL>
-- Streamer: <Name> (https://twitch.tv/<login>)
+- Quelle: <Clip-URL>
+- Streamer: <Name> (https://twitch.tv/<login> bzw. https://kick.com/<login>)
 - Spiel: <Spiel>
 - Sprache: <de|en>
 - Länge: <s>
@@ -78,7 +82,7 @@ Bei einem Fehler: korrigieren und neu schneiden. Nach 2 Fehlversuchen den Clip v
 ## Beschreibung
 <1 Satz, was passiert>
 
-🎥 Streamer: <Name> – https://twitch.tv/<login>
+🎥 Streamer: <Name> – <Kanal-URL>
 Clip mit Erlaubnis des Streamers.
 
 #<spiel> #<streamer> #shorts
@@ -94,5 +98,6 @@ Titelregeln stehen in `docs/kanal-regeln.md`.
 1. Clip-IDs in `daten/verwendet.json` eintragen (auch die verworfenen).
 2. Eine Zeile pro Short in `daten/log.tsv`: `datum	id	streamer	titel	status`.
 3. `upload.md`, `worte.json`, `pruefung/` und die Datenänderungen committen und pushen. Videos werden nicht committed (`.gitignore`).
-4. **Phase 1 (Freigabe):** dem Nutzer jeden `short.mp4` mit `SendUserFile` schicken, zusammen mit Titel und Nummer. Nichts hochladen, bevor der Nutzer zugestimmt hat.
-5. **Phase 2 (automatisch):** gibt es erst, wenn der Nutzer sie freischaltet. Dann lädt `pipeline/youtube_upload.py` hoch (noch nicht gebaut).
+4. Dem Nutzer jeden `short.mp4` mit `SendUserFile` schicken (`status: proactive`). Die Caption enthält Nummer, Streamer und Titel. Danach eine Nachricht mit allen Titeln, Beschreibungen und Hashtags zum Kopieren.
+5. Hochladen macht der Nutzer selbst, abends zwischen 18 und 20 Uhr, auf YouTube, TikTok und Instagram. Die Session lädt nichts hoch.
+6. Meldet der Nutzer etwas zurück (Short abgelehnt, Untertitel falsch), korrigieren, neu schicken und den Status in `daten/log.tsv` setzen.

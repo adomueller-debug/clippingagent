@@ -30,8 +30,8 @@ Die Verfügbarkeit der Handles muss beim Anlegen des Kanals geprüft werden.
 
 ## Rhythmus
 
-- Phase 1 (Freigabe): 5 Shorts am Tag, jeder wird vom Nutzer freigegeben.
-- Phase 2 (automatisch): 5 bis 10 Shorts am Tag, über den Tag verteilt.
+- Lauf jeden Morgen um 08:40 Uhr (Europe/Berlin), 5 Shorts. Der Nutzer lädt abends zwischen 18 und 20 Uhr selbst hoch (YouTube, TikTok, Instagram).
+- Später 5 bis 10 Shorts am Tag, wenn die Nutzung im Pro-Abo es hergibt.
 - Höchstens 2 Shorts pro Streamer und Tag.
 
 ## Messen

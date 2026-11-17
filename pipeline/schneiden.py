@@ -28,7 +28,7 @@ def run(cmd):
 
 def laden(url, ziel):
     if not ziel.exists():
-        run(["yt-dlp", "--no-warnings", "-f", "1080/720/best[height<=1080]", "-o", str(ziel), url])
+        run(["yt-dlp", "--no-warnings", "-f", "1080/720/best[height<=?1080]/best", "-o", str(ziel), url])
 
 
 def probe(pfad):
