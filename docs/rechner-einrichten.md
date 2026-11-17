@@ -18,7 +18,7 @@ winget install Python.Python.3.12 Gyan.FFmpeg Git.Git
 
 Im Terminal in einen Ordner deiner Wahl wechseln, z. B. `Dokumente`, nicht direkt den Benutzerordner:
 ```bash
-git clone https://github.com/adomueller-debug/clippingagent.git
+git clone -b claude/happy-shannon-fczdyb https://github.com/adomueller-debug/clippingagent.git
 cd clippingagent
 pip install -r requirements.txt
 ```
