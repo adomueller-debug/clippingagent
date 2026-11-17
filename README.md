@@ -1,1 +1,15 @@
 # clippingagent
+
+Automatische Streamer-Shorts (zum Start: GTA 6) für YouTube, später auch TikTok und Instagram.
+
+| Teil | Datei |
+|---|---|
+| Ablauf für die tägliche Session | `.claude/skills/tagesproduktion/SKILL.md` |
+| Streamer, Spiele | `config/kanal.json` |
+| Scout (Twitch-Clips finden) | `pipeline/scout.py` |
+| Cutter (9:16 + Untertitel) | `pipeline/schneiden.py` |
+| Kanal-Regeln, Namensvorschläge | `docs/kanal-regeln.md` |
+| Recherche bestehender Repos | `docs/01-recherche.md` |
+| Bereits verwendete Clips, Log | `daten/` |
+
+Einrichten: `pip install -r requirements.txt`, dazu wird `ffmpeg` gebraucht.

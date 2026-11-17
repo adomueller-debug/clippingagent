@@ -1,0 +1,17 @@
+{
+  "spiele": ["Grand Theft Auto VI"],
+  "zeitraum": "24hr",
+  "min_dauer_s": 8,
+  "max_dauer_s": 60,
+  "streamer": [
+    {"name": "MontanaBlack", "twitch": "montanablack88", "sprache": "de", "facecam": null},
+    {"name": "Trymacs",      "twitch": "trymacs",        "sprache": "de", "facecam": null},
+    {"name": "Zarbex",       "twitch": "zarbex",         "sprache": "de", "facecam": null},
+    {"name": "Schradin",     "twitch": "schradin",       "sprache": "de", "facecam": null},
+    {"name": "Papaplatte",   "twitch": "papaplatte",     "sprache": "de", "facecam": null}
+  ],
+  "_hinweise": {
+    "facecam": "Box der Facecam im Quellbild als Anteile [x, y, breite, hoehe], z. B. [0.0, 0.0, 0.25, 0.3]. null = Layout 'blur'. Gesetzt = Layout 'split' (Facecam oben, Gameplay unten). Streamer verschieben die Cam manchmal, deshalb pro Clip am Prüfbild kontrollieren.",
+    "offen": "Rohat: Twitch-Name unbekannt. Englische Streamer: kommen vom Nutzer."
+  }
+}
