@@ -26,9 +26,18 @@ def run(cmd):
     return r.stdout
 
 
-def laden(url, ziel):
-    if not ziel.exists():
-        run(["yt-dlp", "--no-warnings", "-f", "1080/720/best[height<=?1080]/best", "-o", str(ziel), url])
+def laden(url, ziel, bereich=None):
+    """bereich = (start, ende) in Sekunden: nur diesen Abschnitt laden (für lange YouTube-Streams)."""
+    if ziel.exists():
+        return
+    cmd = ["yt-dlp", "--no-warnings", "-o", str(ziel), "--merge-output-format", "mp4"]
+    if "youtube.com" in url or "youtu.be" in url:
+        cmd += ["-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/bv*[height<=1080]+ba/b[height<=1080]/b"]
+    else:
+        cmd += ["-f", "1080/720/best[height<=?1080]/best"]
+    if bereich:
+        cmd += ["--download-sections", f"*{bereich[0]:.1f}-{bereich[1]:.1f}", "--force-keyframes-at-cuts"]
+    run(cmd + [url])
 
 
 def probe(pfad):
@@ -132,6 +141,7 @@ def main():
     ap.add_argument("--sprache", default=None, help="de/en; leer = automatisch")
     ap.add_argument("--facecam", default=None, help="x,y,b,h als Anteile -> Layout split")
     ap.add_argument("--zoom", type=float, default=1.35, help="Layout blur: Ausschnitt-Zoom")
+    ap.add_argument("--bereich", default=None, help="start-ende in Sekunden: nur diesen Abschnitt der Quelle laden (YouTube-Streams)")
     ap.add_argument("--start", type=float, default=0.0)
     ap.add_argument("--ende", type=float, default=None)
     ap.add_argument("--modell", default="small")
@@ -142,7 +152,7 @@ def main():
     out = Path(a.out)
     (out / "pruefung").mkdir(parents=True, exist_ok=True)
     quelle = out / "quelle.mp4"
-    laden(a.url, quelle)
+    laden(a.url, quelle, tuple(map(float, a.bereich.split("-"))) if a.bereich else None)
     sw, sh, fps, dauer = probe(quelle)
     if a.nur_quellbild:
         # Raster in 10-%-Schritten, damit die Facecam-Box als Anteile ablesbar ist

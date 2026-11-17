@@ -96,6 +96,6 @@
     "spiele_muster": "Regex auf den Spielnamen der Plattform. Kick schreibt z. B. 'Grand Theft Auto V (GTA)'. \\b verhindert, dass 'V' auf 'VI' passt.",
     "facecam": "Box der Facecam als Anteile [x, y, breite, hoehe]. null = beim Clip am Quellbild bestimmen. Streamer verschieben die Cam manchmal, deshalb pro Clip prüfen.",
     "max_dauer_s": "Kick-Clips sind oft länger als 60 s. Shorts auf höchstens 60 s kürzen (--start/--ende).",
-    "plattform": "IShowSpeed streamt auf YouTube (@IShowSpeed). YouTube blockiert Downloads aus der Cloud (Bot-Prüfung); Lösung mit dem Nutzer offen. Bis dahin nur seine Twitch-Clips."
+    "plattform": "IShowSpeed: Twitch-Clips aus der Cloud, YouTube-Streams (@IShowSpeed) über den Rechner des Nutzers (docs/rechner-einrichten.md)."
   }
 }

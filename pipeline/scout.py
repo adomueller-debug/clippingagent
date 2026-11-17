@@ -65,6 +65,12 @@ def kick_clips(s, zeitraum, limit):
 QUELLEN = {"twitch": twitch_clips, "kick": kick_clips}
 
 
+def youtube_streams(kanal, limit=6):
+    """Vergangene Streams eines YouTube-Kanals. Nur die Liste, das klappt auch aus der Cloud."""
+    d = ytdlp_json(["--flat-playlist", "--playlist-end", str(limit), "-J", f"https://www.youtube.com/{kanal}/streams"])
+    return [e for e in d.get("entries") or [] if e.get("live_status") == "was_live"]
+
+
 def main():
     cfg = json.loads((ROOT / "config/kanal.json").read_text())
     ap = argparse.ArgumentParser()
@@ -88,6 +94,19 @@ def main():
         except Exception as ex:  # ein Streamer darf den Lauf nicht abbrechen
             print(f"[scout] {s['plattform']}/{s['login']}: {ex}", file=sys.stderr)
             continue
+        if s.get("youtube"):
+            try:
+                for e in youtube_streams(s["youtube"]):
+                    if f"youtube:{e['id']}" in verwendet or not any(m.search(e.get("title") or "") for m in muster):
+                        continue
+                    kandidaten.append({
+                        "id": f"youtube:{e['id']}", "typ": "youtube_stream", "url": f"https://www.youtube.com/watch?v={e['id']}",
+                        "titel_quelle": e.get("title"), "views": e.get("view_count") or 0, "dauer_s": e.get("duration"),
+                        "streamer": s["name"], "plattform": "youtube", "login": s["youtube"], "sprache": s["sprache"],
+                        "facecam": s.get("facecam"), "hinweis": "auf dem Rechner des Nutzers: youtube_highlights.py, dann schneiden.py --bereich",
+                    })
+            except Exception as ex:
+                print(f"[scout] youtube/{s['youtube']}: {ex}", file=sys.stderr)
         geprueft += len(clips)
         for c in clips:
             dauer = c["dauer_s"] or 0

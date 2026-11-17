@@ -54,6 +54,26 @@ Ordner: `ausgabe/JJJJ-MM-TT/NN-kurzname/`.
    `--sprache` ist die Sprache des Streamers aus der Config (`de` oder `en`).
 4. Neue Facecam-Boxen in `config/kanal.json` beim Streamer eintragen.
 
+## 3b. YouTube-Streams (IShowSpeed) – auf dem Rechner des Nutzers
+
+Kandidaten mit `"typ": "youtube_stream"` sind ganze Streams. YouTube blockiert Downloads aus der Cloud, deshalb läuft dieser Teil auf dem Rechner des Nutzers (Remote Control, siehe `docs/rechner-einrichten.md`).
+
+1. `list_computer_folders` aufrufen. Ist der Ordner `clippingagent` online, mit `request_computer_folder` verbinden (ist die Session schon verbunden, direkt weiter). Ist der Rechner offline: YouTube heute überspringen und das in der Abschlussmeldung sagen.
+2. Alle folgenden Befehle mit `_host` auf dem Rechner ausführen, im Ordner `clippingagent`:
+   ```bash
+   git pull
+   python pipeline/youtube_highlights.py URL --anzahl 3
+   ```
+   Liefert Abschnitte (`bereich`) um die meistgesehenen Stellen. Exit-Code 2 = noch keine Most-Replayed-Daten: Stream morgen erneut versuchen, nicht als verwendet markieren.
+3. Höchstens 2 Abschnitte pro Stream schneiden, wie in Schritt 3, aber mit `--bereich`:
+   ```bash
+   python pipeline/schneiden.py --url URL --bereich 5120-5180 --out ausgabe/JJJJ-MM-TT/NN-kurzname --nur-quellbild
+   python pipeline/schneiden.py --url URL --bereich 5120-5180 --out ausgabe/JJJJ-MM-TT/NN-kurzname --sprache en [--facecam ...]
+   ```
+   Speed streamt oft draußen oder als Vollbild-Kamera. Dann ohne `--facecam` (Layout blur) schneiden.
+4. Prüfbilder mit `Read` und `_host` ansehen. Die fertigen Shorts bleiben auf dem Rechner des Nutzers: in der Abschlussmeldung den Pfad nennen statt `SendUserFile`.
+5. `upload.md` wie in Schritt 5 schreiben. In `daten/verwendet.json` die Stream-ID (`youtube:ID`) eintragen, sobald der Stream bearbeitet ist.
+
 ## 4. Prüfer
 
 Die vier Bilder in `ORDNER/pruefung/` ansehen. Prüfen:
