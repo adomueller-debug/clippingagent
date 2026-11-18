@@ -80,6 +80,7 @@ Die vier Bilder in `ORDNER/pruefung/` ansehen. Prüfen:
 
 - Facecam zeigt das Gesicht, nicht abgeschnitten, kein Chat-Rest.
 - Untertitel lesbar und nicht über dem Gesicht.
+- Hat die Quelle schon eingebrannte Untertitel (z. B. bei einem Trailer, den der Streamer schaut) oder transkribiert Whisper vor allem fremden Ton statt des Streamers: mit `--ohne-untertitel` neu schneiden und das in `upload.md` vermerken.
 - Gameplay zeigt das Geschehen (bei Bedarf eine andere Facecam-Box oder das Blur-Layout).
 - Untertitel-Text gegen `worte.json` auf grobe Fehler prüfen. Beleidigungen bleiben, wie sie gesagt wurden (wir ändern nichts am Inhalt).
 
