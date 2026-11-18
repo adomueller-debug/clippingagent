@@ -22,7 +22,7 @@ KICK_ZEIT = {"24hr": "day", "7d": "week", "30d": "month", "all": "all"}
 
 
 def ytdlp_json(args, timeout=120):
-    r = subprocess.run(["yt-dlp", "--no-warnings", *args], capture_output=True, text=True, timeout=timeout)
+    r = subprocess.run([sys.executable, "-m", "yt_dlp", "--no-warnings", *args], capture_output=True, text=True, timeout=timeout)
     if r.returncode != 0:
         raise RuntimeError(r.stderr.strip()[-300:])
     return json.loads(r.stdout)

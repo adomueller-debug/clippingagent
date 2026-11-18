@@ -11,12 +11,18 @@ Ergebnis im Ordner: short.mp4, quelle.mp4, worte.json, untertitel.ass, pruefung/
 """
 import argparse
 import json
+import os
+import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 FONT_DIR = ROOT / "assets/fonts"
 W, H = 1080, 1920
+# Homebrews normales ffmpeg (ab 9.0) hat kein libass -> ffmpeg-full bevorzugen.
+FFMPEG = (os.environ.get("FFMPEG") or shutil.which("ffmpeg", path="/opt/homebrew/opt/ffmpeg-full/bin")
+          or "ffmpeg")
 
 
 def run(cmd):
@@ -30,7 +36,11 @@ def laden(url, ziel, bereich=None):
     """bereich = (start, ende) in Sekunden: nur diesen Abschnitt laden (für lange YouTube-Streams)."""
     if ziel.exists():
         return
-    cmd = ["yt-dlp", "--no-warnings", "-o", str(ziel), "--merge-output-format", "mp4"]
+    # yt-dlp aus derselben Umgebung (mit yt-dlp-ejs für YouTubes JS-Prüfung), ffmpeg-full für
+    # --download-sections: Homebrews normales ffmpeg 9 scheitert dort an der TLS-Zertifikatsprüfung.
+    cmd = [sys.executable, "-m", "yt_dlp", "--no-warnings", "-o", str(ziel), "--merge-output-format", "mp4"]
+    if os.path.isabs(FFMPEG):
+        cmd += ["--ffmpeg-location", os.path.dirname(FFMPEG)]
     if "youtube.com" in url or "youtu.be" in url:
         cmd += ["-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/bv*[height<=1080]+ba/b[height<=1080]/b"]
     else:
@@ -53,7 +63,7 @@ def transkribieren(quelle, sprache, start, ende, modell):
     import numpy as np
 
     # Ton selbst mit ffmpeg dekodieren (16 kHz mono), umgeht PyAV-Versionskonflikte
-    pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(quelle), "-ac", "1", "-ar", "16000", "-f", "f32le", "-"],
+    pcm = subprocess.run([FFMPEG, "-v", "error", "-i", str(quelle), "-ac", "1", "-ar", "16000", "-f", "f32le", "-"],
                          capture_output=True, check=True).stdout
     audio = np.frombuffer(pcm, dtype=np.float32)
     m = WhisperModel(modell, device="cpu", compute_type="int8")
@@ -160,7 +170,7 @@ def main():
         raster = ",".join(f"drawbox=x=iw*{i/10}:y=0:w=2:h=ih:color=yellow@0.6:t=fill,"
                           f"drawbox=x=0:y=ih*{i/10}:w=iw:h=2:color=yellow@0.6:t=fill" for i in range(1, 10))
         for t in (2, dauer / 2):
-            run(["ffmpeg", "-y", "-v", "error", "-ss", f"{t:.1f}", "-i", str(quelle), "-frames:v", "1",
+            run([FFMPEG, "-y", "-v", "error", "-ss", f"{t:.1f}", "-i", str(quelle), "-frames:v", "1",
                  "-vf", f"scale=960:-2,{raster}", str(out / "pruefung" / f"quelle_{int(t)}s.jpg")])
         print(json.dumps({"quelle": f"{sw}x{sh}", "dauer_s": dauer, "bilder": str(out / "pruefung")}))
         return
@@ -182,7 +192,7 @@ def main():
         graph += f";[v0]ass={out / 'untertitel.ass'}:fontsdir={FONT_DIR}[v]"
     (out / "worte.json").write_text(json.dumps({"sprache": sprache, "worte": worte}, ensure_ascii=False, indent=1))
 
-    run(["ffmpeg", "-y", "-v", "error", "-ss", str(a.start), "-to", str(ende), "-i", str(quelle),
+    run([FFMPEG, "-y", "-v", "error", "-ss", str(a.start), "-to", str(ende), "-i", str(quelle),
          "-filter_complex", graph, "-map", "[v]", "-map", "0:a?",
          "-r", str(min(round(fps), 60)), "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-maxrate", "10M", "-bufsize", "20M",
          "-pix_fmt", "yuv420p", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k",
@@ -191,7 +201,7 @@ def main():
     # Prüfbilder für den Prüfer-Agenten
     lang = ende - a.start
     for i, t in enumerate([0.5, lang * 0.33, lang * 0.66, max(lang - 1, 0)]):
-        run(["ffmpeg", "-y", "-v", "error", "-ss", f"{t:.2f}", "-i", str(out / "short.mp4"),
+        run([FFMPEG, "-y", "-v", "error", "-ss", f"{t:.2f}", "-i", str(out / "short.mp4"),
              "-frames:v", "1", "-vf", "scale=360:-2", str(out / "pruefung" / f"bild{i + 1}.jpg")])
     print(json.dumps({"short": str(out / "short.mp4"), "dauer_s": round(lang, 2), "quelle": f"{sw}x{sh}@{fps:.0f}",
                       "sprache": sprache, "worte": len(worte),

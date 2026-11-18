@@ -13,7 +13,7 @@ import sys
 
 
 def metadaten(url):
-    r = subprocess.run(["yt-dlp", "--no-warnings", "-j", "--skip-download", url],
+    r = subprocess.run([sys.executable, "-m", "yt_dlp", "--no-warnings", "-j", "--skip-download", url],
                        capture_output=True, text=True, timeout=300)
     if r.returncode != 0:
         raise SystemExit(f"yt-dlp: {r.stderr.strip()[-400:]}")

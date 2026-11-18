@@ -16,15 +16,19 @@ Im Terminal:
 cd ~
 git clone -b claude/happy-shannon-fczdyb https://github.com/adomueller-debug/clippingagent.git
 cd clippingagent
-python3 -m venv .venv
+brew install ffmpeg-full
+/opt/homebrew/bin/python3.12 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
+
+- **Python 3.12 statt `python3`:** Das System-Python von macOS (3.9) ist zu alt für yt-dlp 2026.
+- **`ffmpeg-full`:** Homebrews normales `ffmpeg` (ab 9.0) hat kein libass, kann also keine Untertitel einbrennen, und scheitert beim Laden von YouTube-Abschnitten an der TLS-Prüfung. Die Pipeline nimmt `ffmpeg-full` automatisch, wenn es installiert ist.
 
 Test, ob Schneiden und Untertitel laufen (lädt beim ersten Mal das Untertitel-Modell, ca. 500 MB):
 
 ```bash
 .venv/bin/python pipeline/schneiden.py \
-  --url https://www.twitch.tv/papaplatte/clip/BashfulIntelligentTortoiseNerfRedBlaster-r8zIPLvDk_0VgN9d \
+  --url 'https://www.twitch.tv/papaplatte/clip/BashfulIntelligentTortoiseNerfRedBlaster-r8zIPLvDk_0VgN9d' \
   --out arbeit/test/mac --sprache de --facecam 0.797,0.33,0.177,0.267
 open arbeit/test/mac/short.mp4
 ```
@@ -32,10 +36,10 @@ open arbeit/test/mac/short.mp4
 Test für YouTube (IShowSpeed):
 
 ```bash
-.venv/bin/python pipeline/youtube_highlights.py https://www.youtube.com/watch?v=o0UeucVxYCA --anzahl 3
+.venv/bin/python pipeline/youtube_highlights.py 'https://www.youtube.com/watch?v=5CPAtEmHAio' --anzahl 3
 ```
 
-Kommt eine Liste mit `highlights`, funktioniert es.
+Kommt eine Liste mit `highlights`, funktioniert es. URLs in Anführungszeichen setzen, sonst bricht zsh am `?` ab. Viele IShowSpeed-Streams haben bei YouTube keine „Meistgesehen“-Kurve. Dann meldet das Skript `keine Most-Replayed-Daten`, und das ist kein Fehler.
 
 ## 2. Kanal und TikTok-Konto anlegen
 
@@ -82,9 +86,9 @@ Dann plant Claude die Shorts in YouTube Studio und TikTok auf ihre Sendeplätze 
 
 ## Checkliste
 
-- [ ] Repository unter `~/clippingagent`, `.venv` installiert, beide Tests laufen
+- [x] Repository unter `~/clippingagent`, `.venv` installiert, beide Tests laufen
 - [ ] YouTube-Kanal und TikTok-Konto angelegt, in Chrome angemeldet
 - [ ] `youtube_kanalname` und `tiktok_konto` in `config/kanal.json` eingetragen
-- [ ] Claude Code zeigt auf `~/clippingagent`
+- [x] Claude Code zeigt auf `~/clippingagent`
 - [ ] Geplante Aufgabe „ClippingAgent: Tagesproduktion“ um 09:40 Uhr angelegt
 - [ ] Erster Lauf am Mac geklappt → Cloud-Aufgabe abgeschaltet
