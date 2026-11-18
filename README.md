@@ -11,5 +11,7 @@ Automatische Streamer-Shorts (zum Start: GTA 6) für YouTube, später auch TikTo
 | Kanal-Regeln, Namensvorschläge | `docs/kanal-regeln.md` |
 | Recherche bestehender Repos | `docs/01-recherche.md` |
 | Bereits verwendete Clips, Log | `daten/` |
+| Einrichtung auf dem Mac (Produktion + Upload) | `docs/mac-setup.md` |
+| Upload-Ablauf am Mac | `.claude/skills/tagesproduktion/upload-mac.md` |
 
 Einrichten: `pip install -r requirements.txt`, dazu wird `ffmpeg` gebraucht.

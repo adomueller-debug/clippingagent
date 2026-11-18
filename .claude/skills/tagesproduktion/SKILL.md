@@ -9,9 +9,10 @@ Arbeitsverzeichnis ist die Wurzel dieses Repos. Kanal-Regeln stehen in `docs/kan
 
 ## 0. Vorbereitung
 
-```bash
-pip install -q -r requirements.txt
-```
+Erst `git pull`. Dann feststellen, wo der Lauf läuft:
+
+- **Mac** (`uname` = Darwin): Python aus der venv nehmen, also überall `.venv/bin/python` statt `python`. Fehlt `.venv`: `python3 -m venv .venv && .venv/bin/pip install -q -r requirements.txt`. YouTube-Quellen (IShowSpeed) gehen hier direkt, Schritt 3b ohne Remote Control. Am Ende statt Schritt 6.4 den Upload nach `upload-mac.md`.
+- **Cloud** (Linux-Container): `pip install -q -r requirements.txt`. YouTube-Quellen nur über den verbundenen Rechner (3b).
 
 `ffmpeg` muss vorhanden sein. Das Untertitel-Modell (faster-whisper „small“) lädt beim ersten Lauf von huggingface.co.
 
@@ -55,6 +56,8 @@ Ordner: `ausgabe/JJJJ-MM-TT/NN-kurzname/`.
 4. Neue Facecam-Boxen in `config/kanal.json` beim Streamer eintragen.
 
 ## 3b. YouTube-Streams (IShowSpeed) – auf dem Rechner des Nutzers
+
+Läuft der Lauf schon auf dem Mac: Punkt 1 entfällt, die Befehle laufen direkt (ohne `_host`), die Shorts werden wie alle anderen behandelt.
 
 Kandidaten mit `"typ": "youtube_stream"` sind ganze Streams. YouTube blockiert Downloads aus der Cloud, deshalb läuft dieser Teil auf dem Rechner des Nutzers (Remote Control, siehe `docs/rechner-einrichten.md`).
 
@@ -110,6 +113,9 @@ Clip mit Erlaubnis des Streamers.
 
 ## Tags
 <kommagetrennt>
+
+## TikTok
+<Beschreibung bis ca. 150 Zeichen, Sprache des Clips, mit Streamer-Credit> #<spiel> #<streamer> #fyp
 ```
 
 Titelregeln stehen in `docs/kanal-regeln.md`.
@@ -120,5 +126,6 @@ Titelregeln stehen in `docs/kanal-regeln.md`.
 2. Eine Zeile pro Short in `daten/log.tsv`: `datum	id	streamer	titel	status`.
 3. `upload.md`, `worte.json`, `pruefung/` und die Datenänderungen committen und pushen. Videos werden nicht committed (`.gitignore`).
 4. Dem Nutzer jeden `short.mp4` mit `SendUserFile` schicken (`status: proactive`). Die Caption enthält Nummer, Streamer und Titel. Danach eine Nachricht mit allen Titeln, Beschreibungen und Hashtags zum Kopieren.
-5. Hochladen macht der Nutzer selbst, abends zwischen 18 und 20 Uhr, auf YouTube, TikTok und Instagram. Die Session lädt nichts hoch.
+5. **Cloud:** Hochladen macht der Nutzer selbst. Die Cloud-Session lädt nichts hoch.
+   **Mac:** Statt `SendUserFile` direkt weiter mit `upload-mac.md` (privat bzw. Entwurf, veröffentlicht wird erst nach dem Ja des Nutzers).
 6. Meldet der Nutzer etwas zurück (Short abgelehnt, Untertitel falsch), korrigieren, neu schicken und den Status in `daten/log.tsv` setzen.

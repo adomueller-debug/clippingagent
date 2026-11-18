@@ -4,3 +4,4 @@ ausgabe/**/*.wav
 ausgabe/**/quelle*
 __pycache__/
 *.pyc
+.venv/
