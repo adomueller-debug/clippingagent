@@ -1,0 +1,78 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.65,0:00:02.15,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}HOW{\c&HFFFFFF&} BIG IS
+Dialogue: 0,0:00:02.15,0:00:02.33,Sub,,0,0,0,,{\pos(540,592)}HOW {\c&H00E5FF&}BIG{\c&HFFFFFF&} IS
+Dialogue: 0,0:00:02.33,0:00:02.58,Sub,,0,0,0,,{\pos(540,592)}HOW BIG {\c&H00E5FF&}IS{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.45,0:00:02.57,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}THIS{\c&HFFFFFF&} THING?
+Dialogue: 0,0:00:02.57,0:00:02.82,Sub,,0,0,0,,{\pos(540,592)}THIS {\c&H00E5FF&}THING?{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.87,0:00:02.89,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}HOW{\c&HFFFFFF&} DO I
+Dialogue: 0,0:00:02.89,0:00:02.97,Sub,,0,0,0,,{\pos(540,592)}HOW {\c&H00E5FF&}DO{\c&HFFFFFF&} I
+Dialogue: 0,0:00:02.97,0:00:03.22,Sub,,0,0,0,,{\pos(540,592)}HOW DO {\c&H00E5FF&}I{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.97,0:00:03.11,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}DO{\c&HFFFFFF&} IT?
+Dialogue: 0,0:00:03.11,0:00:03.36,Sub,,0,0,0,,{\pos(540,592)}DO {\c&H00E5FF&}IT?{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.95,0:00:06.85,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}YO,{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.85,0:00:07.30,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}OH{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.75,0:00:08.17,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}MY{\c&HFFFFFF&} GOD
+Dialogue: 0,0:00:08.17,0:00:08.79,Sub,,0,0,0,,{\pos(540,592)}MY {\c&H00E5FF&}GOD{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.86,0:00:11.36,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}YO,{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.42,0:00:11.62,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}THIS{\c&HFFFFFF&} MAP IS
+Dialogue: 0,0:00:11.62,0:00:11.98,Sub,,0,0,0,,{\pos(540,592)}THIS {\c&H00E5FF&}MAP{\c&HFFFFFF&} IS
+Dialogue: 0,0:00:11.98,0:00:12.30,Sub,,0,0,0,,{\pos(540,592)}THIS MAP {\c&H00E5FF&}IS{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.30,0:00:12.84,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}FUCKING{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.66,0:00:14.50,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}HUGE{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.66,0:00:16.16,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}BRO{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.02,0:00:17.54,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}WHAT{\c&HFFFFFF&} THE FUCK?
+Dialogue: 0,0:00:17.54,0:00:17.90,Sub,,0,0,0,,{\pos(540,592)}WHAT {\c&H00E5FF&}THE{\c&HFFFFFF&} FUCK?
+Dialogue: 0,0:00:17.90,0:00:18.70,Sub,,0,0,0,,{\pos(540,592)}WHAT THE {\c&H00E5FF&}FUCK?{\c&HFFFFFF&}
+Dialogue: 0,0:00:21.26,0:00:22.14,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}YO,{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.40,0:00:23.26,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}OH{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.88,0:00:25.44,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}MY{\c&HFFFFFF&} GOD THEIR
+Dialogue: 0,0:00:25.44,0:00:26.00,Sub,,0,0,0,,{\pos(540,592)}MY {\c&H00E5FF&}GOD{\c&HFFFFFF&} THEIR
+Dialogue: 0,0:00:26.00,0:00:26.58,Sub,,0,0,0,,{\pos(540,592)}MY GOD {\c&H00E5FF&}THEIR{\c&HFFFFFF&}
+Dialogue: 0,0:00:29.84,0:00:30.22,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}ISLANDS{\c&HFFFFFF&} OR
+Dialogue: 0,0:00:30.22,0:00:30.47,Sub,,0,0,0,,{\pos(540,592)}ISLANDS {\c&H00E5FF&}OR{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.36,0:00:30.61,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}ANYTHING{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.58,0:00:31.06,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}PROBABLY{\c&HFFFFFF&} NOT
+Dialogue: 0,0:00:31.06,0:00:31.34,Sub,,0,0,0,,{\pos(540,592)}PROBABLY {\c&H00E5FF&}NOT{\c&HFFFFFF&}
+Dialogue: 0,0:00:32.36,0:00:33.26,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}THAT{\c&HFFFFFF&} IS CRAZY
+Dialogue: 0,0:00:33.26,0:00:33.56,Sub,,0,0,0,,{\pos(540,592)}THAT {\c&H00E5FF&}IS{\c&HFFFFFF&} CRAZY
+Dialogue: 0,0:00:33.56,0:00:34.72,Sub,,0,0,0,,{\pos(540,592)}THAT IS {\c&H00E5FF&}CRAZY{\c&HFFFFFF&}
+Dialogue: 0,0:00:35.56,0:00:36.00,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}YO,{\c&HFFFFFF&}
+Dialogue: 0,0:00:36.06,0:00:36.16,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}THE{\c&HFFFFFF&} MAPS ARE
+Dialogue: 0,0:00:36.16,0:00:36.54,Sub,,0,0,0,,{\pos(540,592)}THE {\c&H00E5FF&}MAPS{\c&HFFFFFF&} ARE
+Dialogue: 0,0:00:36.54,0:00:36.79,Sub,,0,0,0,,{\pos(540,592)}THE MAPS {\c&H00E5FF&}ARE{\c&HFFFFFF&}
+Dialogue: 0,0:00:36.76,0:00:37.18,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}FUCKING{\c&HFFFFFF&} MA -
+Dialogue: 0,0:00:37.18,0:00:37.58,Sub,,0,0,0,,{\pos(540,592)}FUCKING {\c&H00E5FF&}MA{\c&HFFFFFF&} -
+Dialogue: 0,0:00:37.58,0:00:37.90,Sub,,0,0,0,,{\pos(540,592)}FUCKING MA {\c&H00E5FF&}-{\c&HFFFFFF&}
+Dialogue: 0,0:00:37.90,0:00:38.15,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}YO,{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.10,0:00:38.20,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}THE{\c&HFFFFFF&} MAP -
+Dialogue: 0,0:00:38.20,0:00:38.36,Sub,,0,0,0,,{\pos(540,592)}THE {\c&H00E5FF&}MAP{\c&HFFFFFF&} -
+Dialogue: 0,0:00:38.36,0:00:38.70,Sub,,0,0,0,,{\pos(540,592)}THE MAP {\c&H00E5FF&}-{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.70,0:00:39.20,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}THE{\c&HFFFFFF&} MAP'S
+Dialogue: 0,0:00:39.20,0:00:39.48,Sub,,0,0,0,,{\pos(540,592)}THE {\c&H00E5FF&}MAP'S{\c&HFFFFFF&}
+Dialogue: 0,0:00:39.48,0:00:39.88,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}MASSIVE.{\c&HFFFFFF&}
+Dialogue: 0,0:00:40.70,0:00:41.14,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}MASSIVE.{\c&HFFFFFF&}
+Dialogue: 0,0:00:41.46,0:00:41.80,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}THERE'S{\c&HFFFFFF&} PROBABLY
+Dialogue: 0,0:00:41.80,0:00:42.05,Sub,,0,0,0,,{\pos(540,592)}THERE'S {\c&H00E5FF&}PROBABLY{\c&HFFFFFF&}
+Dialogue: 0,0:00:41.94,0:00:42.06,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}LIKE{\c&HFFFFFF&} ISLANDS AND
+Dialogue: 0,0:00:42.06,0:00:42.30,Sub,,0,0,0,,{\pos(540,592)}LIKE {\c&H00E5FF&}ISLANDS{\c&HFFFFFF&} AND
+Dialogue: 0,0:00:42.30,0:00:42.55,Sub,,0,0,0,,{\pos(540,592)}LIKE ISLANDS {\c&H00E5FF&}AND{\c&HFFFFFF&}
+Dialogue: 0,0:00:42.50,0:00:42.75,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}SHIT,{\c&HFFFFFF&}
+Dialogue: 0,0:00:42.68,0:00:42.76,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}BUT{\c&HFFFFFF&} I CAN'T
+Dialogue: 0,0:00:42.76,0:00:43.18,Sub,,0,0,0,,{\pos(540,592)}BUT {\c&H00E5FF&}I{\c&HFFFFFF&} CAN'T
+Dialogue: 0,0:00:43.18,0:00:43.43,Sub,,0,0,0,,{\pos(540,592)}BUT I {\c&H00E5FF&}CAN'T{\c&HFFFFFF&}
+Dialogue: 0,0:00:43.38,0:00:43.54,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}SEE{\c&HFFFFFF&} HOW TO
+Dialogue: 0,0:00:43.54,0:00:43.66,Sub,,0,0,0,,{\pos(540,592)}SEE {\c&H00E5FF&}HOW{\c&HFFFFFF&} TO
+Dialogue: 0,0:00:43.66,0:00:43.91,Sub,,0,0,0,,{\pos(540,592)}SEE HOW {\c&H00E5FF&}TO{\c&HFFFFFF&}
+Dialogue: 0,0:00:43.74,0:00:44.02,Sub,,0,0,0,,{\pos(540,592)}{\c&H00E5FF&}DISCOVER{\c&HFFFFFF&} IT.
+Dialogue: 0,0:00:44.02,0:00:44.27,Sub,,0,0,0,,{\pos(540,592)}DISCOVER {\c&H00E5FF&}IT.{\c&HFFFFFF&}

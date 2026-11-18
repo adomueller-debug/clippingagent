@@ -146,6 +146,7 @@ def main():
     ap.add_argument("--ende", type=float, default=None)
     ap.add_argument("--modell", default="small")
     ap.add_argument("--ohne-untertitel", action="store_true")
+    ap.add_argument("--worte", default=None, help="korrigierte worte.json verwenden statt neu zu transkribieren (Zeiten relativ zu --start)")
     ap.add_argument("--nur-quellbild", action="store_true", help="nur laden und pruefung/quelle.jpg mit Raster schreiben")
     a = ap.parse_args()
 
@@ -172,7 +173,11 @@ def main():
         worte, sprache = [], a.sprache
         graph = graph.replace("[v0]", "[v]")
     else:
-        worte, sprache = transkribieren(quelle, a.sprache, a.start, a.ende, a.modell)
+        if a.worte:
+            d = json.loads(Path(a.worte).read_text())
+            worte, sprache = d["worte"], d.get("sprache")
+        else:
+            worte, sprache = transkribieren(quelle, a.sprache, a.start, a.ende, a.modell)
         ass_datei(worte, sub_y, out / "untertitel.ass")
         graph += f";[v0]ass={out / 'untertitel.ass'}:fontsdir={FONT_DIR}[v]"
     (out / "worte.json").write_text(json.dumps({"sprache": sprache, "worte": worte}, ensure_ascii=False, indent=1))
