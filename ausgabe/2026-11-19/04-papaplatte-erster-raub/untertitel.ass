@@ -1,0 +1,90 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.80,0:00:03.32,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}OKAY,{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.36,0:00:03.52,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}HABEN{\c&HFFFFFF&} WIR
+Dialogue: 0,0:00:03.52,0:00:03.77,Sub,,0,0,0,,{\pos(540,760)}HABEN {\c&H00E5FF&}WIR{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.62,0:00:03.84,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}IRGENDWAS{\c&HFFFFFF&} NOCH
+Dialogue: 0,0:00:03.84,0:00:04.09,Sub,,0,0,0,,{\pos(540,760)}IRGENDWAS {\c&H00E5FF&}NOCH{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.96,0:00:04.12,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}AN{\c&HFFFFFF&} HIER?
+Dialogue: 0,0:00:04.12,0:00:04.37,Sub,,0,0,0,,{\pos(540,760)}AN {\c&H00E5FF&}HIER?{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.58,0:00:04.83,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}JA.{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.78,0:00:08.04,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}LOS,{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.22,0:00:08.47,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}RENNEN,{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.42,0:00:08.74,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}RENNEN,{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.80,0:00:09.05,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}RENNEN,{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.94,0:00:09.48,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}RENNEN,{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.48,0:00:09.73,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}RENNEN.{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.36,0:00:13.68,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}ALSO,{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.68,0:00:14.00,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}WENN{\c&HFFFFFF&} ICH DAS
+Dialogue: 0,0:00:14.00,0:00:14.12,Sub,,0,0,0,,{\pos(540,760)}WENN {\c&H00E5FF&}ICH{\c&HFFFFFF&} DAS
+Dialogue: 0,0:00:14.12,0:00:14.37,Sub,,0,0,0,,{\pos(540,760)}WENN ICH {\c&H00E5FF&}DAS{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.22,0:00:14.36,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}NICHT{\c&HFFFFFF&} SCHNACKEN
+Dialogue: 0,0:00:14.36,0:00:14.66,Sub,,0,0,0,,{\pos(540,760)}NICHT {\c&H00E5FF&}SCHNACKEN{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.66,0:00:14.91,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}KANN,{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.86,0:00:14.90,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}DANN{\c&HFFFFFF&} HABE ICH
+Dialogue: 0,0:00:14.90,0:00:14.98,Sub,,0,0,0,,{\pos(540,760)}DANN {\c&H00E5FF&}HABE{\c&HFFFFFF&} ICH
+Dialogue: 0,0:00:14.98,0:00:15.23,Sub,,0,0,0,,{\pos(540,760)}DANN HABE {\c&H00E5FF&}ICH{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.06,0:00:15.22,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}ALLES{\c&HFFFFFF&} GESEHEN.
+Dialogue: 0,0:00:15.22,0:00:15.50,Sub,,0,0,0,,{\pos(540,760)}ALLES {\c&H00E5FF&}GESEHEN.{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.86,0:00:18.18,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}MACH{\c&HFFFFFF&} ZU DIR,
+Dialogue: 0,0:00:18.18,0:00:18.36,Sub,,0,0,0,,{\pos(540,760)}MACH {\c&H00E5FF&}ZU{\c&HFFFFFF&} DIR,
+Dialogue: 0,0:00:18.36,0:00:18.61,Sub,,0,0,0,,{\pos(540,760)}MACH ZU {\c&H00E5FF&}DIR,{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.50,0:00:18.86,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}LOSER.{\c&HFFFFFF&}
+Dialogue: 0,0:00:21.80,0:00:22.12,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}NEE,{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.24,0:00:22.49,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}DIGGER.{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.74,0:00:22.86,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}DAS{\c&HFFFFFF&} GIBT'S
+Dialogue: 0,0:00:22.86,0:00:23.14,Sub,,0,0,0,,{\pos(540,760)}DAS {\c&H00E5FF&}GIBT'S{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.14,0:00:23.39,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}NICHT!{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.00,0:00:30.32,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}GUTER,{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.38,0:00:30.63,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}BITTE,{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.66,0:00:30.91,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}STOPP!{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.88,0:00:31.06,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}IRGENDWER{\c&HFFFFFF&} MUSS
+Dialogue: 0,0:00:31.06,0:00:31.31,Sub,,0,0,0,,{\pos(540,760)}IRGENDWER {\c&H00E5FF&}MUSS{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.18,0:00:31.30,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}MIR{\c&HFFFFFF&} SEIN AUTO
+Dialogue: 0,0:00:31.30,0:00:31.42,Sub,,0,0,0,,{\pos(540,760)}MIR {\c&H00E5FF&}SEIN{\c&HFFFFFF&} AUTO
+Dialogue: 0,0:00:31.42,0:00:31.67,Sub,,0,0,0,,{\pos(540,760)}MIR SEIN {\c&H00E5FF&}AUTO{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.60,0:00:31.85,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}GEBEN.{\c&HFFFFFF&}
+Dialogue: 0,0:00:32.54,0:00:32.86,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}BITTE,{\c&HFFFFFF&}
+Dialogue: 0,0:00:33.00,0:00:33.08,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}LASS{\c&HFFFFFF&} MICH HIER
+Dialogue: 0,0:00:33.08,0:00:33.26,Sub,,0,0,0,,{\pos(540,760)}LASS {\c&H00E5FF&}MICH{\c&HFFFFFF&} HIER
+Dialogue: 0,0:00:33.26,0:00:33.51,Sub,,0,0,0,,{\pos(540,760)}LASS MICH {\c&H00E5FF&}HIER{\c&HFFFFFF&}
+Dialogue: 0,0:00:33.42,0:00:33.67,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}RAUS,{\c&HFFFFFF&}
+Dialogue: 0,0:00:33.88,0:00:34.13,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}BITTE!{\c&HFFFFFF&}
+Dialogue: 0,0:00:37.40,0:00:37.72,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}SO,{\c&HFFFFFF&}
+Dialogue: 0,0:00:37.86,0:00:38.00,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}AUS{\c&HFFFFFF&} DEM AUTO
+Dialogue: 0,0:00:38.00,0:00:38.10,Sub,,0,0,0,,{\pos(540,760)}AUS {\c&H00E5FF&}DEM{\c&HFFFFFF&} AUTO
+Dialogue: 0,0:00:38.10,0:00:38.35,Sub,,0,0,0,,{\pos(540,760)}AUS DEM {\c&H00E5FF&}AUTO{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.34,0:00:38.59,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}JETZT.{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.74,0:00:38.78,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}ICH{\c&HFFFFFF&} MUSS WEG.
+Dialogue: 0,0:00:38.78,0:00:38.92,Sub,,0,0,0,,{\pos(540,760)}ICH {\c&H00E5FF&}MUSS{\c&HFFFFFF&} WEG.
+Dialogue: 0,0:00:38.92,0:00:39.17,Sub,,0,0,0,,{\pos(540,760)}ICH MUSS {\c&H00E5FF&}WEG.{\c&HFFFFFF&}
+Dialogue: 0,0:00:41.20,0:00:41.64,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}DA{\c&HFFFFFF&} MUSS ER
+Dialogue: 0,0:00:41.64,0:00:41.76,Sub,,0,0,0,,{\pos(540,760)}DA {\c&H00E5FF&}MUSS{\c&HFFFFFF&} ER
+Dialogue: 0,0:00:41.76,0:00:42.01,Sub,,0,0,0,,{\pos(540,760)}DA MUSS {\c&H00E5FF&}ER{\c&HFFFFFF&}
+Dialogue: 0,0:00:42.00,0:00:42.12,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}HIER{\c&HFFFFFF&} NOCH
+Dialogue: 0,0:00:42.12,0:00:42.37,Sub,,0,0,0,,{\pos(540,760)}HIER {\c&H00E5FF&}NOCH{\c&HFFFFFF&}
+Dialogue: 0,0:00:42.24,0:00:42.60,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}STERBEN.{\c&HFFFFFF&}
+Dialogue: 0,0:00:46.99,0:00:47.43,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}OH{\c&HFFFFFF&} GOTT,
+Dialogue: 0,0:00:47.43,0:00:47.79,Sub,,0,0,0,,{\pos(540,760)}OH {\c&H00E5FF&}GOTT,{\c&HFFFFFF&}
+Dialogue: 0,0:00:48.01,0:00:48.26,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}OKAY.{\c&HFFFFFF&}
+Dialogue: 0,0:00:48.39,0:00:48.49,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}KEINE{\c&HFFFFFF&} AHNUNG,
+Dialogue: 0,0:00:48.49,0:00:48.74,Sub,,0,0,0,,{\pos(540,760)}KEINE {\c&H00E5FF&}AHNUNG,{\c&HFFFFFF&}
+Dialogue: 0,0:00:48.67,0:00:48.67,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}WIE{\c&HFFFFFF&} ICH DAS
+Dialogue: 0,0:00:48.67,0:00:48.67,Sub,,0,0,0,,{\pos(540,760)}WIE {\c&H00E5FF&}ICH{\c&HFFFFFF&} DAS
+Dialogue: 0,0:00:48.67,0:00:48.92,Sub,,0,0,0,,{\pos(540,760)}WIE ICH {\c&H00E5FF&}DAS{\c&HFFFFFF&}
+Dialogue: 0,0:00:48.73,0:00:49.05,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}ÜBERLEBT{\c&HFFFFFF&} HABE.
+Dialogue: 0,0:00:49.05,0:00:49.30,Sub,,0,0,0,,{\pos(540,760)}ÜBERLEBT {\c&H00E5FF&}HABE.{\c&HFFFFFF&}
+Dialogue: 0,0:00:51.01,0:00:51.27,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}OH{\c&HFFFFFF&} MEIN GOTT,
+Dialogue: 0,0:00:51.27,0:00:51.69,Sub,,0,0,0,,{\pos(540,760)}OH {\c&H00E5FF&}MEIN{\c&HFFFFFF&} GOTT,
+Dialogue: 0,0:00:51.69,0:00:51.94,Sub,,0,0,0,,{\pos(540,760)}OH MEIN {\c&H00E5FF&}GOTT,{\c&HFFFFFF&}
+Dialogue: 0,0:00:51.97,0:00:52.22,Sub,,0,0,0,,{\pos(540,760)}{\c&H00E5FF&}BRUDER.{\c&HFFFFFF&}

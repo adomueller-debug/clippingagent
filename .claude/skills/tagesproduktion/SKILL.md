@@ -35,6 +35,7 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Regeln:
 - Kick-Titel sind oft Tastatur-Gebrabbel. Dann zählen nur Views und das Quellbild.
 - Bevorzugen: Reaktion + Ereignis im selben Clip (Unfall, Tod, Schreck, Bug, Lachkrampf, Streit).
 - Aussortieren: Ton kaputt, nur Chat-Lesen, Werbung, Ladebildschirm, nichts passiert in den ersten 3 s.
+- Aussortieren (YouTube-Richtlinien): Nacktheit im Spiel (GTA 6 hat Dusch-, Strip- und Strandszenen), Unterwäsche oder Tanga im Bildmittelpunkt, Gewalt gegen leicht bekleidete Figuren. Im Zweifel raus. Die Prüfbilder aus allen Teilen des Clips ansehen, nicht nur den Anfang.
 - Beim Kurator reicht der Twitch-Titel nicht immer. Im Zweifel `--nur-quellbild` laufen lassen und die Bilder ansehen.
 
 ## 3. Cutter: pro Clip
