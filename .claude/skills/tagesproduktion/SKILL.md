@@ -26,6 +26,14 @@ Ergebnis: `arbeit/kandidaten.json`, nach Views sortiert, schon verwendete Clips 
 Bei weniger als 5 Kandidaten: mit `--zeitraum 7d` erneut laufen lassen.
 Gibt es auch dann keine Clips zum Spiel (z. B. vor dem Release), nicht auf ein anderes Spiel ausweichen: dem Nutzer kurz melden und den Lauf beenden.
 
+## 1b. TikTok-Signal
+
+```bash
+python pipeline/tiktok_signal.py --tage 2
+```
+
+Zeigt, welche GTA-Posts auf den TikTok-Profilen der Streamer gerade die meisten Aufrufe haben. Streamer mit vielen viralen Posts bekommen beim Kurator Vorrang, und Momente, die dort laufen (z. B. „BigFoot Sichtung“), werden in den Twitch-/Kick-Kandidaten gezielt gesucht. Geschnitten wird immer aus dem Original-Clip; TikTok-Videos werden nie heruntergeladen oder wiederverwendet.
+
 ## 2. Kurator: Auswahl
 
 Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Regeln:

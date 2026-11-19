@@ -13,28 +13,32 @@
       "plattform": "twitch",
       "login": "montanablack88",
       "sprache": "de",
-      "facecam": null
+      "facecam": null,
+      "tiktok": "montanablack"
     },
     {
       "name": "Trymacs",
       "plattform": "twitch",
       "login": "trymacs",
       "sprache": "de",
-      "facecam": null
+      "facecam": null,
+      "tiktok": "trymacs"
     },
     {
       "name": "Zarbex",
       "plattform": "twitch",
       "login": "zarbex",
       "sprache": "de",
-      "facecam": null
+      "facecam": null,
+      "tiktok": "zarbex"
     },
     {
       "name": "Schradin",
       "plattform": "twitch",
       "login": "schradin",
       "sprache": "de",
-      "facecam": null
+      "facecam": null,
+      "tiktok": "schradin"
     },
     {
       "name": "Papaplatte",
@@ -46,21 +50,24 @@
         0.33,
         0.177,
         0.267
-      ]
+      ],
+      "tiktok": "papaplatte"
     },
     {
       "name": "Rohat",
       "plattform": "twitch",
       "login": "xrohat",
       "sprache": "de",
-      "facecam": null
+      "facecam": null,
+      "tiktok": "rohat"
     },
     {
       "name": "Kai Cenat",
       "plattform": "twitch",
       "login": "kaicenat",
       "sprache": "en",
-      "facecam": null
+      "facecam": null,
+      "tiktok": "kaicenat"
     },
     {
       "name": "IShowSpeed",
@@ -68,28 +75,32 @@
       "login": "ishowspeed",
       "sprache": "en",
       "facecam": null,
-      "youtube": "@IShowSpeed"
+      "youtube": "@IShowSpeed",
+      "tiktok": "ishowspeed"
     },
     {
       "name": "Lacy",
       "plattform": "twitch",
       "login": "lacy",
       "sprache": "en",
-      "facecam": null
+      "facecam": null,
+      "tiktok": "lacy"
     },
     {
       "name": "xQc",
       "plattform": "kick",
       "login": "xqc",
       "sprache": "en",
-      "facecam": null
+      "facecam": null,
+      "tiktok": "xqc"
     },
     {
       "name": "Adin Ross",
       "plattform": "kick",
       "login": "adinross",
       "sprache": "en",
-      "facecam": null
+      "facecam": null,
+      "tiktok": "adinross"
     }
   ],
   "_hinweise": {
@@ -97,7 +108,8 @@
     "facecam": "Box der Facecam als Anteile [x, y, breite, hoehe]. null = beim Clip am Quellbild bestimmen. Streamer verschieben die Cam manchmal, deshalb pro Clip prüfen.",
     "max_dauer_s": "Kick-Clips sind oft länger als 60 s. Shorts auf höchstens 60 s kürzen (--start/--ende).",
     "plattform": "IShowSpeed: Twitch-Clips aus der Cloud, YouTube-Streams (@IShowSpeed) über den Rechner des Nutzers (docs/rechner-einrichten.md).",
-    "upload": "Kanalname und TikTok-Konto eintragen, sobald der Name feststeht. Solange null, lädt der Mac nichts hoch (Schutz gegen Upload auf den falschen Kanal, z. B. Unfathomd)."
+    "upload": "Kanalname und TikTok-Konto eintragen, sobald der Name feststeht. Solange null, lädt der Mac nichts hoch (Schutz gegen Upload auf den falschen Kanal, z. B. Unfathomd).",
+    "tiktok": "Offizielle TikTok-Profile der Streamer. Nur als Signal für pipeline/tiktok_signal.py, nie als Videoquelle. Handles nicht alle geprüft: liefert eins nichts Passendes, prüfen."
   },
   "upload": {
     "youtube_kanalname": null,

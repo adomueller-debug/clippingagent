@@ -12,6 +12,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
@@ -34,7 +35,15 @@ def twitch_clips(s, zeitraum, limit):
 
     def details(e):
         try:
-            d = ytdlp_json(["-j", "--skip-download", e["url"]])
+            d = None
+            for versuch in range(3):  # Twitch bremst bei vielen Abrufen: kurz warten, erneut versuchen
+                try:
+                    d = ytdlp_json(["-j", "--skip-download", e["url"]])
+                    break
+                except Exception:
+                    if versuch == 2:
+                        raise
+                    time.sleep(3 * (versuch + 1))
         except Exception as ex:
             print(f"[scout] {e['url']}: {ex}", file=sys.stderr)
             return None
@@ -45,7 +54,7 @@ def twitch_clips(s, zeitraum, limit):
             "erstellt": datetime.fromtimestamp(e["timestamp"], timezone.utc).isoformat() if e.get("timestamp") else None,
         }
 
-    with ThreadPoolExecutor(6) as pool:
+    with ThreadPoolExecutor(3) as pool:
         return [c for c in pool.map(details, entries) if c]
 
 
