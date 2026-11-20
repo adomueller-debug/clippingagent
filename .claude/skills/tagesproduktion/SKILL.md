@@ -56,9 +56,9 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
 - Schwach und daher raus: Gespräche ohne Pointe, ruhiger „erster Eindruck“, Menüs, Ladebildschirme, Zwischensequenzen ohne Reaktion, reines Herumfahren.
 - **Pointe ans Ende:** Der Short endet auf dem lustigsten Moment oder direkt danach („The ENDING 😂“: 7,4 Mio.). Kein Ausklingen. Das sorgt dafür, dass man bis zum Schluss schaut und neu startet.
 
-- Höchstens 5 Shorts pro Tag (TikTok verteilt den Testtopf sonst auf zu viele Videos). Shorts, die schon in `ausgabe/<heute>/` liegen (z. B. aus einem manuellen Lauf am Vorabend), zählen mit: nur bis 5 auffüllen, Nummerierung fortsetzen.
+- **10 Shorts pro Lauf als Auswahl.** Der Nutzer entscheidet, was hochgeht. Manuelle Läufe kommen obendrauf, Nummerierung im Tagesordner fortsetzen. Am Ende eine Empfehlung geben: die besten 3–5 für den Upload (TikTok verteilt den Testtopf sonst auf zu viele Videos), mit Sendeplätzen.
 - Höchstens 2 Clips pro Streamer und Tag. Lieber Abwechslung als nur der Clip mit den meisten Views.
-- Beide Sprachen mischen: ungefähr die Hälfte deutsche, die Hälfte englische Streamer, solange beide genug gute Clips haben.
+- Sprachen: etwa 7 englische, 3 deutsche Shorts. Englische Streamer haben die größere Reichweite; die US-Liste in `config/kanal.json` ist dafür erweitert (Marlon, JasonTheWeen, CaseOh, Stable Ronaldo, Jynxzi, RayAsianBoy, Agent 00, N3on, PlaqueBoyMax).
 - Kick-Titel sind oft Tastatur-Gebrabbel. Dann zählen nur Views und das Quellbild.
 - Aussortieren: Ton kaputt, nur Chat-Lesen, Werbung, Ladebildschirm, nichts passiert in den ersten 3 s.
 - **Nacktheit und sexy Szenen:** erlaubt, wenn jede nackte Stelle (Po, Brust, Genitalbereich) mit `--zensur` verpixelt ist, über die ganze Zeit, in der sie zu sehen ist. Danach Prüfbilder im Sekundentakt ansehen (siehe Prüfer). Bewegt sich die Figur, mehrere Zensur-Boxen mit Zeitfenster setzen. Unterwäsche, Bikini, Tanga ohne Zensur sind okay, solange der Clip nicht nur darauf zoomt.

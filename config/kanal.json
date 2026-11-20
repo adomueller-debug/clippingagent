@@ -101,6 +101,78 @@
       "sprache": "en",
       "facecam": null,
       "tiktok": "adinross"
+    },
+    {
+      "name": "Marlon",
+      "plattform": "twitch",
+      "login": "marlon",
+      "sprache": "en",
+      "facecam": null,
+      "tiktok": "marlon"
+    },
+    {
+      "name": "JasonTheWeen",
+      "plattform": "twitch",
+      "login": "jasontheween",
+      "sprache": "en",
+      "facecam": null,
+      "tiktok": "jasontheween"
+    },
+    {
+      "name": "CaseOh",
+      "plattform": "twitch",
+      "login": "caseoh_",
+      "sprache": "en",
+      "facecam": null,
+      "tiktok": "caseoh"
+    },
+    {
+      "name": "Stable Ronaldo",
+      "plattform": "twitch",
+      "login": "stableronaldo",
+      "sprache": "en",
+      "facecam": null,
+      "tiktok": "stableronaldo"
+    },
+    {
+      "name": "Jynxzi",
+      "plattform": "twitch",
+      "login": "jynxzi",
+      "sprache": "en",
+      "facecam": null,
+      "tiktok": "jynxzi"
+    },
+    {
+      "name": "RayAsianBoy",
+      "plattform": "twitch",
+      "login": "rayasianboy",
+      "sprache": "en",
+      "facecam": null,
+      "tiktok": "rayasianboy"
+    },
+    {
+      "name": "Agent 00",
+      "plattform": "twitch",
+      "login": "agent00",
+      "sprache": "en",
+      "facecam": null,
+      "tiktok": "agent00"
+    },
+    {
+      "name": "N3on",
+      "plattform": "kick",
+      "login": "n3on",
+      "sprache": "en",
+      "facecam": null,
+      "tiktok": "n3on"
+    },
+    {
+      "name": "PlaqueBoyMax",
+      "plattform": "twitch",
+      "login": "plaqueboymax",
+      "sprache": "en",
+      "facecam": null,
+      "tiktok": "plaqueboymax"
     }
   ],
   "_hinweise": {
@@ -110,7 +182,8 @@
     "plattform": "IShowSpeed: Twitch-Clips aus der Cloud, YouTube-Streams (@IShowSpeed) über den Rechner des Nutzers (docs/rechner-einrichten.md).",
     "upload": "Kanalname und TikTok-Konto eintragen, sobald der Name feststeht. Solange null, lädt der Mac nichts hoch (Schutz gegen Upload auf den falschen Kanal, z. B. Unfathomd).",
     "tiktok": "Offizielle TikTok-Profile der Streamer. Nur als Signal für pipeline/tiktok_signal.py, nie als Videoquelle. Handles nicht alle geprüft: liefert eins nichts Passendes, prüfen.",
-    "clip_kanaele_youtube": "Große YouTube-Clip-Kanäle. pipeline/tiktok_signal.py liest ihre neuesten Shorts mit, damit wir keine Momente posten, die es dort schon gibt, und um zu sehen, was läuft."
+    "clip_kanaele_youtube": "Große YouTube-Clip-Kanäle. pipeline/tiktok_signal.py liest ihre neuesten Shorts mit, damit wir keine Momente posten, die es dort schon gibt, und um zu sehen, was läuft.",
+    "neue_us_streamer": "Am 21.11. ergänzt nach GTA-6-Clip-Views der letzten 7 Tage. Erlaubnis bzw. Clipping-Kampagne für diese Streamer vor dem Hochladen klären. TikTok-Handles nicht alle geprüft."
   },
   "upload": {
     "youtube_kanalname": null,

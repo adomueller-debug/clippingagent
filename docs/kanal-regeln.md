@@ -31,7 +31,7 @@ Siehe `docs/tiktok-analyse.md` und Schritt 5 im Skill `tagesproduktion`. Kurz:
 
 ## Rhythmus
 
-- Lauf jeden Morgen um 08:40 Uhr (Europe/Berlin), höchstens 5 Shorts.
+- Lauf jeden Morgen um 08:40 Uhr (Europe/Berlin): 10 Shorts zur Auswahl, etwa 7 englische und 3 deutsche. Der Nutzer wählt aus; empfohlen sind 3–5 Uploads pro Tag.
 - Hochladen über den Tag verteilt, mindestens 2 Stunden Abstand (Sendeplätze in `config/kanal.json`).
 - Höchstens 2 Shorts pro Streamer und Tag.
 - Nie einen Moment hochladen, den der Streamer oder ein Clip-Kanal schon gepostet hat (TikTok spielt Kopien nicht aus).
