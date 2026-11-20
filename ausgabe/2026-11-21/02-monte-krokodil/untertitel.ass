@@ -1,0 +1,53 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:24.50,Hook,,0,0,0,,{\pos(540,760)}Monte will ein\NKrokodil füttern
+Dialogue: 0,0:00:00.00,0:00:00.23,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DER{\c&HFFFFFF&} GENAUE WARME
+Dialogue: 0,0:00:00.23,0:00:00.49,Sub,,0,0,0,,{\pos(540,1360)}DER {\c&H00E5FF&}GENAUE{\c&HFFFFFF&} WARME
+Dialogue: 0,0:00:00.49,0:00:00.77,Sub,,0,0,0,,{\pos(540,1360)}DER GENAUE {\c&H00E5FF&}WARME{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.77,0:00:01.19,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}MAHLZEIT{\c&HFFFFFF&} NICHT
+Dialogue: 0,0:00:01.19,0:00:02.31,Sub,,0,0,0,,{\pos(540,1360)}MAHLZEIT {\c&H00E5FF&}NICHT{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.18,0:00:06.44,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}NICHT{\c&HFFFFFF&} MICH
+Dialogue: 0,0:00:06.44,0:00:06.69,Sub,,0,0,0,,{\pos(540,1360)}NICHT {\c&H00E5FF&}MICH{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.56,0:00:06.86,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BEISSEN{\c&HFFFFFF&} NICHT
+Dialogue: 0,0:00:06.86,0:00:07.11,Sub,,0,0,0,,{\pos(540,1360)}BEISSEN {\c&H00E5FF&}NICHT{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.00,0:00:07.14,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}MICH{\c&HFFFFFF&} BEISSEN
+Dialogue: 0,0:00:07.14,0:00:07.56,Sub,,0,0,0,,{\pos(540,1360)}MICH {\c&H00E5FF&}BEISSEN{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.69,0:00:10.13,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}FRIST{\c&HFFFFFF&} DOCH MAL
+Dialogue: 0,0:00:10.13,0:00:10.29,Sub,,0,0,0,,{\pos(540,1360)}FRIST {\c&H00E5FF&}DOCH{\c&HFFFFFF&} MAL
+Dialogue: 0,0:00:10.29,0:00:10.54,Sub,,0,0,0,,{\pos(540,1360)}FRIST DOCH {\c&H00E5FF&}MAL{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.49,0:00:10.74,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DU{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.45,0:00:13.01,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}FALSCHE{\c&HFFFFFF&} BEUTE
+Dialogue: 0,0:00:13.01,0:00:13.31,Sub,,0,0,0,,{\pos(540,1360)}FALSCHE {\c&H00E5FF&}BEUTE{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.31,0:00:13.75,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}FALSCHE{\c&HFFFFFF&} BEUTE
+Dialogue: 0,0:00:13.75,0:00:14.01,Sub,,0,0,0,,{\pos(540,1360)}FALSCHE {\c&H00E5FF&}BEUTE{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.01,0:00:14.37,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}FALSCHE{\c&HFFFFFF&} BEUTE
+Dialogue: 0,0:00:14.37,0:00:14.73,Sub,,0,0,0,,{\pos(540,1360)}FALSCHE {\c&H00E5FF&}BEUTE{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.73,0:00:15.79,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}MEINE{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.32,0:00:18.76,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}GÜTE{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.70,0:00:20.26,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}OJA{\c&HFFFFFF&} MIR DAS
+Dialogue: 0,0:00:20.26,0:00:20.38,Sub,,0,0,0,,{\pos(540,1360)}OJA {\c&H00E5FF&}MIR{\c&HFFFFFF&} DAS
+Dialogue: 0,0:00:20.38,0:00:20.63,Sub,,0,0,0,,{\pos(540,1360)}OJA MIR {\c&H00E5FF&}DAS{\c&HFFFFFF&}
+Dialogue: 0,0:00:20.52,0:00:20.62,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}GANZE{\c&HFFFFFF&} BEIN
+Dialogue: 0,0:00:20.62,0:00:21.14,Sub,,0,0,0,,{\pos(540,1360)}GANZE {\c&H00E5FF&}BEIN{\c&HFFFFFF&}
+Dialogue: 0,0:00:21.14,0:00:21.80,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ZERFETZT{\c&HFFFFFF&} WEH DU
+Dialogue: 0,0:00:21.80,0:00:22.46,Sub,,0,0,0,,{\pos(540,1360)}ZERFETZT {\c&H00E5FF&}WEH{\c&HFFFFFF&} DU
+Dialogue: 0,0:00:22.46,0:00:22.71,Sub,,0,0,0,,{\pos(540,1360)}ZERFETZT WEH {\c&H00E5FF&}DU{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.52,0:00:22.80,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}GREIFST{\c&HFFFFFF&} JETZT
+Dialogue: 0,0:00:22.80,0:00:23.05,Sub,,0,0,0,,{\pos(540,1360)}GREIFST {\c&H00E5FF&}JETZT{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.90,0:00:23.02,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}NOCH{\c&HFFFFFF&} MAL AN
+Dialogue: 0,0:00:23.02,0:00:23.16,Sub,,0,0,0,,{\pos(540,1360)}NOCH {\c&H00E5FF&}MAL{\c&HFFFFFF&} AN
+Dialogue: 0,0:00:23.16,0:00:23.41,Sub,,0,0,0,,{\pos(540,1360)}NOCH MAL {\c&H00E5FF&}AN{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.36,0:00:23.46,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DU{\c&HFFFFFF&} ARSCH
+Dialogue: 0,0:00:23.46,0:00:23.74,Sub,,0,0,0,,{\pos(540,1360)}DU {\c&H00E5FF&}ARSCH{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.46,0:00:24.71,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}NIMM{\c&HFFFFFF&}

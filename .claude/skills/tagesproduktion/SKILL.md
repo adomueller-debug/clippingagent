@@ -56,7 +56,7 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
 - Schwach und daher raus: Gespräche ohne Pointe, ruhiger „erster Eindruck“, Menüs, Ladebildschirme, Zwischensequenzen ohne Reaktion, reines Herumfahren.
 - **Pointe ans Ende:** Der Short endet auf dem lustigsten Moment oder direkt danach („The ENDING 😂“: 7,4 Mio.). Kein Ausklingen. Das sorgt dafür, dass man bis zum Schluss schaut und neu startet.
 
-- Höchstens 5 Shorts pro Tag (TikTok verteilt den Testtopf sonst auf zu viele Videos).
+- Höchstens 5 Shorts pro Tag (TikTok verteilt den Testtopf sonst auf zu viele Videos). Shorts, die schon in `ausgabe/<heute>/` liegen (z. B. aus einem manuellen Lauf am Vorabend), zählen mit: nur bis 5 auffüllen, Nummerierung fortsetzen.
 - Höchstens 2 Clips pro Streamer und Tag. Lieber Abwechslung als nur der Clip mit den meisten Views.
 - Beide Sprachen mischen: ungefähr die Hälfte deutsche, die Hälfte englische Streamer, solange beide genug gute Clips haben.
 - Kick-Titel sind oft Tastatur-Gebrabbel. Dann zählen nur Views und das Quellbild.
