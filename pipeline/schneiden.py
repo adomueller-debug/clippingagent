@@ -185,6 +185,9 @@ def main():
         for t in (2, dauer / 2):
             run([FFMPEG, "-y", "-v", "error", "-ss", f"{t:.1f}", "-i", str(quelle), "-frames:v", "1",
                  "-vf", f"scale=960:-2,{raster}", str(out / "pruefung" / f"quelle_{int(t)}s.jpg")])
+        # Bildleiste im Sekundentakt: so findet der Kurator den Moment ohne den Clip abzuspielen
+        run([FFMPEG, "-y", "-v", "error", "-i", str(quelle), "-vf", "fps=1,scale=200:-2,tile=10x6",
+             "-frames:v", "1", str(out / "pruefung" / "leiste.jpg")])
         print(json.dumps({"quelle": f"{sw}x{sh}", "dauer_s": dauer, "bilder": str(out / "pruefung")}))
         return
     ende = min(a.ende or dauer, dauer)

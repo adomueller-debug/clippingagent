@@ -36,6 +36,23 @@ python pipeline/tiktok_signal.py --tage 2
 
 Zeigt außerdem, welche GTA-Posts auf den TikTok-Profilen der Streamer gerade die meisten Aufrufe haben. Daraus lernen wir die *Typen* von Momenten, die ziehen, und suchen ähnliche, noch nicht gepostete Momente. Vorrang haben Streamer, die selbst wenig GTA auf TikTok posten, und frische Clips der letzten Stunden. Geschnitten wird immer aus dem Original-Clip; TikTok-Videos werden nie heruntergeladen oder wiederverwendet.
 
+## 1c. Trend-Scout: Was ist gerade neu?
+
+```bash
+python pipeline/trend_scout.py
+```
+
+Zeigt (a) die meistgesehenen Kick-Clips der ganzen GTA-VI-Kategorie, auch von Streamern, die nicht auf unserer Liste stehen, (b) die meistgesehenen Entdeckungs-Videos dieser Woche auf YouTube (Easter Eggs, Geheimnisse, Orte, Glitches), (c) Entdeckungs-Clips unserer Streamer.
+
+Daraus ableiten:
+1. **Welche Entdeckungen laufen gerade?** (z. B. Area 51, Monster-Haus, Mandys Waschbecken, Bigfoot.) Unsere Kandidaten gezielt nach Streamer-Reaktionen auf diese Dinge durchsuchen, auch über Titel hinweg in den Bildleisten.
+2. **Was ist noch neu?** Für jedes Thema, das ein Kandidat zeigt, die Sättigung prüfen:
+   ```bash
+   python pipeline/trend_scout.py --pruefe "thema1" "thema2"
+   ```
+   „NEU (kaum gezeigt)“ = höchste Priorität. „gesättigt“ = nur nehmen, wenn die Reaktion selbst außergewöhnlich ist. Beispiel: Der Flughafen ging mit über 1 Mio. Aufrufen viral, solange ihn noch niemand gezeigt hatte; am 21.11. gab es schon 19 Videos dazu.
+3. Kick-Clips von Streamern außerhalb unserer Liste: nur vorschlagen (in der Abschlussmeldung), nicht schneiden. Wenn der Nutzer sie freigibt, Streamer in `config/kanal.json` aufnehmen.
+
 ## 2. Kurator: Auswahl
 
 Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage ist `docs/tiktok-analyse.md`. Regeln:
@@ -52,6 +69,7 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
   9. Streamer gegeneinander: einer legt den anderen rein, trollt ihn, fährt ihn um („Speed did Kai dirty“: 25 Mio.). Co-Streams (Monte + Schradin, Kai + Fanum) gezielt danach durchsuchen
   10. Das erste Mal: erste Reaktion auf etwas Neues im Spiel (Grafik-Moment, Lucia, Fahrzeug, Ort), aber nur mit starker Reaktion, nicht als ruhiger „erster Eindruck“
   11. Gespräch über GTA mit Pointe (z. B. „Fanum muss wegen GTA 6 Thanksgiving ausfallen lassen“: 2,2 Mio.). Auch ohne Spielbild, solange die Pointe im Clip sitzt
+  12. **Neue Entdeckung:** ein Ort, ein Geheimnis, ein Easter Egg, eine Spielmechanik, die noch kaum jemand gezeigt hat (Sättigung „NEU“). Mindestens 2 der 10 Shorts sollen aus diesem Typ kommen, wenn es Kandidaten gibt. Hook macht die Neuheit klar („Nobody showed this yet…“, „Das hat noch keiner gefunden“).
 - Die Reaktion des Streamers muss sichtbar sein (Schrei, Lachen, Hände vors Gesicht, Fassungslosigkeit).
 - Schwach und daher raus: Gespräche ohne Pointe, ruhiger „erster Eindruck“, Menüs, Ladebildschirme, Zwischensequenzen ohne Reaktion, reines Herumfahren.
 - **Pointe ans Ende:** Der Short endet auf dem lustigsten Moment oder direkt danach („The ENDING 😂“: 7,4 Mio.). Kein Ausklingen. Das sorgt dafür, dass man bis zum Schluss schaut und neu startet.
@@ -63,6 +81,7 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
 - Aussortieren: Ton kaputt, nur Chat-Lesen, Werbung, Ladebildschirm, nichts passiert in den ersten 3 s.
 - **Nacktheit und sexy Szenen:** erlaubt, wenn jede nackte Stelle (Po, Brust, Genitalbereich) mit `--zensur` verpixelt ist, über die ganze Zeit, in der sie zu sehen ist. Danach Prüfbilder im Sekundentakt ansehen (siehe Prüfer). Bewegt sich die Figur, mehrere Zensur-Boxen mit Zeitfenster setzen. Unterwäsche, Bikini, Tanga ohne Zensur sind okay, solange der Clip nicht nur darauf zoomt.
 - Immer raus, auch bekleidet oder zensiert: deutlich sichtbare Sex-Bewegungen (Stoßbewegungen, Lapdance mit Berührung im Schritt). Angedeutet ja, gezeigt nein: Den Short dann vor der eindeutigen Stelle enden lassen (`--ende`) oder bei der Reaktion des Streamers bleiben. Ebenfalls raus: Gewalt gegen leicht bekleidete Figuren, Blut-Nahaufnahmen. Das löscht TikTok sofort. **Erlaubt** ist Slapstick im Spiel, auch mit Tieren, wenn es ein Versehen ist und nichts Blutiges zu sehen ist (Lacys Hund-Clip: 8,1 Mio. Aufrufe). Die Prüfbilder aus allen Teilen des Clips ansehen, nicht nur den Anfang.
+- **Gründlich sichten:** mindestens 25 Kandidaten per Bildleiste im Sekundentakt ansehen (`--nur-quellbild` erzeugt `pruefung/leiste.jpg`), für die besten 15 das Transkript lesen. Twitch-Titel sind oft nichtssagend („h“, „.“), die Momente stecken trotzdem drin.
 - Beim Kurator reicht der Twitch-Titel nicht immer. Im Zweifel `--nur-quellbild` laufen lassen und die Bilder ansehen.
 
 ## 3. Cutter: pro Clip
