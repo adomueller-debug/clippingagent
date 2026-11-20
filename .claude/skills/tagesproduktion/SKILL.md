@@ -46,7 +46,7 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
   3. Kreative Aktion (etwas, das sonst keiner macht)
   4. Chaos / Verfolgung / Unfall mit lauter Reaktion
   5. Drama aus der Story mit Reaktion des Streamers
-  6. Sexy / Flirt / peinliche Begegnung: Dates, Flirts, Strand, Dusche, Stripclub-Reaktionen. Nacktheit **nur zensiert** (siehe unten)
+  6. Sexy / Flirt / peinliche Begegnung: Kuss-Szenen (z. B. mit Lucia oder Mandy), Dates, Flirts, Strand, Dusche, Stripclub-Reaktionen, angedeutete Sex-Szenen ohne nackte Haut (Szene blendet ab, Geräusche, Bett-Szene bekleidet, vor allem die Reaktion des Streamers). Nacktheit **nur zensiert** (siehe unten). Nackte Szenen sind kein Muss: Kuss- und angedeutete Szenen haben Vorrang.
   7. Komische Begegnungen: schräge NPCs, Promi-Cameos (Drake, Bad Bunny), absurde Dialoge
   8. Sehr Außergewöhnliches: UFOs, Bigfoot, Bugs, Physik-Chaos, Dinge, die man nicht erwartet
 - Die Reaktion des Streamers muss sichtbar sein (Schrei, Lachen, Hände vors Gesicht, Fassungslosigkeit).
@@ -58,7 +58,7 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
 - Kick-Titel sind oft Tastatur-Gebrabbel. Dann zählen nur Views und das Quellbild.
 - Aussortieren: Ton kaputt, nur Chat-Lesen, Werbung, Ladebildschirm, nichts passiert in den ersten 3 s.
 - **Nacktheit und sexy Szenen:** erlaubt, wenn jede nackte Stelle (Po, Brust, Genitalbereich) mit `--zensur` verpixelt ist, über die ganze Zeit, in der sie zu sehen ist. Danach Prüfbilder im Sekundentakt ansehen (siehe Prüfer). Bewegt sich die Figur, mehrere Zensur-Boxen mit Zeitfenster setzen. Unterwäsche, Bikini, Tanga ohne Zensur sind okay, solange der Clip nicht nur darauf zoomt.
-- Immer raus, auch zensiert: dargestellte sexuelle Handlungen (Lapdance mit Berührung, Sex-Szenen), Gewalt gegen leicht bekleidete Figuren, Blut-Nahaufnahmen. Das löscht TikTok sofort. **Erlaubt** ist Slapstick im Spiel, auch mit Tieren, wenn es ein Versehen ist und nichts Blutiges zu sehen ist (Lacys Hund-Clip: 8,1 Mio. Aufrufe). Die Prüfbilder aus allen Teilen des Clips ansehen, nicht nur den Anfang.
+- Immer raus, auch bekleidet oder zensiert: deutlich sichtbare Sex-Bewegungen (Stoßbewegungen, Lapdance mit Berührung im Schritt). Angedeutet ja, gezeigt nein: Den Short dann vor der eindeutigen Stelle enden lassen (`--ende`) oder bei der Reaktion des Streamers bleiben. Ebenfalls raus: Gewalt gegen leicht bekleidete Figuren, Blut-Nahaufnahmen. Das löscht TikTok sofort. **Erlaubt** ist Slapstick im Spiel, auch mit Tieren, wenn es ein Versehen ist und nichts Blutiges zu sehen ist (Lacys Hund-Clip: 8,1 Mio. Aufrufe). Die Prüfbilder aus allen Teilen des Clips ansehen, nicht nur den Anfang.
 - Beim Kurator reicht der Twitch-Titel nicht immer. Im Zweifel `--nur-quellbild` laufen lassen und die Bilder ansehen.
 
 ## 3. Cutter: pro Clip
