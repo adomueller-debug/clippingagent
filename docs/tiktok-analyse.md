@@ -70,6 +70,30 @@ Der Clip „I didn't mean to“ (8,1 Mio.) ist der Moment, in dem Lacy aus Verse
 - **TikTok-Suche am Mac:** #gta6, #gta6funny, #streamerclips und die For-You-Seite mit Claude in Chrome durchsehen. Dort laufen auch die großen Clip-Accounts, die wir von hier nicht finden.
 - **Bezahlte Clipping-Kampagnen:** Für GTA 6 gibt es offizielle Kampagnen, bei denen Streamer pro Aufruf zahlen, z. B. Kai Cenat mit einem Topf von 10.000 $ ([Content Rewards](https://contentrewards.com/articles/gta-6-clipping)). Das wäre eine Einnahmequelle mit ausdrücklicher Erlaubnis.
 
+## 7. Unsere eigenen Zahlen (Stand 20.11., 02:16 Uhr)
+
+18 Shorts auf TikTok, Median **222 Aufrufe**, Spanne 0–444. Alle Zahlen in `daten/performance.tsv`.
+
+| Platz | Short | Länge | Aufrufe |
+|---|---|---|---|
+| 1 | Zarbex fährt Schradin um (18.11.) | 23 s | 444 |
+| 2 | MontanaBlack hat kein Aim (18.11.) | 27 s | 425 |
+| 3 | Kai Cenat Reaktionen (18.11.) | 30 s | 394 / 390 |
+| … | die meisten vom 19.11. | 24–60 s | 150–260 |
+| letzte | Trymacs Todessound | 33 s | 79 |
+| letzte | **Zarbex Bigfoot** | 14 s | **1** |
+| letzte | **Papaplatte Tankstelle** | 15 s | **0** |
+
+**Befund 1: Doppelte Momente werden nicht ausgespielt.** Zarbex hat „BigFoot Sichtung in GTA 6“ am 19.11. um 09:06 Uhr selbst gepostet (281.700 Aufrufe). Unser Short desselben Moments kam danach: 1 Aufruf. Papaplatte hat am 19.11. um 16:10 Uhr „Bisschen überreagiert“ gepostet (724.100 Aufrufe), sehr wahrscheinlich derselbe Tankstellen-Moment: unser Short 0 Aufrufe. TikTok erkennt bereits vorhandene Inhalte und spielt Kopien nicht aus. Ausgerechnet die beiden nach dem TikTok-Signal gewählten Clips sind die schlechtesten.
+
+**Regel:** Einen Moment, den der Streamer (oder ein anderer Account) schon auf TikTok gepostet hat, nie hochladen. Das TikTok-Signal zeigt, welche *Typen* von Momenten ziehen, und welche *konkreten* Momente wir meiden müssen. Gut sind Momente, die noch niemand gepostet hat: frisch aus dem Stream, schneller als der Streamer selbst, oder von Streamern, deren eigener TikTok wenig GTA postet (MontanaBlack, Kai Cenat, IShowSpeed, Schradin).
+
+**Befund 2: Rund 200 Aufrufe sind der Testtopf.** TikTok zeigt jedes Video eines neuen Kontos erst einer kleinen Gruppe. Kein Short hat diese Hürde geschafft. Entscheidend für den Sprung ist, wie viele die Videos bis zum Ende schauen (Wiedergabedauer in TikTok Studio → Analysen).
+
+**Befund 3: Der erste Tag lief besser als der zweite.** 18.11.: 4 Shorts, 390–444 Aufrufe. 19.11.: 14 Shorts, meist 150–260. Viele Posts an einem Tag verteilen den Testtopf. **Regel:** 3–5 TikToks pro Tag, mindestens 2 Stunden Abstand.
+
+**Wichtig für den Muster-Short vom 20.11. (Lacy, Hund):** Den hat Lacy selbst gepostet (8,1 Mio.). Er zeigt nur das neue Format und darf nicht hochgeladen werden.
+
 ## Quellen
 
 - TikTok-Profile der Streamer, ausgelesen am 20.11.2026 (`pipeline/tiktok_signal.py`)

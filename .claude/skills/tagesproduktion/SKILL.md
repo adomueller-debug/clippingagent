@@ -32,7 +32,9 @@ Gibt es auch dann keine Clips zum Spiel (z. B. vor dem Release), nicht auf ein a
 python pipeline/tiktok_signal.py --tage 2
 ```
 
-Zeigt, welche GTA-Posts auf den TikTok-Profilen der Streamer gerade die meisten Aufrufe haben. Streamer mit vielen viralen Posts bekommen beim Kurator Vorrang, und Momente, die dort laufen (z. B. „BigFoot Sichtung“), werden in den Twitch-/Kick-Kandidaten gezielt gesucht. Geschnitten wird immer aus dem Original-Clip; TikTok-Videos werden nie heruntergeladen oder wiederverwendet.
+**Achtung, doppelt = tot:** Was ein Streamer schon selbst auf TikTok gepostet hat, spielt TikTok bei uns nicht aus (Zarbex Bigfoot: 1 Aufruf, Papaplatte Tankstelle: 0). Jeder Kandidat wird gegen diese Liste geprüft: Passt das Thema eines Clips zu einem TikTok-Post desselben Streamers aus den letzten 3 Tagen (z. B. „Big Foot?“ ↔ „BigFoot Sichtung in GTA 6“), fliegt er raus. Im Zweifel raus.
+
+Zeigt außerdem, welche GTA-Posts auf den TikTok-Profilen der Streamer gerade die meisten Aufrufe haben. Daraus lernen wir die *Typen* von Momenten, die ziehen, und suchen ähnliche, noch nicht gepostete Momente. Vorrang haben Streamer, die selbst wenig GTA auf TikTok posten, und frische Clips der letzten Stunden. Geschnitten wird immer aus dem Original-Clip; TikTok-Videos werden nie heruntergeladen oder wiederverwendet.
 
 ## 2. Kurator: Auswahl
 
@@ -47,6 +49,7 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
 - Die Reaktion des Streamers muss sichtbar sein (Schrei, Lachen, Hände vors Gesicht, Fassungslosigkeit).
 - Schwach und daher raus: Gespräche, „erster Eindruck“, Menüs, Ladebildschirme, Zwischensequenzen ohne Reaktion, reines Herumfahren.
 
+- Höchstens 5 Shorts pro Tag (TikTok verteilt den Testtopf sonst auf zu viele Videos).
 - Höchstens 2 Clips pro Streamer und Tag. Lieber Abwechslung als nur der Clip mit den meisten Views.
 - Beide Sprachen mischen: ungefähr die Hälfte deutsche, die Hälfte englische Streamer, solange beide genug gute Clips haben.
 - Kick-Titel sind oft Tastatur-Gebrabbel. Dann zählen nur Views und das Quellbild.
