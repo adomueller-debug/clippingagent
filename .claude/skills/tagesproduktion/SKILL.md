@@ -36,14 +36,22 @@ Zeigt, welche GTA-Posts auf den TikTok-Profilen der Streamer gerade die meisten 
 
 ## 2. Kurator: Auswahl
 
-Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Regeln:
+Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage ist `docs/tiktok-analyse.md`. Regeln:
+
+- **Nur lustige oder besondere Momente.** Der Clip muss in einen dieser Typen passen, sonst raus, egal wie viele Views:
+  1. Versehen / Fail („I didn't mean to“, „Not again“, „Bro missed“): stärkster Typ
+  2. Tier-Begegnung (Hund, Katze, Hai, Alligator)
+  3. Kreative Aktion (etwas, das sonst keiner macht)
+  4. Chaos / Verfolgung / Unfall mit lauter Reaktion
+  5. Drama aus der Story mit Reaktion des Streamers
+- Die Reaktion des Streamers muss sichtbar sein (Schrei, Lachen, Hände vors Gesicht, Fassungslosigkeit).
+- Schwach und daher raus: Gespräche, „erster Eindruck“, Menüs, Ladebildschirme, Zwischensequenzen ohne Reaktion, reines Herumfahren.
 
 - Höchstens 2 Clips pro Streamer und Tag. Lieber Abwechslung als nur der Clip mit den meisten Views.
 - Beide Sprachen mischen: ungefähr die Hälfte deutsche, die Hälfte englische Streamer, solange beide genug gute Clips haben.
 - Kick-Titel sind oft Tastatur-Gebrabbel. Dann zählen nur Views und das Quellbild.
-- Bevorzugen: Reaktion + Ereignis im selben Clip (Unfall, Tod, Schreck, Bug, Lachkrampf, Streit).
 - Aussortieren: Ton kaputt, nur Chat-Lesen, Werbung, Ladebildschirm, nichts passiert in den ersten 3 s.
-- Aussortieren (YouTube-Richtlinien): Nacktheit im Spiel (GTA 6 hat Dusch-, Strip- und Strandszenen), Unterwäsche oder Tanga im Bildmittelpunkt, Gewalt gegen leicht bekleidete Figuren. Im Zweifel raus. Die Prüfbilder aus allen Teilen des Clips ansehen, nicht nur den Anfang.
+- Aussortieren (YouTube-Richtlinien): Nacktheit im Spiel (GTA 6 hat Dusch-, Strip- und Strandszenen), Unterwäsche oder Tanga im Bildmittelpunkt, Gewalt gegen leicht bekleidete Figuren, Blut-Nahaufnahmen. Im Zweifel raus. **Erlaubt** ist Slapstick im Spiel, auch mit Tieren, wenn es ein Versehen ist und nichts Blutiges zu sehen ist (Lacys Hund-Clip: 8,1 Mio. Aufrufe). Die Prüfbilder aus allen Teilen des Clips ansehen, nicht nur den Anfang.
 - Beim Kurator reicht der Twitch-Titel nicht immer. Im Zweifel `--nur-quellbild` laufen lassen und die Bilder ansehen.
 
 ## 3. Cutter: pro Clip
@@ -58,9 +66,12 @@ Ordner: `ausgabe/JJJJ-MM-TT/NN-kurzname/`.
    Steht für den Streamer in `config/kanal.json` schon eine Box, sie nur prüfen. Wenn keine Facecam sichtbar ist: ohne `--facecam` schneiden (Layout blur).
 2. Schneiden:
    ```bash
-   python pipeline/schneiden.py --url URL --out ORDNER --sprache de --facecam 0.797,0.33,0.177,0.267
+   python pipeline/schneiden.py --url URL --out ORDNER --sprache de --facecam 0.797,0.33,0.177,0.267 \
+     --hook "Papaplatte fällt auf den ältesten Trick rein"
    ```
-3. `ORDNER/worte.json` lesen. Wenn der Clip mit Leerlauf beginnt oder nach der Pointe weiterläuft: mit `--start`/`--ende` neu schneiden (die Quelle wird wiederverwendet). Ziel: der Moment beginnt in den ersten 2 s, die Pointe sitzt am Ende. Shorts sind höchstens 60 s lang; längere Clips (oft bei Kick) immer kürzen.
+   **`--hook` ist Pflicht:** Streamer + was passiert, 3–8 Wörter, Sprache des Clips, ohne Emoji. Erscheint als weiße Box auf der Naht zwischen Facecam und Spiel. Verrät die Pointe nicht ganz („Lacy meets a dog in GTA 6“, „Die dümmste Verfolgungsjagd“).
+   Untertitel rutschen bei gesetztem Hook ins untere Drittel. Hat der Stream schon Live-Untertitel: `--ohne-untertitel` (der Hook bleibt).
+3. `ORDNER/worte.json` lesen. Wenn der Clip mit Leerlauf beginnt oder nach der Pointe weiterläuft: mit `--start`/`--ende` neu schneiden (die Quelle wird wiederverwendet). Ziel: der Moment beginnt in den ersten 2 s, die Pointe sitzt am Ende. **Ziellänge 7–20 s** (Median-Aufrufe bei 0–15 s: 652.000, bei über 60 s: 131.000). Über 30 s nur, wenn eine Geschichte trägt. Twitch-Clips sind meist 30–60 s: fast immer kürzen.
    `--sprache` ist die Sprache des Streamers aus der Config (`de` oder `en`).
 4. Neue Facecam-Boxen in `config/kanal.json` beim Streamer eintragen.
 
@@ -109,23 +120,23 @@ Bei einem Fehler: korrigieren und neu schneiden. Nach 2 Fehlversuchen den Clip v
 - Sprache: <de|en>
 - Länge: <s>
 
+## Hook
+<Text der Hook-Zeile im Video>
+
 ## Titel
-<max. 70 Zeichen, Sprache des Clips, Streamername vorne, konkret was passiert, höchstens ein Emoji>
+<YouTube: max. 60 Zeichen, catchy, Streamername + was passiert, 1–2 Emoji>
 
 ## Beschreibung
-<1 Satz, was passiert>
-
-🎥 Streamer: <Name> – <Kanal-URL>
-Clip mit Erlaubnis des Streamers.
-
-#<spiel> #<streamer> #shorts
+#gta6 #<streamer> #shorts
 
 ## Tags
 <kommagetrennt>
 
 ## TikTok
-<Beschreibung bis ca. 150 Zeichen, Sprache des Clips, mit Streamer-Credit> #<spiel> #<streamer> #fyp
+<2–6 Wörter, Ich-Form oder „Bro …“, macht neugierig statt die Pointe zu verraten><2–3 Emoji> #fyp #viral #<streamer> #gta6 #<thema>
 ```
+
+Kein Beschreibungstext und kein Credit-Satz („mit Erlaubnis“), weder auf YouTube noch auf TikTok. Beispiele für TikTok: „I didn't mean to😢💔 #fyp #viral #lacy #gta6 #dog“, „Er musste es einfach tun😭💥 #fyp #viral #papaplatte #gta6 #explosion“.
 
 Titelregeln stehen in `docs/kanal-regeln.md`.
 

@@ -98,7 +98,8 @@ def ts(t):
     return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
 
 
-def ass_datei(worte, y, pfad):
+def ass_datei(worte, y, pfad, hook=None, hook_y=None, dauer=0.0):
+    """Wort-Untertitel und optional eine Hook-Zeile (weiße Box, schwarze Schrift, ganze Länge)."""
     kopf = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
@@ -108,11 +109,20 @@ WrapStyle: 2
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     zeilen = []
+    if hook and len(hook) > 24 and "\\N" not in hook:
+        # in zwei möglichst gleich lange Zeilen teilen
+        w = hook.split()
+        k = min(range(1, len(w)), key=lambda i: abs(len(" ".join(w[:i])) - len(" ".join(w[i:]))))
+        hook = " ".join(w[:k]) + "\\N" + " ".join(w[k:])
+    if hook:
+        # Ohne Emoji: libass kann keine Farb-Emoji. Emoji gehören in den TikTok-Text.
+        zeilen.append(f"Dialogue: 1,{ts(0)},{ts(dauer)},Hook,,0,0,0,,{{\\pos({W // 2},{hook_y})}}{hook}")
     for b in bloecke(worte):
         for i, w in enumerate(b):
             ende = b[i + 1]["s"] if i + 1 < len(b) else max(w["e"], w["s"] + 0.25)
@@ -135,13 +145,13 @@ def filter_graph(sw, sh, facecam, zoom):
              f"crop={W}:{top}[cam];"
              f"[0:v]crop={gw}:{sh}:(iw-{gw})/2:0,scale={W}:{unten}[game];"
              f"[cam][game]vstack=inputs=2[v0]")
-        return g, top  # Untertitel auf der Naht
+        return g, top, top  # Untertitel und Hook auf der Naht
     gw = int(sw / zoom) // 2 * 2
     fg_h = int(W * sh / gw) // 2 * 2
     g = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},gblur=sigma=40,eq=brightness=-0.12[bg];"
          f"[0:v]crop={gw}:{sh}:(iw-{gw})/2:0,scale={W}:{fg_h}[fg];"
          f"[bg][fg]overlay=0:(H-h)/2[v0]")
-    return g, (H + fg_h) // 2 + 170  # Untertitel unter dem Bild
+    return g, (H + fg_h) // 2 + 170, (H - fg_h) // 2 - 110  # Untertitel unter, Hook über dem Bild
 
 
 def main():
@@ -156,6 +166,7 @@ def main():
     ap.add_argument("--ende", type=float, default=None)
     ap.add_argument("--modell", default="small")
     ap.add_argument("--ohne-untertitel", action="store_true")
+    ap.add_argument("--hook", default=None, help="Hook-Zeile im Video (ohne Emoji), z. B. 'Lacy trifft einen Hund in GTA 6'")
     ap.add_argument("--worte", default=None, help="korrigierte worte.json verwenden statt neu zu transkribieren (Zeiten relativ zu --start)")
     ap.add_argument("--nur-quellbild", action="store_true", help="nur laden und pruefung/quelle.jpg mit Raster schreiben")
     a = ap.parse_args()
@@ -177,19 +188,24 @@ def main():
     ende = min(a.ende or dauer, dauer)
 
     facecam = [float(x) for x in a.facecam.split(",")] if a.facecam else None
-    graph, sub_y = filter_graph(sw, sh, facecam, a.zoom)
+    graph, sub_y, hook_y = filter_graph(sw, sh, facecam, a.zoom)
+    if a.hook and facecam:
+        # Hook sitzt auf der Naht, die Untertitel rutschen ins untere Drittel (über der TikTok-Leiste)
+        sub_y = H - 560
 
     if a.ohne_untertitel:
         worte, sprache = [], a.sprache
-        graph = graph.replace("[v0]", "[v]")
     else:
         if a.worte:
             d = json.loads(Path(a.worte).read_text())
             worte, sprache = d["worte"], d.get("sprache")
         else:
             worte, sprache = transkribieren(quelle, a.sprache, a.start, a.ende, a.modell)
-        ass_datei(worte, sub_y, out / "untertitel.ass")
+    if worte or a.hook:
+        ass_datei(worte, sub_y, out / "untertitel.ass", a.hook, hook_y, ende - a.start)
         graph += f";[v0]ass={out / 'untertitel.ass'}:fontsdir={FONT_DIR}[v]"
+    else:
+        graph = graph.replace("[v0]", "[v]")
     (out / "worte.json").write_text(json.dumps({"sprache": sprache, "worte": worte}, ensure_ascii=False, indent=1))
 
     run([FFMPEG, "-y", "-v", "error", "-ss", str(a.start), "-to", str(ende), "-i", str(quelle),
