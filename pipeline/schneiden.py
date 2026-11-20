@@ -166,6 +166,8 @@ def main():
     ap.add_argument("--ende", type=float, default=None)
     ap.add_argument("--modell", default="small")
     ap.add_argument("--ohne-untertitel", action="store_true")
+    ap.add_argument("--zensur", action="append", default=[],
+                    help="Bereich im Quellbild verpixeln: x,y,b,h als Anteile, optional ,von,bis in s (relativ zum Short). Mehrfach möglich.")
     ap.add_argument("--hook", default=None, help="Hook-Zeile im Video (ohne Emoji), z. B. 'Lacy trifft einen Hund in GTA 6'")
     ap.add_argument("--worte", default=None, help="korrigierte worte.json verwenden statt neu zu transkribieren (Zeiten relativ zu --start)")
     ap.add_argument("--nur-quellbild", action="store_true", help="nur laden und pruefung/quelle.jpg mit Raster schreiben")
@@ -189,6 +191,20 @@ def main():
 
     facecam = [float(x) for x in a.facecam.split(",")] if a.facecam else None
     graph, sub_y, hook_y = filter_graph(sw, sh, facecam, a.zoom)
+    if a.zensur:
+        # Zensur zuerst aufs Quellbild, damit sie in Facecam- und Spiel-Ausschnitt gleich sitzt
+        kette, quelle_lbl = [], "0:v"
+        for i, z in enumerate(a.zensur):
+            v = [float(x) for x in z.split(",")]
+            zx, zy, zw, zh = (int(sw * v[0]) // 2 * 2, int(sh * v[1]) // 2 * 2,
+                              max(int(sw * v[2]) // 2 * 2, 2), max(int(sh * v[3]) // 2 * 2, 2))
+            zeit = f":enable='between(t,{v[4]},{v[5]})'" if len(v) == 6 else ""
+            kette.append(f"[{quelle_lbl}]split[zs{i}][zb{i}];[zb{i}]crop={zw}:{zh}:{zx}:{zy},"
+                         f"scale=iw/64:ih/64,scale={zw}:{zh}:flags=neighbor[zp{i}];"
+                         f"[zs{i}][zp{i}]overlay={zx}:{zy}{zeit}[zo{i}]")
+            quelle_lbl = f"zo{i}"
+        kette.append(f"[{quelle_lbl}]split=2[q1][q2]")
+        graph = ";".join(kette) + ";" + graph.replace("[0:v]", "[q1]", 1).replace("[0:v]", "[q2]", 1)
     if a.hook and facecam:
         # Hook sitzt auf der Naht, die Untertitel rutschen ins untere Drittel (über der TikTok-Leiste)
         sub_y = H - 560

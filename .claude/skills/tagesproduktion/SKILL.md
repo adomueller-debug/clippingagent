@@ -46,6 +46,9 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
   3. Kreative Aktion (etwas, das sonst keiner macht)
   4. Chaos / Verfolgung / Unfall mit lauter Reaktion
   5. Drama aus der Story mit Reaktion des Streamers
+  6. Sexy / Flirt / peinliche Begegnung: Dates, Flirts, Strand, Dusche, Stripclub-Reaktionen. Nacktheit **nur zensiert** (siehe unten)
+  7. Komische Begegnungen: schräge NPCs, Promi-Cameos (Drake, Bad Bunny), absurde Dialoge
+  8. Sehr Außergewöhnliches: UFOs, Bigfoot, Bugs, Physik-Chaos, Dinge, die man nicht erwartet
 - Die Reaktion des Streamers muss sichtbar sein (Schrei, Lachen, Hände vors Gesicht, Fassungslosigkeit).
 - Schwach und daher raus: Gespräche, „erster Eindruck“, Menüs, Ladebildschirme, Zwischensequenzen ohne Reaktion, reines Herumfahren.
 
@@ -54,7 +57,8 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
 - Beide Sprachen mischen: ungefähr die Hälfte deutsche, die Hälfte englische Streamer, solange beide genug gute Clips haben.
 - Kick-Titel sind oft Tastatur-Gebrabbel. Dann zählen nur Views und das Quellbild.
 - Aussortieren: Ton kaputt, nur Chat-Lesen, Werbung, Ladebildschirm, nichts passiert in den ersten 3 s.
-- Aussortieren (YouTube-Richtlinien): Nacktheit im Spiel (GTA 6 hat Dusch-, Strip- und Strandszenen), Unterwäsche oder Tanga im Bildmittelpunkt, Gewalt gegen leicht bekleidete Figuren, Blut-Nahaufnahmen. Im Zweifel raus. **Erlaubt** ist Slapstick im Spiel, auch mit Tieren, wenn es ein Versehen ist und nichts Blutiges zu sehen ist (Lacys Hund-Clip: 8,1 Mio. Aufrufe). Die Prüfbilder aus allen Teilen des Clips ansehen, nicht nur den Anfang.
+- **Nacktheit und sexy Szenen:** erlaubt, wenn jede nackte Stelle (Po, Brust, Genitalbereich) mit `--zensur` verpixelt ist, über die ganze Zeit, in der sie zu sehen ist. Danach Prüfbilder im Sekundentakt ansehen (siehe Prüfer). Bewegt sich die Figur, mehrere Zensur-Boxen mit Zeitfenster setzen. Unterwäsche, Bikini, Tanga ohne Zensur sind okay, solange der Clip nicht nur darauf zoomt.
+- Immer raus, auch zensiert: dargestellte sexuelle Handlungen (Lapdance mit Berührung, Sex-Szenen), Gewalt gegen leicht bekleidete Figuren, Blut-Nahaufnahmen. Das löscht TikTok sofort. **Erlaubt** ist Slapstick im Spiel, auch mit Tieren, wenn es ein Versehen ist und nichts Blutiges zu sehen ist (Lacys Hund-Clip: 8,1 Mio. Aufrufe). Die Prüfbilder aus allen Teilen des Clips ansehen, nicht nur den Anfang.
 - Beim Kurator reicht der Twitch-Titel nicht immer. Im Zweifel `--nur-quellbild` laufen lassen und die Bilder ansehen.
 
 ## 3. Cutter: pro Clip
@@ -72,6 +76,7 @@ Ordner: `ausgabe/JJJJ-MM-TT/NN-kurzname/`.
    python pipeline/schneiden.py --url URL --out ORDNER --sprache de --facecam 0.797,0.33,0.177,0.267 \
      --hook "Papaplatte fällt auf den ältesten Trick rein"
    ```
+   Nacktheit verpixeln: `--zensur x,y,b,h[,von,bis]` (Anteile im Quellbild wie bei der Facecam, Zeiten relativ zum Short), mehrfach möglich. Box großzügig wählen.
    **`--hook` ist Pflicht:** Streamer + was passiert, 3–8 Wörter, Sprache des Clips, ohne Emoji. Erscheint als weiße Box auf der Naht zwischen Facecam und Spiel. Verrät die Pointe nicht ganz („Lacy meets a dog in GTA 6“, „Die dümmste Verfolgungsjagd“).
    Untertitel rutschen bei gesetztem Hook ins untere Drittel. Hat der Stream schon Live-Untertitel: `--ohne-untertitel` (der Hook bleibt).
 3. `ORDNER/worte.json` lesen. Wenn der Clip mit Leerlauf beginnt oder nach der Pointe weiterläuft: mit `--start`/`--ende` neu schneiden (die Quelle wird wiederverwendet). Ziel: der Moment beginnt in den ersten 2 s, die Pointe sitzt am Ende. **Ziellänge 7–20 s** (Median-Aufrufe bei 0–15 s: 652.000, bei über 60 s: 131.000). Über 30 s nur, wenn eine Geschichte trägt. Twitch-Clips sind meist 30–60 s: fast immer kürzen.
@@ -101,6 +106,11 @@ Kandidaten mit `"typ": "youtube_stream"` sind ganze Streams. YouTube blockiert D
 5. `upload.md` wie in Schritt 5 schreiben. In `daten/verwendet.json` die Stream-ID (`youtube:ID`) eintragen, sobald der Stream bearbeitet ist.
 
 ## 4. Prüfer
+
+Bei Shorts mit `--zensur`: zusätzlich ein Bild pro Sekunde ziehen und jedes ansehen. Ist irgendwo unzensierte Nacktheit zu sehen, Box anpassen oder den Clip verwerfen.
+```bash
+ffmpeg -v error -i ORDNER/short.mp4 -vf fps=1,scale=270:-2,tile=6x3 ORDNER/pruefung/zensur-check.jpg
+```
 
 Die vier Bilder in `ORDNER/pruefung/` ansehen. Prüfen:
 
