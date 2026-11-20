@@ -94,6 +94,33 @@ Der Clip „I didn't mean to“ (8,1 Mio.) ist der Moment, in dem Lacy aus Verse
 
 **Wichtig für den Muster-Short vom 20.11. (Lacy, Hund):** Den hat Lacy selbst gepostet (8,1 Mio.). Er zeigt nur das neue Format und darf nicht hochgeladen werden.
 
+## 8. Große Clip-Kanäle auf YouTube (Stand 20.11.)
+
+Ausgewertet: die neuesten 80 Shorts von Kai Cenat Live, Speedy Boykins (IShowSpeed), Live Speedy, Papaplatte Clips, Daily xQc Clips und MajesticDrama, dazu 210 Shorts aus der YouTube-Suche zu GTA 6.
+
+**Inhalt schlägt Titelform.** Innerhalb eines Kanals machen Emoji, Länge und Name vorne im Titel kaum einen Unterschied (Median relativ zum Kanal: mit Emoji 0,93, ohne 1,05). Ausreißer entstehen durch den Moment.
+
+**Die Moment-Typen der größten Ausreißer** (Faktor über dem Kanal-Median):
+
+| Typ | Beispiel | Aufrufe | Faktor |
+|---|---|---|---|
+| Streamer gegeneinander | „Speed did Kai dirty 😭😭“ | 25 Mio. | 73× |
+| Das erste Mal | „Papaplatte sees the LEGO Smart Brick for the first time“ | 4,5 Mio. | 54× |
+| Pointe am Ende | „The ENDING 😂😂“ | 7,4 Mio. | 22× |
+| Missverständnis zwischen zweien | „Papaplatte is misunderstood by Rewi“ | 1,5 Mio. | 18× |
+| Gespräch über GTA mit Pointe | „Fanum Is Worried He Would Have To Skip Thanksgiving To Play GTA VI 😂“ | 2,2 Mio. | 5× |
+| Absurder Fail | „IShowSpeed Surviving A Fall Off A Cliff In Fortnite! 😭“ | 2,1 Mio. | 55× |
+
+**Zwei Titelstile, beide erfolgreich:**
+- A „Meme“ (Speedy Boykins, Median 344.000): 2–6 Wörter, verrät nicht die Pointe, doppelte Emoji: „Bro became colorblind 💀💀“, „Not the KSI laugh 😂😂“
+- B „Satz“ (Kai Cenat Live, Median 436.000): Streamer + Ereignis, 40–90 Zeichen: „Ed Sheeran's Aura Has Kai Cenat Shocked 😭“
+
+Wir wechseln ab und vermerken den Stil in `upload.md`. Nach zwei Wochen zeigen die eigenen Zahlen, welcher bei uns besser läuft.
+
+**Doppelte Momente auch auf YouTube:** Papaplatte Clips hat „Papaplatte overreacted a bit in GTA 6“ (363.000) und „falls for the oldest trick in the book“ (52.000) schon gepostet. Unser Short #4 vom 18.11. und die Tankstelle vom 19.11. waren also auch dort schon vorhanden. `pipeline/tiktok_signal.py` liest diese Kanäle jetzt mit.
+
+**Übernommen in den Ablauf:** drei neue Moment-Typen (Streamer gegeneinander, das erste Mal, Gespräch mit Pointe), Regel „Pointe ans Ende“, zwei YouTube-Titelstile im Wechsel, Clip-Kanäle als Doppel-Prüfung.
+
 ## Quellen
 
 - TikTok-Profile der Streamer, ausgelesen am 20.11.2026 (`pipeline/tiktok_signal.py`)
@@ -101,3 +128,4 @@ Der Clip „I didn't mean to“ (8,1 Mio.) ist der Moment, in dem Lacy aus Verse
 - [OpusClip: The Anatomy of a Viral TikTok in 2026](https://www.opus.pro/blog/anatomy-of-a-viral-tiktok-2026) (Anbieter-Daten, nur als Richtung)
 - [OpusClip: Why 80% of Viral TikToks Use Captions](https://www.opus.pro/blog/why-viral-tiktoks-use-captions)
 - [Content Rewards: GTA 6 Clipping](https://contentrewards.com/articles/gta-6-clipping)
+- YouTube-Shorts der Kanäle Kai Cenat Live, Speedy Boykins, Live Speedy, Papaplatte Clips, Daily xQc Clips, MajesticDrama sowie YouTube-Suche „gta 6 …“, ausgelesen am 20.11.2026

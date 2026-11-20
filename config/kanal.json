@@ -109,18 +109,41 @@
     "max_dauer_s": "Kick-Clips sind oft länger als 60 s. Shorts auf höchstens 60 s kürzen (--start/--ende).",
     "plattform": "IShowSpeed: Twitch-Clips aus der Cloud, YouTube-Streams (@IShowSpeed) über den Rechner des Nutzers (docs/rechner-einrichten.md).",
     "upload": "Kanalname und TikTok-Konto eintragen, sobald der Name feststeht. Solange null, lädt der Mac nichts hoch (Schutz gegen Upload auf den falschen Kanal, z. B. Unfathomd).",
-    "tiktok": "Offizielle TikTok-Profile der Streamer. Nur als Signal für pipeline/tiktok_signal.py, nie als Videoquelle. Handles nicht alle geprüft: liefert eins nichts Passendes, prüfen."
+    "tiktok": "Offizielle TikTok-Profile der Streamer. Nur als Signal für pipeline/tiktok_signal.py, nie als Videoquelle. Handles nicht alle geprüft: liefert eins nichts Passendes, prüfen.",
+    "clip_kanaele_youtube": "Große YouTube-Clip-Kanäle. pipeline/tiktok_signal.py liest ihre neuesten Shorts mit, damit wir keine Momente posten, die es dort schon gibt, und um zu sehen, was läuft."
   },
   "upload": {
     "youtube_kanalname": null,
     "tiktok_konto": null,
     "sendeplaetze": [
-      "18:00",
-      "18:30",
+      "12:00",
+      "14:30",
+      "17:00",
       "19:00",
-      "19:30",
-      "20:00"
+      "21:00"
     ],
     "zeitzone": "Europe/Berlin"
-  }
+  },
+  "clip_kanaele_youtube": [
+    {
+      "name": "Kai Cenat Live",
+      "id": "UCvCfpQXRXdJdL07pzTIA6Cw"
+    },
+    {
+      "name": "Speedy Boykins",
+      "id": "UCd09ztChTkJ9dlY6RLawSog"
+    },
+    {
+      "name": "Live Speedy",
+      "id": "UC2bW_AY9BlbYLGJSXAbjS4Q"
+    },
+    {
+      "name": "Papaplatte Clips",
+      "id": "UCpSnLiVfsNWL3N24WjsAMQA"
+    },
+    {
+      "name": "Daily xQc Clips",
+      "id": "UCSsvRiJr8IWOUsjLTwsDp0Q"
+    }
+  ]
 }

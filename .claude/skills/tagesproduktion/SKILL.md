@@ -49,8 +49,12 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
   6. Sexy / Flirt / peinliche Begegnung: Kuss-Szenen (z. B. mit Lucia oder Mandy), Dates, Flirts, Strand, Dusche, Stripclub-Reaktionen, angedeutete Sex-Szenen ohne nackte Haut (Szene blendet ab, Geräusche, Bett-Szene bekleidet, vor allem die Reaktion des Streamers). Nacktheit **nur zensiert** (siehe unten). Nackte Szenen sind kein Muss: Kuss- und angedeutete Szenen haben Vorrang.
   7. Komische Begegnungen: schräge NPCs, Promi-Cameos (Drake, Bad Bunny), absurde Dialoge
   8. Sehr Außergewöhnliches: UFOs, Bigfoot, Bugs, Physik-Chaos, Dinge, die man nicht erwartet
+  9. Streamer gegeneinander: einer legt den anderen rein, trollt ihn, fährt ihn um („Speed did Kai dirty“: 25 Mio.). Co-Streams (Monte + Schradin, Kai + Fanum) gezielt danach durchsuchen
+  10. Das erste Mal: erste Reaktion auf etwas Neues im Spiel (Grafik-Moment, Lucia, Fahrzeug, Ort), aber nur mit starker Reaktion, nicht als ruhiger „erster Eindruck“
+  11. Gespräch über GTA mit Pointe (z. B. „Fanum muss wegen GTA 6 Thanksgiving ausfallen lassen“: 2,2 Mio.). Auch ohne Spielbild, solange die Pointe im Clip sitzt
 - Die Reaktion des Streamers muss sichtbar sein (Schrei, Lachen, Hände vors Gesicht, Fassungslosigkeit).
-- Schwach und daher raus: Gespräche, „erster Eindruck“, Menüs, Ladebildschirme, Zwischensequenzen ohne Reaktion, reines Herumfahren.
+- Schwach und daher raus: Gespräche ohne Pointe, ruhiger „erster Eindruck“, Menüs, Ladebildschirme, Zwischensequenzen ohne Reaktion, reines Herumfahren.
+- **Pointe ans Ende:** Der Short endet auf dem lustigsten Moment oder direkt danach („The ENDING 😂“: 7,4 Mio.). Kein Ausklingen. Das sorgt dafür, dass man bis zum Schluss schaut und neu startet.
 
 - Höchstens 5 Shorts pro Tag (TikTok verteilt den Testtopf sonst auf zu viele Videos).
 - Höchstens 2 Clips pro Streamer und Tag. Lieber Abwechslung als nur der Clip mit den meisten Views.
@@ -132,12 +136,16 @@ Bei einem Fehler: korrigieren und neu schneiden. Nach 2 Fehlversuchen den Clip v
 - Spiel: <Spiel>
 - Sprache: <de|en>
 - Länge: <s>
+- Moment-Typ: <Nummer und Name aus Schritt 2>
+- Titelstil: <A Meme | B Satz>
 
 ## Hook
 <Text der Hook-Zeile im Video>
 
 ## Titel
-<YouTube: max. 60 Zeichen, catchy, Streamername + was passiert, 1–2 Emoji>
+<YouTube: abwechselnd Stil A oder B, Stil in `upload.md` unter „Titelstil“ vermerken>
+<A „Meme“ (wie Speedy Boykins): 2–6 Wörter, verrät nicht die Pointe, 2 gleiche Emoji: „Monte did Schradin dirty 😭😭“, „The ENDING 💀💀“>
+<B „Satz“ (wie Kai Cenat Live): Streamer + was passiert, 40–90 Zeichen, 1–2 Emoji: „Kai Cenat Gets Chased By The Cops In GTA VI 😭🚨“>
 
 ## Beschreibung
 #gta6 #<streamer> #shorts

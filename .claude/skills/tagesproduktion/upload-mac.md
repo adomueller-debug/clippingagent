@@ -6,7 +6,7 @@ Läuft am Ende der Tagesproduktion auf dem Mac oder auf Zuruf („Lade die Short
 
 ## Sendeplätze
 
-Aus `config/kanal.json` → `upload.sendeplaetze` (Standard 18:00, 18:30, 19:00, 19:30, 20:00 Uhr, Europe/Berlin). Shorts in der Reihenfolge ihrer Nummer auf die Plätze des Tages verteilen. Ist ein Platz schon vorbei, auf den nächsten Tag schieben.
+Aus `config/kanal.json` → `upload.sendeplaetze` (Standard 12:00, 14:30, 17:00, 19:00, 21:00 Uhr, Europe/Berlin; mindestens 2 Stunden Abstand). Shorts in der Reihenfolge ihrer Nummer auf die Plätze des Tages verteilen. Ist ein Platz schon vorbei, auf den nächsten Tag schieben.
 
 ## 1. Shorts finden
 
@@ -24,7 +24,7 @@ Aus `config/kanal.json` → `upload.sendeplaetze` (Standard 18:00, 18:30, 19:00,
 ## 3. YouTube (privat)
 
 1. Neuer Tab: studio.youtube.com → „Erstellen“ → „Videos hochladen“, `short.mp4` per `file_upload` (absoluter Pfad).
-2. Titel, Beschreibung und Tags aus `upload.md` (Abschnitte „Titel“, „Beschreibung“, „Tags“).
+2. Titel, Beschreibung (nur Hashtags) und Tags aus `upload.md` (Abschnitte „Titel“, „Beschreibung“, „Tags“).
 3. Zielgruppe: „Nein, nicht speziell für Kinder“. Veränderte oder synthetische Inhalte: **Nein** (echte Stream-Aufnahmen). Kategorie: Gaming. Videosprache: Sprache aus `upload.md`.
 4. Sichtbarkeit **„Privat“**, speichern. Hier nie „Öffentlich“, „Planen“ oder „Nicht gelistet“.
 5. Studio-Link notieren.
@@ -34,7 +34,7 @@ Aus `config/kanal.json` → `upload.sendeplaetze` (Standard 18:00, 18:30, 19:00,
 ## 4. TikTok (Entwurf)
 
 1. tiktok.com/upload, `short.mp4` per `file_upload`.
-2. Beschreibung und Hashtags aus dem Abschnitt „TikTok“ in `upload.md`. Fehlt er: Titel + Credit-Zeile + 3–4 Hashtags, höchstens ca. 150 Zeichen.
+2. Beschreibung und Hashtags aus dem Abschnitt „TikTok“ in `upload.md`. Fehlt er: kurzer Satz (2–6 Wörter) mit 2–3 Emoji, dann `#fyp #viral #<streamer> #gta6`. Kein Credit-Satz.
 3. „KI-generierte Inhalte“: aus.
 4. **„Entwurf speichern“**. Hier nie „Posten“ oder „Planen“. Kein Entwurf-Knopf: TikTok für diesen Short auslassen und melden.
 

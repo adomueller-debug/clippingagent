@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""TikTok-Signal: welche Momente gehen auf den TikTok-Profilen der Streamer gerade viral?
+"""TikTok-Signal: welche Momente gehen auf den TikTok-Profilen der Streamer und bei großen YouTube-Clip-Kanälen gerade viral?
+
+Zweck: 1. lernen, welche Moment-Typen ziehen, 2. Momente meiden, die es schon gibt (Kopien spielt TikTok nicht aus).
 
 Liest nur die öffentlichen Profile (Titel, Aufrufe). Lädt nichts herunter und lädt nichts hoch.
 Der Kurator sucht die genannten Momente danach im Original-Clip auf Twitch/Kick.
@@ -54,12 +56,30 @@ def main():
                 posts.append({"streamer": s["name"], "sprache": s["sprache"], "views": e.get("view_count") or 0,
                               "zeit": zeit.isoformat(), "titel": titel, "url": e.get("url")})
 
+    # Große YouTube-Clip-Kanäle: neueste Shorts (ohne Datum in der Liste, daher nur die ersten 30)
+    def yt(k):
+        r = subprocess.run([sys.executable, "-m", "yt_dlp", "--no-warnings", "--flat-playlist", "--playlist-end", "30",
+                            "-J", f"https://www.youtube.com/channel/{k['id']}/shorts"], capture_output=True, text=True, timeout=180)
+        if r.returncode != 0:
+            print(f"[youtube] {k['name']}: {r.stderr.strip()[-200:]}", file=sys.stderr)
+            return []
+        return json.loads(r.stdout).get("entries") or []
+    kanaele = cfg.get("clip_kanaele_youtube", [])
+    with ThreadPoolExecutor(3) as pool:
+        for k, entries in zip(kanaele, pool.map(yt, kanaele)):
+            for e in entries:
+                titel = e.get("title") or ""
+                if muster and not muster.search(titel):
+                    continue
+                posts.append({"streamer": k["name"], "plattform": "youtube", "sprache": None, "views": e.get("view_count") or 0,
+                              "zeit": None, "titel": titel, "url": f"https://www.youtube.com/shorts/{e['id']}"})
+
     posts.sort(key=lambda p: -p["views"])
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_text(json.dumps(posts, ensure_ascii=False, indent=2))
     print(f"[tiktok] {len(posts)} passende Posts -> {a.out}")
     for p in posts[:25]:
-        print(f"  {p['views']:>9}  {p['streamer']:<13} {p['zeit'][5:16]}  {p['titel'][:70]}")
+        print(f"  {p['views']:>9}  {p['streamer'][:16]:<16} {(p['zeit'][5:16] if p['zeit'] else 'YouTube'):<11} {p['titel'][:70]}")
 
 
 if __name__ == "__main__":

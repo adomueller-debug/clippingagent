@@ -21,18 +21,20 @@ Die Verfügbarkeit der Handles muss beim Anlegen des Kanals geprüft werden.
 - Profilbild: gelbes Chat-Sprechblasen-Symbol mit „!!" auf Schwarz.
 - Shorts: Facecam oben, Gameplay unten, Untertitel auf der Naht. Kein Logo, kein Intro, kein Outro.
 
-## Titel
+## Titel und Texte
 
-- Sprache des Clips. Höchstens 70 Zeichen.
-- Streamername vorne, dann was passiert, konkret: „Papaplatte fällt auf den ältesten Trick rein 💀"
-- Höchstens ein Emoji. Kein Clickbait, das der Clip nicht einlöst.
-- Spielname in die Hashtags, nicht in den Titel (außer zum Launch: „GTA 6" im Titel bringt in der ersten Woche Suchverkehr).
+Siehe `docs/tiktok-analyse.md` und Schritt 5 im Skill `tagesproduktion`. Kurz:
+
+- **TikTok:** 2–6 Wörter, macht neugierig, 2–3 Emoji, dann `#fyp #viral #<streamer> #gta6 #<thema>`. Kein Beschreibungstext, kein Credit-Satz.
+- **YouTube:** Titel im Stil A („Meme“: „Monte did Schradin dirty 😭😭“) oder Stil B („Satz“: „Kai Cenat Gets Chased By The Cops In GTA VI 😭🚨“), abwechselnd, um zu testen. Beschreibung nur Hashtags.
+- **Hook-Zeile im Video:** Streamer + was passiert, 3–8 Wörter, ohne Emoji.
 
 ## Rhythmus
 
-- Lauf jeden Morgen um 08:40 Uhr (Europe/Berlin), 5 Shorts. Der Nutzer lädt abends zwischen 18 und 20 Uhr selbst hoch (YouTube, TikTok, Instagram).
-- Später 5 bis 10 Shorts am Tag, wenn die Nutzung im Pro-Abo es hergibt.
+- Lauf jeden Morgen um 08:40 Uhr (Europe/Berlin), höchstens 5 Shorts.
+- Hochladen über den Tag verteilt, mindestens 2 Stunden Abstand (Sendeplätze in `config/kanal.json`).
 - Höchstens 2 Shorts pro Streamer und Tag.
+- Nie einen Moment hochladen, den der Streamer oder ein Clip-Kanal schon gepostet hat (TikTok spielt Kopien nicht aus).
 
 ## Messen
 
