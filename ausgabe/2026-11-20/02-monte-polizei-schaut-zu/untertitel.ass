@@ -1,0 +1,41 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:22.00,Hook,,0,0,0,,{\pos(540,760)}Monte wird neben der\NPolizei verprügelt
+Dialogue: 0,0:00:00.90,0:00:01.06,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}KOMM{\c&HFFFFFF&} MAL,
+Dialogue: 0,0:00:01.06,0:00:01.31,Sub,,0,0,0,,{\pos(540,1360)}KOMM {\c&H00E5FF&}MAL,{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.58,0:00:01.66,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}KOMM{\c&HFFFFFF&} MAL,
+Dialogue: 0,0:00:01.66,0:00:01.96,Sub,,0,0,0,,{\pos(540,1360)}KOMM {\c&H00E5FF&}MAL,{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.96,0:00:02.04,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}KOMM{\c&HFFFFFF&} MAL,
+Dialogue: 0,0:00:02.04,0:00:02.29,Sub,,0,0,0,,{\pos(540,1360)}KOMM {\c&H00E5FF&}MAL,{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.14,0:00:02.22,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}KOMM{\c&HFFFFFF&} MAL.
+Dialogue: 0,0:00:02.22,0:00:02.47,Sub,,0,0,0,,{\pos(540,1360)}KOMM {\c&H00E5FF&}MAL.{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.78,0:00:03.14,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DIE{\c&HFFFFFF&} POLIZEI
+Dialogue: 0,0:00:03.14,0:00:03.46,Sub,,0,0,0,,{\pos(540,1360)}DIE {\c&H00E5FF&}POLIZEI{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.46,0:00:03.66,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}MACHT{\c&HFFFFFF&} NICHTS.
+Dialogue: 0,0:00:03.66,0:00:03.91,Sub,,0,0,0,,{\pos(540,1360)}MACHT {\c&H00E5FF&}NICHTS.{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.76,0:00:09.01,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BRO!{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.94,0:00:11.42,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DIE{\c&HFFFFFF&} POLIZEI
+Dialogue: 0,0:00:11.42,0:00:11.90,Sub,,0,0,0,,{\pos(540,1360)}DIE {\c&H00E5FF&}POLIZEI{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.90,0:00:12.06,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}STEHT{\c&HFFFFFF&} NEBEN MIR.
+Dialogue: 0,0:00:12.06,0:00:12.28,Sub,,0,0,0,,{\pos(540,1360)}STEHT {\c&H00E5FF&}NEBEN{\c&HFFFFFF&} MIR.
+Dialogue: 0,0:00:12.28,0:00:12.53,Sub,,0,0,0,,{\pos(540,1360)}STEHT NEBEN {\c&H00E5FF&}MIR.{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.52,0:00:12.60,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ICH{\c&HFFFFFF&} WERDE
+Dialogue: 0,0:00:12.60,0:00:12.85,Sub,,0,0,0,,{\pos(540,1360)}ICH {\c&H00E5FF&}WERDE{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.70,0:00:13.22,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}VERPRÜGELT.{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.62,0:00:17.82,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ICH{\c&HFFFFFF&} WERDE
+Dialogue: 0,0:00:17.82,0:00:18.07,Sub,,0,0,0,,{\pos(540,1360)}ICH {\c&H00E5FF&}WERDE{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.92,0:00:18.52,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}VERPRÜGELT.{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.86,0:00:19.08,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}NEBEN{\c&HFFFFFF&} DER
+Dialogue: 0,0:00:19.08,0:00:19.33,Sub,,0,0,0,,{\pos(540,1360)}NEBEN {\c&H00E5FF&}DER{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.26,0:00:19.70,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}POLIZEI.{\c&HFFFFFF&}

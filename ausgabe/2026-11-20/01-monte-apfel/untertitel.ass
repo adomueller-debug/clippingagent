@@ -1,0 +1,63 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:27.50,Hook,,0,0,0,,{\pos(540,760)}Monte wirft\Nnur einen Apfel
+Dialogue: 0,0:00:00.00,0:00:00.25,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}MOMENT.{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.36,0:00:04.88,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}FLUGBAHN{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.88,0:00:05.40,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ANSCHALTEN,{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.60,0:00:06.02,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ABBRECHEN{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.02,0:00:06.48,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WERFEN.{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.06,0:00:07.34,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}IHR{\c&HFFFFFF&} FLIEGT DOCH
+Dialogue: 0,0:00:07.34,0:00:07.60,Sub,,0,0,0,,{\pos(540,1360)}IHR {\c&H00E5FF&}FLIEGT{\c&HFFFFFF&} DOCH
+Dialogue: 0,0:00:07.60,0:00:07.85,Sub,,0,0,0,,{\pos(540,1360)}IHR FLIEGT {\c&H00E5FF&}DOCH{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.72,0:00:07.82,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}MIT{\c&HFFFFFF&} SICHERHEIT
+Dialogue: 0,0:00:07.82,0:00:08.12,Sub,,0,0,0,,{\pos(540,1360)}MIT {\c&H00E5FF&}SICHERHEIT{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.12,0:00:08.46,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}JETZT{\c&HFFFFFF&} DIE
+Dialogue: 0,0:00:08.46,0:00:08.90,Sub,,0,0,0,,{\pos(540,1360)}JETZT {\c&H00E5FF&}DIE{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.90,0:00:09.34,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}SONNENBRILLE{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.34,0:00:09.59,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WEG,{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.68,0:00:09.93,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ODER?{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.28,0:00:14.80,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ACH{\c&HFFFFFF&} MAN,
+Dialogue: 0,0:00:14.80,0:00:15.22,Sub,,0,0,0,,{\pos(540,1360)}ACH {\c&H00E5FF&}MAN,{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.40,0:00:15.52,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WEGEN{\c&HFFFFFF&} JEDER
+Dialogue: 0,0:00:15.52,0:00:15.82,Sub,,0,0,0,,{\pos(540,1360)}WEGEN {\c&H00E5FF&}JEDER{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.82,0:00:16.44,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}SCHEISSE.{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.70,0:00:16.94,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DIE{\c&HFFFFFF&} BULLEN
+Dialogue: 0,0:00:16.94,0:00:17.42,Sub,,0,0,0,,{\pos(540,1360)}DIE {\c&H00E5FF&}BULLEN{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.42,0:00:17.64,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}SCHIESSEN{\c&HFFFFFF&} MICH
+Dialogue: 0,0:00:17.64,0:00:17.89,Sub,,0,0,0,,{\pos(540,1360)}SCHIESSEN {\c&H00E5FF&}MICH{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.86,0:00:18.12,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}AB,{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.22,0:00:18.30,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WEIL{\c&HFFFFFF&} ICH JEMAND
+Dialogue: 0,0:00:18.30,0:00:18.44,Sub,,0,0,0,,{\pos(540,1360)}WEIL {\c&H00E5FF&}ICH{\c&HFFFFFF&} JEMAND
+Dialogue: 0,0:00:18.44,0:00:18.69,Sub,,0,0,0,,{\pos(540,1360)}WEIL ICH {\c&H00E5FF&}JEMAND{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.62,0:00:18.78,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}MIT{\c&HFFFFFF&} EINEM APFEL
+Dialogue: 0,0:00:18.78,0:00:18.90,Sub,,0,0,0,,{\pos(540,1360)}MIT {\c&H00E5FF&}EINEM{\c&HFFFFFF&} APFEL
+Dialogue: 0,0:00:18.90,0:00:19.32,Sub,,0,0,0,,{\pos(540,1360)}MIT EINEM {\c&H00E5FF&}APFEL{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.32,0:00:19.92,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ABGESCHMISSEN{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.92,0:00:20.24,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}HAB.{\c&HFFFFFF&}
+Dialogue: 0,0:00:20.50,0:00:20.88,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ALSO{\c&HFFFFFF&} DAS IST
+Dialogue: 0,0:00:20.88,0:00:21.04,Sub,,0,0,0,,{\pos(540,1360)}ALSO {\c&H00E5FF&}DAS{\c&HFFFFFF&} IST
+Dialogue: 0,0:00:21.04,0:00:21.29,Sub,,0,0,0,,{\pos(540,1360)}ALSO DAS {\c&H00E5FF&}IST{\c&HFFFFFF&}
+Dialogue: 0,0:00:21.18,0:00:21.30,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}JA{\c&HFFFFFF&} WOHL
+Dialogue: 0,0:00:21.30,0:00:21.55,Sub,,0,0,0,,{\pos(540,1360)}JA {\c&H00E5FF&}WOHL{\c&HFFFFFF&}
+Dialogue: 0,0:00:21.48,0:00:22.32,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WILLKOMMEN{\c&HFFFFFF&} IN
+Dialogue: 0,0:00:22.32,0:00:22.57,Sub,,0,0,0,,{\pos(540,1360)}WILLKOMMEN {\c&H00E5FF&}IN{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.46,0:00:22.94,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}AMERIKA.{\c&HFFFFFF&}
+Dialogue: 0,0:00:25.26,0:00:25.78,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WILLKOMMEN{\c&HFFFFFF&} IN
+Dialogue: 0,0:00:25.78,0:00:26.03,Sub,,0,0,0,,{\pos(540,1360)}WILLKOMMEN {\c&H00E5FF&}IN{\c&HFFFFFF&}
+Dialogue: 0,0:00:25.96,0:00:26.46,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}AMERIKA.{\c&HFFFFFF&}
+Dialogue: 0,0:00:26.92,0:00:27.02,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ICH{\c&HFFFFFF&} HAB DOCH
+Dialogue: 0,0:00:27.02,0:00:27.10,Sub,,0,0,0,,{\pos(540,1360)}ICH {\c&H00E5FF&}HAB{\c&HFFFFFF&} DOCH
+Dialogue: 0,0:00:27.10,0:00:27.35,Sub,,0,0,0,,{\pos(540,1360)}ICH HAB {\c&H00E5FF&}DOCH{\c&HFFFFFF&}
+Dialogue: 0,0:00:27.24,0:00:27.42,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}NUR{\c&HFFFFFF&} EINEN
+Dialogue: 0,0:00:27.42,0:00:27.67,Sub,,0,0,0,,{\pos(540,1360)}NUR {\c&H00E5FF&}EINEN{\c&HFFFFFF&}
