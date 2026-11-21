@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:22.00,Hook,,0,0,0,,{\pos(540,760)}N3on gets ID\Nchecked in GTA 6
+Dialogue: 0,0:00:00.24,0:00:00.72,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WHAT{\c&HFFFFFF&} IS THIS
+Dialogue: 0,0:00:00.72,0:00:00.90,Sub,,0,0,0,,{\pos(540,1360)}WHAT {\c&H00E5FF&}IS{\c&HFFFFFF&} THIS
+Dialogue: 0,0:00:00.90,0:00:01.32,Sub,,0,0,0,,{\pos(540,1360)}WHAT IS {\c&H00E5FF&}THIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.32,0:00:03.24,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}IN{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.79,0:00:07.13,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}HERE{\c&HFFFFFF&} OVER 21,
+Dialogue: 0,0:00:07.13,0:00:07.55,Sub,,0,0,0,,{\pos(540,1360)}HERE {\c&H00E5FF&}OVER{\c&HFFFFFF&} 21,
+Dialogue: 0,0:00:07.55,0:00:08.05,Sub,,0,0,0,,{\pos(540,1360)}HERE OVER {\c&H00E5FF&}21,{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.11,0:00:09.03,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}LET{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.22,0:00:14.32,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ME{\c&HFFFFFF&} THE FUCKING
+Dialogue: 0,0:00:14.32,0:00:14.46,Sub,,0,0,0,,{\pos(540,1360)}ME {\c&H00E5FF&}THE{\c&HFFFFFF&} FUCKING
+Dialogue: 0,0:00:14.46,0:00:14.80,Sub,,0,0,0,,{\pos(540,1360)}ME THE {\c&H00E5FF&}FUCKING{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.80,0:00:15.16,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}CLUB{\c&HFFFFFF&} OVER 21
+Dialogue: 0,0:00:15.16,0:00:15.54,Sub,,0,0,0,,{\pos(540,1360)}CLUB {\c&H00E5FF&}OVER{\c&HFFFFFF&} 21
+Dialogue: 0,0:00:15.54,0:00:15.98,Sub,,0,0,0,,{\pos(540,1360)}CLUB OVER {\c&H00E5FF&}21{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.98,0:00:16.46,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BITCH{\c&HFFFFFF&}

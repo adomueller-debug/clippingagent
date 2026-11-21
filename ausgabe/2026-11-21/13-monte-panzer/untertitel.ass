@@ -1,0 +1,52 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:20.00,Hook,,0,0,0,,{\pos(540,760)}Monte klaut einen Panzer
+Dialogue: 0,0:00:00.65,0:00:01.11,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}RICHTIG{\c&HFFFFFF&} RICHTIG
+Dialogue: 0,0:00:01.11,0:00:01.36,Sub,,0,0,0,,{\pos(540,1360)}RICHTIG {\c&H00E5FF&}RICHTIG{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.35,0:00:01.75,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}SPASS.{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.95,0:00:08.39,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}OH{\c&HFFFFFF&} MEIN GOTT,
+Dialogue: 0,0:00:08.39,0:00:08.59,Sub,,0,0,0,,{\pos(540,1360)}OH {\c&H00E5FF&}MEIN{\c&HFFFFFF&} GOTT,
+Dialogue: 0,0:00:08.59,0:00:08.84,Sub,,0,0,0,,{\pos(540,1360)}OH MEIN {\c&H00E5FF&}GOTT,{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.95,0:00:09.03,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WAS{\c&HFFFFFF&} IST DENN
+Dialogue: 0,0:00:09.03,0:00:09.25,Sub,,0,0,0,,{\pos(540,1360)}WAS {\c&H00E5FF&}IST{\c&HFFFFFF&} DENN
+Dialogue: 0,0:00:09.25,0:00:09.50,Sub,,0,0,0,,{\pos(540,1360)}WAS IST {\c&H00E5FF&}DENN{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.37,0:00:09.49,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}JETZT{\c&HFFFFFF&} BEI DENEN
+Dialogue: 0,0:00:09.49,0:00:09.67,Sub,,0,0,0,,{\pos(540,1360)}JETZT {\c&H00E5FF&}BEI{\c&HFFFFFF&} DENEN
+Dialogue: 0,0:00:09.67,0:00:09.92,Sub,,0,0,0,,{\pos(540,1360)}JETZT BEI {\c&H00E5FF&}DENEN{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.87,0:00:10.13,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}LOS,{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.21,0:00:10.46,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DIGGER?{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.83,0:00:11.19,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WAS{\c&HFFFFFF&} IST,
+Dialogue: 0,0:00:11.19,0:00:11.44,Sub,,0,0,0,,{\pos(540,1360)}WAS {\c&H00E5FF&}IST,{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.33,0:00:11.41,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WAS{\c&HFFFFFF&} SOLL DAS
+Dialogue: 0,0:00:11.41,0:00:11.63,Sub,,0,0,0,,{\pos(540,1360)}WAS {\c&H00E5FF&}SOLL{\c&HFFFFFF&} DAS
+Dialogue: 0,0:00:11.63,0:00:11.88,Sub,,0,0,0,,{\pos(540,1360)}WAS SOLL {\c&H00E5FF&}DAS{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.85,0:00:12.13,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DENN?{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.69,0:00:12.79,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WARUM{\c&HFFFFFF&} SIND JETZT
+Dialogue: 0,0:00:12.79,0:00:12.93,Sub,,0,0,0,,{\pos(540,1360)}WARUM {\c&H00E5FF&}SIND{\c&HFFFFFF&} JETZT
+Dialogue: 0,0:00:12.93,0:00:13.18,Sub,,0,0,0,,{\pos(540,1360)}WARUM SIND {\c&H00E5FF&}JETZT{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.09,0:00:13.27,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}HIER{\c&HFFFFFF&} SCHON DIE
+Dialogue: 0,0:00:13.27,0:00:13.41,Sub,,0,0,0,,{\pos(540,1360)}HIER {\c&H00E5FF&}SCHON{\c&HFFFFFF&} DIE
+Dialogue: 0,0:00:13.41,0:00:13.66,Sub,,0,0,0,,{\pos(540,1360)}HIER SCHON {\c&H00E5FF&}DIE{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.57,0:00:13.89,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}RE...{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.89,0:00:14.13,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BIN{\c&HFFFFFF&} GLEICH TOT.
+Dialogue: 0,0:00:14.13,0:00:14.27,Sub,,0,0,0,,{\pos(540,1360)}BIN {\c&H00E5FF&}GLEICH{\c&HFFFFFF&} TOT.
+Dialogue: 0,0:00:14.27,0:00:14.52,Sub,,0,0,0,,{\pos(540,1360)}BIN GLEICH {\c&H00E5FF&}TOT.{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.27,0:00:15.63,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WIESO{\c&HFFFFFF&} SIND JETZT
+Dialogue: 0,0:00:15.63,0:00:15.77,Sub,,0,0,0,,{\pos(540,1360)}WIESO {\c&H00E5FF&}SIND{\c&HFFFFFF&} JETZT
+Dialogue: 0,0:00:15.77,0:00:16.02,Sub,,0,0,0,,{\pos(540,1360)}WIESO SIND {\c&H00E5FF&}JETZT{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.91,0:00:16.11,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}HIER{\c&HFFFFFF&} SCHON DIE
+Dialogue: 0,0:00:16.11,0:00:16.23,Sub,,0,0,0,,{\pos(540,1360)}HIER {\c&H00E5FF&}SCHON{\c&HFFFFFF&} DIE
+Dialogue: 0,0:00:16.23,0:00:16.48,Sub,,0,0,0,,{\pos(540,1360)}HIER SCHON {\c&H00E5FF&}DIE{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.33,0:00:16.51,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DICKEN{\c&HFFFFFF&} PANZER?
+Dialogue: 0,0:00:16.51,0:00:17.05,Sub,,0,0,0,,{\pos(540,1360)}DICKEN {\c&H00E5FF&}PANZER?{\c&HFFFFFF&}

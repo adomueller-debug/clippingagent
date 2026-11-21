@@ -1,0 +1,68 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:20.00,Hook,,0,0,0,,{\pos(540,760)}CaseOh plays\Nthe bridge game
+Dialogue: 0,0:00:00.00,0:00:00.02,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}YOU{\c&HFFFFFF&} TRYING TO
+Dialogue: 0,0:00:00.02,0:00:00.24,Sub,,0,0,0,,{\pos(540,1360)}YOU {\c&H00E5FF&}TRYING{\c&HFFFFFF&} TO
+Dialogue: 0,0:00:00.24,0:00:00.49,Sub,,0,0,0,,{\pos(540,1360)}YOU TRYING {\c&H00E5FF&}TO{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.34,0:00:00.52,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}KILL{\c&HFFFFFF&} SOMEBODY'S
+Dialogue: 0,0:00:00.52,0:00:00.98,Sub,,0,0,0,,{\pos(540,1360)}KILL {\c&H00E5FF&}SOMEBODY'S{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.98,0:00:01.23,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}GRANDMA?{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.44,0:00:01.44,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}I{\c&HFFFFFF&} HAVE YOU
+Dialogue: 0,0:00:01.44,0:00:01.56,Sub,,0,0,0,,{\pos(540,1360)}I {\c&H00E5FF&}HAVE{\c&HFFFFFF&} YOU
+Dialogue: 0,0:00:01.56,0:00:01.81,Sub,,0,0,0,,{\pos(540,1360)}I HAVE {\c&H00E5FF&}YOU{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.70,0:00:01.88,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}KNOW{\c&HFFFFFF&} THERE WAS
+Dialogue: 0,0:00:01.88,0:00:02.02,Sub,,0,0,0,,{\pos(540,1360)}KNOW {\c&H00E5FF&}THERE{\c&HFFFFFF&} WAS
+Dialogue: 0,0:00:02.02,0:00:02.27,Sub,,0,0,0,,{\pos(540,1360)}KNOW THERE {\c&H00E5FF&}WAS{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.16,0:00:02.30,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}A{\c&HFFFFFF&} REAL LIFE
+Dialogue: 0,0:00:02.30,0:00:02.48,Sub,,0,0,0,,{\pos(540,1360)}A {\c&H00E5FF&}REAL{\c&HFFFFFF&} LIFE
+Dialogue: 0,0:00:02.48,0:00:02.76,Sub,,0,0,0,,{\pos(540,1360)}A REAL {\c&H00E5FF&}LIFE{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.76,0:00:03.00,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}COURT{\c&HFFFFFF&} CASE.
+Dialogue: 0,0:00:03.00,0:00:03.36,Sub,,0,0,0,,{\pos(540,1360)}COURT {\c&H00E5FF&}CASE.{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.04,0:00:04.44,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}SOMEBODY{\c&HFFFFFF&} KILLED
+Dialogue: 0,0:00:04.44,0:00:04.84,Sub,,0,0,0,,{\pos(540,1360)}SOMEBODY {\c&H00E5FF&}KILLED{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.84,0:00:05.28,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}SOMEBODY{\c&HFFFFFF&} DOING
+Dialogue: 0,0:00:05.28,0:00:05.54,Sub,,0,0,0,,{\pos(540,1360)}SOMEBODY {\c&H00E5FF&}DOING{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.54,0:00:05.79,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}THIS.{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.84,0:00:05.84,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}THEY{\c&HFFFFFF&} GOT LIFE
+Dialogue: 0,0:00:05.84,0:00:05.98,Sub,,0,0,0,,{\pos(540,1360)}THEY {\c&H00E5FF&}GOT{\c&HFFFFFF&} LIFE
+Dialogue: 0,0:00:05.98,0:00:06.24,Sub,,0,0,0,,{\pos(540,1360)}THEY GOT {\c&H00E5FF&}LIFE{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.24,0:00:06.46,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}IN{\c&HFFFFFF&} PRISON.
+Dialogue: 0,0:00:06.46,0:00:06.71,Sub,,0,0,0,,{\pos(540,1360)}IN {\c&H00E5FF&}PRISON.{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.84,0:00:06.94,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WAIT{\c&HFFFFFF&} TILL NEXT
+Dialogue: 0,0:00:06.94,0:00:07.04,Sub,,0,0,0,,{\pos(540,1360)}WAIT {\c&H00E5FF&}TILL{\c&HFFFFFF&} NEXT
+Dialogue: 0,0:00:07.04,0:00:07.29,Sub,,0,0,0,,{\pos(540,1360)}WAIT TILL {\c&H00E5FF&}NEXT{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.28,0:00:07.44,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BIG{\c&HFFFFFF&} TRUCK COME
+Dialogue: 0,0:00:07.44,0:00:07.64,Sub,,0,0,0,,{\pos(540,1360)}BIG {\c&H00E5FF&}TRUCK{\c&HFFFFFF&} COME
+Dialogue: 0,0:00:07.64,0:00:07.89,Sub,,0,0,0,,{\pos(540,1360)}BIG TRUCK {\c&H00E5FF&}COME{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.86,0:00:08.11,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}THROUGH.{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.14,0:00:08.22,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}YOU{\c&HFFFFFF&} COOKED.
+Dialogue: 0,0:00:08.22,0:00:08.52,Sub,,0,0,0,,{\pos(540,1360)}YOU {\c&H00E5FF&}COOKED.{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.52,0:00:09.96,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}RECEIVING{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.96,0:00:10.32,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ADDITIONAL{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.32,0:00:10.82,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}REPORTS{\c&HFFFFFF&} OF A
+Dialogue: 0,0:00:10.82,0:00:10.96,Sub,,0,0,0,,{\pos(540,1360)}REPORTS {\c&H00E5FF&}OF{\c&HFFFFFF&} A
+Dialogue: 0,0:00:10.96,0:00:11.21,Sub,,0,0,0,,{\pos(540,1360)}REPORTS OF {\c&H00E5FF&}A{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.00,0:00:11.34,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}HOMICIDE{\c&HFFFFFF&} IN
+Dialogue: 0,0:00:11.34,0:00:11.70,Sub,,0,0,0,,{\pos(540,1360)}HOMICIDE {\c&H00E5FF&}IN{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.70,0:00:11.92,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}COUNTY{\c&HFFFFFF&} COUNTY
+Dialogue: 0,0:00:11.92,0:00:12.40,Sub,,0,0,0,,{\pos(540,1360)}COUNTY {\c&H00E5FF&}COUNTY{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.40,0:00:12.96,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}RESPONDING{\c&HFFFFFF&} UNITS
+Dialogue: 0,0:00:12.96,0:00:13.42,Sub,,0,0,0,,{\pos(540,1360)}RESPONDING {\c&H00E5FF&}UNITS{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.42,0:00:13.64,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}USE{\c&HFFFFFF&} CAUTION.
+Dialogue: 0,0:00:13.64,0:00:14.06,Sub,,0,0,0,,{\pos(540,1360)}USE {\c&H00E5FF&}CAUTION.{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.23,0:00:16.69,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}HEY,{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.79,0:00:16.83,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}YOU{\c&HFFFFFF&} BETTER NOT
+Dialogue: 0,0:00:16.83,0:00:16.95,Sub,,0,0,0,,{\pos(540,1360)}YOU {\c&H00E5FF&}BETTER{\c&HFFFFFF&} NOT
+Dialogue: 0,0:00:16.95,0:00:17.20,Sub,,0,0,0,,{\pos(540,1360)}YOU BETTER {\c&H00E5FF&}NOT{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.15,0:00:17.67,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}SNITCH!{\c&HFFFFFF&}

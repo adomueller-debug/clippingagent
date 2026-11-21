@@ -1,0 +1,18 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:12.12,Hook,,0,0,0,,{\pos(540,760)}Monte und die Granate
+Dialogue: 0,0:00:09.24,0:00:10.16,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}OH{\c&HFFFFFF&} MEIN GOTT,
+Dialogue: 0,0:00:10.16,0:00:10.52,Sub,,0,0,0,,{\pos(540,1360)}OH {\c&H00E5FF&}MEIN{\c&HFFFFFF&} GOTT,
+Dialogue: 0,0:00:10.52,0:00:11.08,Sub,,0,0,0,,{\pos(540,1360)}OH MEIN {\c&H00E5FF&}GOTT,{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.14,0:00:11.40,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DIGGER!{\c&HFFFFFF&}
