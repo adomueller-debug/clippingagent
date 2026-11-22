@@ -21,4 +21,4 @@ IShowSpeed Says He's Lando Norris And Crashes Instantly 😭🏎️
 gta 6, gta vi, ishowspeed, speed, lando norris, gta 6 crash
 
 ## TikTok
-I'm Lando Norris bro😭🏎️ #fyp #viral #ishowspeed #gta6 #f1
+"I'm Lando Norris" – three seconds later 🏎️ #gta6clips #ishowspeed #f1 #crash

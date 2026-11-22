@@ -21,4 +21,4 @@ Ich fühle mich wie Ghostrider 💀💀
 gta 6, gta vi, montanablack, monte, ghostrider, gta 6 motorrad
 
 ## TikTok
-Ghostrider Digger😭🏍️ #fyp #viral #montanablack #gta6 #ghostrider
+Monte wird zum Ghostrider 🔥 #gta6 #montanablack #twitchde #ghostrider

@@ -21,4 +21,4 @@ Der Crash des Tages 💀💀
 gta 6, gta vi, trymacs, gta 6 crash, gta 6 motorrad, gta 6 deutsch
 
 ## TikTok
-Crash des Tages😭🏍️ #fyp #viral #trymacs #gta6 #crash
+Neun Sekunden, ein Motorrad und Trymacs #grandtheftauto6 #trymacs #deutschegamer #gta6fails

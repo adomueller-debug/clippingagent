@@ -21,4 +21,4 @@ Y'all better not call the cops 💀💀
 gta 6, gta vi, kai cenat, gta 6 cops, gta 6 funny, gta 6 chaos
 
 ## TikTok
-You're not a witness right?😭🚨 #fyp #viral #kaicenat #gta6 #cops
+Kai made sure nobody calls the cops #gtavi #kaicenat #gta6funny

@@ -21,4 +21,4 @@ IShowSpeed Jumps Off A Bridge And Gets His Car Stolen 😭🌉
 gta 6, gta vi, ishowspeed, speed, gta 6 bridge, gta 6 funny
 
 ## TikTok
-Bro they stole our car😭🌉 #fyp #viral #ishowspeed #gta6 #bridge
+wait for what happens to his car… 🌉 #grandtheftauto6 #ishowspeed #gta6fails #bridgejump

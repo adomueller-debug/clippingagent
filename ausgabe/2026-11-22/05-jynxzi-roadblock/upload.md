@@ -22,4 +22,4 @@ How did they survive that 💀💀
 gta 6, gta vi, jynxzi, gta 6 roadblock, gta 6 police, gta 6 funny
 
 ## TikTok
-This game is awesome😭🚓 #fyp #viral #jynxzi #gta6 #roadblock
+nicht für TikTok (grenzwertig: Unbeteiligte überfahren bzw. überfahrene Katze)

@@ -21,4 +21,4 @@ They're streaming their own crash 💀💀
 gta 6, gta vi, n3on, gta 6 streamer, gta 6 easter egg, gta 6 satire
 
 ## TikTok
-They're LIVE from the crash😭📱 #fyp #viral #n3on #gta6 #streamer
+NPCs in GTA 6 livestream their own car crash 📱 #gta6 #n3on #gta6eastereggs #streamerclips

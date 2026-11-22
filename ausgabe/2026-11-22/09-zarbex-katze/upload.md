@@ -21,4 +21,4 @@ Zarbex sieht, wie die Polizei eine Katze überfährt 😳🐈
 gta 6, gta vi, zarbex, gta 6 katze, gta 6 polizei, gta 6 deutsch
 
 ## TikTok
-Die Polizei hat die Katze überfahren😭🐈 #fyp #viral #zarbex #gta6 #katze
+nicht für TikTok (grenzwertig: Unbeteiligte überfahren bzw. überfahrene Katze)

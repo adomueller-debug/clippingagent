@@ -21,4 +21,4 @@ I'll show you a real driver babe 💀💀
 gta 6, gta vi, stable ronaldo, ron, gta 6 driving, gta 6 crash
 
 ## TikTok
-A real driver babe😭🚗 #fyp #viral #stableronaldo #gta6 #driving
+Should Ron ever drive again? #gta6 #stableronaldo #gta6memes #driving

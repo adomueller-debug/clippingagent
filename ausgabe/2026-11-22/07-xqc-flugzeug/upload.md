@@ -21,4 +21,4 @@ xQc Jumps Out Of A Plane In GTA 6 🪂✈️
 gta 6, gta vi, xqc, gta 6 plane, gta 6 skydive, gta 6 parachute
 
 ## TikTok
-I had to try it😭🪂 #fyp #viral #xqc #gta6 #skydive
+xQc tries skydiving in GTA 6 for the first time 🪂 #gtavi #xqc #gta6gameplay #skydiving
