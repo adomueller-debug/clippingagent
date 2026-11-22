@@ -1,5 +1,7 @@
 # Kanal-Regeln (Entwurf)
 
+Veröffentlicht wird nur auf **TikTok (@chatwntcrazy)**, der Nutzer lädt selbst hoch. Kein YouTube.
+
 ## Name: Vorschläge
 
 Der Name soll breiter sein als GTA, in Deutsch und Englisch funktionieren und sagen, was man bekommt: den Moment, in dem der Stream eskaliert.
@@ -26,7 +28,6 @@ Die Verfügbarkeit der Handles muss beim Anlegen des Kanals geprüft werden.
 Siehe `docs/tiktok-analyse.md` und Schritt 5 im Skill `tagesproduktion`. Kurz:
 
 - **TikTok:** 2–8 Wörter, macht neugierig, 0–2 Emoji, dann 3–5 Hashtags (siehe „TikTok-Hashtags“). Jeder Text anders gebaut, nie `#fyp`/`#viral`. Kein Credit-Satz.
-- **YouTube:** Titel im Stil A („Meme“: „Monte did Schradin dirty 😭😭“) oder Stil B („Satz“: „Kai Cenat Gets Chased By The Cops In GTA VI 😭🚨“), abwechselnd, um zu testen. Beschreibung nur Hashtags.
 - **Hook-Zeile im Video:** Streamer + was passiert, 3–8 Wörter, ohne Emoji.
 
 ## TikTok-Hashtags
@@ -43,12 +44,12 @@ Siehe `docs/tiktok-analyse.md` und Schritt 5 im Skill `tagesproduktion`. Kurz:
 
 - Jeden Short **direkt veröffentlichen** („Posten“), nicht in TikTok planen und nicht mehrere auf Vorrat hochladen. Am 21.11. wurden 10 Clips in 4 Minuten hochgeladen und 9 davon geplant. Die geplanten bekamen 0–4 Aufrufe, der direkt gepostete 269.
 - Hochladen und Posten passieren im selben Moment, zum Sendeplatz.
-- Höchstens 3 Posts am Tag, mindestens 3 Stunden Abstand (`upload.tiktok_sendeplaetze` in `config/kanal.json`: 12:00, 17:00, 21:00). Grenzwertige Shorts (`- Plattform: nur YouTube`) nie zu TikTok.
+- Höchstens 3 Posts am Tag, mindestens 3 Stunden Abstand (`upload.tiktok_sendeplaetze` in `config/kanal.json`: 12:00, 17:00, 21:00). Grenzwertige Clips (Stripclub, Sex, Blut, Gewalt gegen Unbeteiligte) werden gar nicht produziert.
 
 ## Rhythmus
 
 - Lauf jeden Morgen um 08:40 Uhr (Europe/Berlin): 10 Shorts zur Auswahl, etwa 7 englische und 3 deutsche. Der Nutzer wählt aus; empfohlen sind 3–5 Uploads pro Tag.
-- Hochladen über den Tag verteilt: YouTube mindestens 2 Stunden Abstand, TikTok höchstens 3 am Tag mit mindestens 3 Stunden Abstand (Sendeplätze in `config/kanal.json`).
+- Hochladen über den Tag verteilt: höchstens 3 TikToks am Tag, mindestens 3 Stunden Abstand (12:00, 17:00, 21:00).
 - Höchstens 2 Shorts pro Streamer und Tag.
 - Nie einen Moment hochladen, den der Streamer oder ein Clip-Kanal schon gepostet hat (TikTok spielt Kopien nicht aus).
 

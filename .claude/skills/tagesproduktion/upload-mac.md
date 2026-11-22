@@ -1,5 +1,7 @@
 # Upload am Mac (YouTube privat, TikTok einzeln zum Sendeplatz)
 
+> **Derzeit nicht genutzt.** Produziert wird in der Cloud, der Nutzer postet selbst und nur auf TikTok. Nicht ausführen, solange der Nutzer das nicht ausdrücklich wieder einschaltet.
+
 Läuft am Ende der Tagesproduktion auf dem Mac oder auf Zuruf („Lade die Shorts von heute hoch“). Werkzeug: Claude in Chrome (`mcp__claude-in-chrome__*`, `file_upload` für die Videodatei). Mit dem Nutzer Deutsch sprechen.
 
 **Veröffentlicht oder eingeplant wird erst nach einem ausdrücklichen Ja des Nutzers im Chat zu genau diesen Shorts** (Abschnitt 6).

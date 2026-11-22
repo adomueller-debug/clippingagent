@@ -1,11 +1,11 @@
 ---
 name: tagesproduktion
-description: Tägliche Produktion der Streamer-Shorts. Holt die besten neuen Twitch-Clips der konfigurierten Streamer zum aktuellen Spiel, schneidet sie auf 9:16 mit Untertiteln, schreibt Titel und Beschreibung und legt alles zur Freigabe vor. Verwenden, wenn der tägliche Lauf startet oder der Nutzer „Tagesproduktion“, „neue Shorts“ oder „heutige Clips“ sagt.
+description: Tägliche Produktion der Streamer-Shorts. Holt die besten neuen Twitch-Clips der konfigurierten Streamer zum aktuellen Spiel, schneidet sie auf 9:16 mit Untertiteln, schreibt den TikTok-Text mit Hashtags und legt alles zur Freigabe vor. Veröffentlicht wird nur auf TikTok. Verwenden, wenn der tägliche Lauf startet oder der Nutzer „Tagesproduktion“, „neue Shorts“ oder „heutige Clips“ sagt.
 ---
 
 # Tagesproduktion
 
-Arbeitsverzeichnis ist die Wurzel dieses Repos. Kanal-Regeln stehen in `docs/kanal-regeln.md`, die Streamer-Liste in `config/kanal.json`.
+Arbeitsverzeichnis ist die Wurzel dieses Repos. **Ziel ist nur TikTok (@chatwntcrazy).** Auf YouTube wird nichts hochgeladen; YouTube dient nur als Quelle (IShowSpeed-Streams, Clip-Kanäle als Signal). Kanal-Regeln stehen in `docs/kanal-regeln.md`, die Streamer-Liste in `config/kanal.json`.
 
 ## 0. Vorbereitung
 
@@ -74,8 +74,8 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
 - Schwach und daher raus: Gespräche ohne Pointe, ruhiger „erster Eindruck“, Menüs, Ladebildschirme, Zwischensequenzen ohne Reaktion, reines Herumfahren.
 - **Pointe ans Ende:** Der Short endet auf dem lustigsten Moment oder direkt danach („The ENDING 😂“: 7,4 Mio.). Kein Ausklingen. Das sorgt dafür, dass man bis zum Schluss schaut und neu startet.
 
-- **10 Shorts pro Lauf als Auswahl.** Der Nutzer entscheidet, was hochgeht. Manuelle Läufe kommen obendrauf, Nummerierung im Tagesordner fortsetzen. Am Ende eine Empfehlung geben: die besten 3–5 für den Upload (TikTok verteilt den Testtopf sonst auf zu viele Videos), mit Sendeplätzen.
-- **TikTok-Sicherheit (Zahlen vom 22.11.):** Shorts mit Stripclub, Bett-/Sexszene, sichtbarem Blut, Gewalt gegen Frauen oder Unbeteiligte oder NPCs von Brücken werfen bekommen in `upload.md` die Zeile `- Plattform: nur YouTube` und kommen nie in die TikTok-Empfehlung. Empfehlung für TikTok: höchstens 3 pro Tag, mindestens 3 Stunden Abstand (`upload.tiktok_sendeplaetze`: 12:00, 17:00, 21:00), jeder einzeln zum Sendeplatz hochgeladen und sofort gepostet. Mindestens 7 der 10 Shorts sollen TikTok-tauglich sein.
+- **10 Shorts pro Lauf als Auswahl.** Der Nutzer entscheidet, was hochgeht. Manuelle Läufe kommen obendrauf, Nummerierung im Tagesordner fortsetzen. Am Ende eine Empfehlung geben: die besten 3 für TikTok mit den Sendeplätzen 12:00, 17:00, 21:00 (TikTok verteilt den Testtopf sonst auf zu viele Videos).
+- **TikTok-Sicherheit (Zahlen vom 22.11.):** Clips mit Stripclub, Bett-/Sexszene, sichtbarem Blut, Gewalt gegen Frauen oder Unbeteiligte oder NPCs von Brücken werfen werden **nicht produziert** (wir posten nur auf TikTok, und dort bekamen sie 0–9 Aufrufe). Alle 10 Shorts müssen TikTok-tauglich sein. Gepostet werden höchstens 3 pro Tag, mindestens 3 Stunden Abstand (`upload.tiktok_sendeplaetze`: 12:00, 17:00, 21:00), jeder einzeln zum Sendeplatz hochgeladen und sofort gepostet.
 - Höchstens 2 Clips pro Streamer und Tag. Lieber Abwechslung als nur der Clip mit den meisten Views.
 - Sprachen: etwa 7 englische, 3 deutsche Shorts. Englische Streamer haben die größere Reichweite; die US-Liste in `config/kanal.json` ist dafür erweitert (Marlon, JasonTheWeen, CaseOh, Stable Ronaldo, Jynxzi, RayAsianBoy, Agent 00, N3on, PlaqueBoyMax).
 - Kick-Titel sind oft Tastatur-Gebrabbel. Dann zählen nur Views und das Quellbild.
@@ -149,7 +149,7 @@ Bei einem Fehler: korrigieren und neu schneiden. Nach 2 Fehlversuchen den Clip v
 ## 5. Texter: `ORDNER/upload.md`
 
 ```markdown
-# <Titel>
+# <Arbeitstitel: Streamer + was passiert>
 
 - Quelle: <Clip-URL>
 - Streamer: <Name> (https://twitch.tv/<login> bzw. https://kick.com/<login>)
@@ -157,29 +157,17 @@ Bei einem Fehler: korrigieren und neu schneiden. Nach 2 Fehlversuchen den Clip v
 - Sprache: <de|en>
 - Länge: <s>
 - Moment-Typ: <Nummer und Name aus Schritt 2>
-- Titelstil: <A Meme | B Satz>
 
 ## Hook
 <Text der Hook-Zeile im Video>
-
-## Titel
-<YouTube: abwechselnd Stil A oder B, Stil in `upload.md` unter „Titelstil“ vermerken>
-<A „Meme“ (wie Speedy Boykins): 2–6 Wörter, verrät nicht die Pointe, 2 gleiche Emoji: „Monte did Schradin dirty 😭😭“, „The ENDING 💀💀“>
-<B „Satz“ (wie Kai Cenat Live): Streamer + was passiert, 40–90 Zeichen, 1–2 Emoji: „Kai Cenat Gets Chased By The Cops In GTA VI 😭🚨“>
-
-## Beschreibung
-#gta6 #<streamer> #shorts
-
-## Tags
-<kommagetrennt>
 
 ## TikTok
 <2–8 Wörter, Sprache des Clips, macht neugierig statt die Pointe zu verraten, jedes Mal anders gebaut> <0–2 Emoji, wechselnd> <3–5 Hashtags nach den TikTok-Regeln>
 ```
 
-Kein Beschreibungstext und kein Credit-Satz („mit Erlaubnis“), weder auf YouTube noch auf TikTok. Beispiele für TikTok (absichtlich verschieden gebaut): „Why did Lacy bring the dog 😢 #gtavi #lacy #gta6funny“, „Monte sieht die Granate zu spät #gta6 #montanablack #twitchde #explosion“, „wait for the landing… #grandtheftauto6 #jynxzi #gta6fails“.
+Kein Credit-Satz („mit Erlaubnis“). Beispiele für TikTok (absichtlich verschieden gebaut): „Why did Lacy bring the dog 😢 #gtavi #lacy #gta6funny“, „Monte sieht die Granate zu spät #gta6 #montanablack #twitchde #explosion“, „wait for the landing… #grandtheftauto6 #jynxzi #gta6fails“.
 
-Titelregeln stehen in `docs/kanal-regeln.md`.
+Text- und Hashtag-Regeln stehen in `docs/kanal-regeln.md`.
 
 ### TikTok-Text: jeder anders
 
@@ -195,7 +183,7 @@ TikTok drosselt Konten, deren Beiträge gleich aussehen (gleiches Satzmuster, gl
 1. Clip-IDs in `daten/verwendet.json` eintragen (auch die verworfenen).
 2. Eine Zeile pro Short in `daten/log.tsv`: `datum	id	streamer	titel	status`.
 3. `upload.md`, `worte.json`, `pruefung/` und die Datenänderungen committen und pushen. Videos werden nicht committed (`.gitignore`).
-4. Dem Nutzer jeden `short.mp4` mit `SendUserFile` schicken (`status: proactive`). Die Caption enthält Nummer, Streamer und Titel. Danach eine Nachricht mit allen Titeln, Beschreibungen und Hashtags zum Kopieren.
+4. Dem Nutzer jeden `short.mp4` mit `SendUserFile` schicken (`status: proactive`). Die Caption enthält Nummer, Streamer und TikTok-Text. Danach eine Nachricht mit allen TikTok-Texten samt Hashtags zum Kopieren und der Empfehlung: welche 3 heute, auf welchem Sendeplatz (12:00, 17:00, 21:00), mit dem Hinweis „einzeln zum Sendeplatz hochladen und direkt posten, nicht planen“.
 5. **Cloud:** Hochladen macht der Nutzer selbst. Die Cloud-Session lädt nichts hoch.
-   **Mac:** Statt `SendUserFile` direkt weiter mit `upload-mac.md` (YouTube privat, TikTok erst zum Sendeplatz einzeln hochladen und sofort posten; veröffentlicht wird erst nach dem Ja des Nutzers).
+   **Mac:** Statt `SendUserFile` direkt weiter mit `upload-mac.md` (derzeit nicht genutzt: der Nutzer postet selbst auf TikTok).
 6. Meldet der Nutzer etwas zurück (Short abgelehnt, Untertitel falsch), korrigieren, neu schicken und den Status in `daten/log.tsv` setzen.

@@ -1,6 +1,6 @@
 # clippingagent
 
-Automatische Streamer-Shorts (zum Start: GTA 6) für YouTube, später auch TikTok und Instagram.
+Automatische Streamer-Shorts (zum Start: GTA 6) für TikTok (@chatwntcrazy). Produziert wird täglich in der Cloud, gepostet wird von Hand.
 
 | Teil | Datei |
 |---|---|
