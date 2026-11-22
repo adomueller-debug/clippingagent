@@ -75,6 +75,7 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
 - **Pointe ans Ende:** Der Short endet auf dem lustigsten Moment oder direkt danach („The ENDING 😂“: 7,4 Mio.). Kein Ausklingen. Das sorgt dafür, dass man bis zum Schluss schaut und neu startet.
 
 - **10 Shorts pro Lauf als Auswahl.** Der Nutzer entscheidet, was hochgeht. Manuelle Läufe kommen obendrauf, Nummerierung im Tagesordner fortsetzen. Am Ende eine Empfehlung geben: die besten 3–5 für den Upload (TikTok verteilt den Testtopf sonst auf zu viele Videos), mit Sendeplätzen.
+- **TikTok-Sicherheit (Zahlen vom 22.11.):** Shorts mit Stripclub, Bett-/Sexszene, sichtbarem Blut, Gewalt gegen Frauen oder Unbeteiligte oder NPCs von Brücken werfen bekommen in `upload.md` die Zeile `- Plattform: nur YouTube` und kommen nie in die TikTok-Empfehlung. Empfehlung für TikTok: höchstens 3 pro Tag, mindestens 3 Stunden Abstand (Sendeplätze z. B. 12:00, 17:00, 21:00). Mindestens 7 der 10 Shorts sollen TikTok-tauglich sein.
 - Höchstens 2 Clips pro Streamer und Tag. Lieber Abwechslung als nur der Clip mit den meisten Views.
 - Sprachen: etwa 7 englische, 3 deutsche Shorts. Englische Streamer haben die größere Reichweite; die US-Liste in `config/kanal.json` ist dafür erweitert (Marlon, JasonTheWeen, CaseOh, Stable Ronaldo, Jynxzi, RayAsianBoy, Agent 00, N3on, PlaqueBoyMax).
 - Kick-Titel sind oft Tastatur-Gebrabbel. Dann zählen nur Views und das Quellbild.

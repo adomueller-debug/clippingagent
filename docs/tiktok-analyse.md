@@ -121,6 +121,22 @@ Wir wechseln ab und vermerken den Stil in `upload.md`. Nach zwei Wochen zeigen d
 
 **Übernommen in den Ablauf:** drei neue Moment-Typen (Streamer gegeneinander, das erste Mal, Gespräch mit Pointe), Regel „Pointe ans Ende“, zwei YouTube-Titelstile im Wechsel, Clip-Kanäle als Doppel-Prüfung.
 
+## 9. Zahlen vom 22.11. (12:22 Uhr): Hook wirkt, dann Einbruch auf 0
+
+**Was funktioniert hat:** Die ersten Shorts mit Hook-Zeile und 15–25 s Länge: Monte und das Krokodil **1.369**, Kai und die Hände **1.115**, Speed und der Spielstand **515**, Monte und der Apfel 304. Das ist das 2- bis 6-Fache des bisherigen Medians (222).
+
+**Was danach passiert ist:** Die 10 Shorts vom 21.11. stehen fast alle bei **0–3 Aufrufen**, ebenso Zarbex im Stripclub (3) und Monte „Polizei schaut zu“ (9). Unter 200 heißt: TikTok hat die Videos nicht einmal der Testgruppe gezeigt.
+
+Wahrscheinliche Ursachen, absteigend:
+1. **Zu viele Uploads auf einmal:** 14 Shorts für einen Tag, offenbar kurz hintereinander. Das wirkt wie Spam und bremst das ganze Konto.
+2. **Grenzwertige Inhalte in Serie:** Stripclub (3 Aufrufe), Bettszene (0), Blut nach der Granate (0), Prügel (9), NPCs von der Brücke werfen (0). Jeder Treffer „nicht für die Für-dich-Seite geeignet“ senkt das Vertrauen ins Konto.
+3. **Noch in Prüfung:** Wenn die Videos erst kurz online sind, kann 0 auch „wird geprüft“ heißen.
+
+**Regeln ab jetzt:**
+- Höchstens 3 TikToks pro Tag, mindestens 3 Stunden Abstand. Nie mehrere auf einmal hochladen.
+- Stripclub, Bett-/Sexszenen, sichtbares Blut, Gewalt gegen Frauen oder Unbeteiligte und „von der Brücke werfen“ werden weiter produziert, aber als **„nur YouTube“** markiert und nie für TikTok empfohlen.
+- Haben 3 Uploads in Folge unter 50 Aufrufe nach 24 Stunden: 48 Stunden Pause, dann Kontostatus prüfen.
+
 ## Quellen
 
 - TikTok-Profile der Streamer, ausgelesen am 20.11.2026 (`pipeline/tiktok_signal.py`)

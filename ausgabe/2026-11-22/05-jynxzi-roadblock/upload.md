@@ -7,6 +7,7 @@
 - Länge: 24 s
 - Moment-Typ: 4 Chaos
 - Titelstil: A Meme
+- Plattform: nur YouTube (überfährt Unbeteiligte)
 
 ## Hook
 Jynxzi vs the roadblock
