@@ -1,6 +1,6 @@
 # ClippingAgent auf dem Mac einrichten
 
-Der Mac übernimmt den ganzen Tageslauf: Clips suchen, schneiden, auf YouTube **privat** und bei TikTok als **Entwurf** hochladen. Öffentlich wird ein Short erst, wenn du im Chat „Ja“ sagst. Das ist derselbe Ablauf wie beim YouTubeAgent.
+Der Mac übernimmt den ganzen Tageslauf: Clips suchen, schneiden, auf YouTube **privat** hochladen. TikTok-Shorts werden erst zu ihrem Sendeplatz einzeln hochgeladen und sofort gepostet. Öffentlich wird ein Short erst, wenn du im Chat „Ja“ sagst. Das ist derselbe Ablauf wie beim YouTubeAgent.
 
 Warum auf dem Mac und nicht in der Cloud: Die Videos sind zu groß fürs Repository, der Upload läuft über deinen angemeldeten Browser, und YouTube-Streams (IShowSpeed) lassen sich vom Mac aus laden.
 
@@ -66,7 +66,7 @@ In der Claude-Desktop-App eine geplante Aufgabe anlegen:
 - **Zeit:** täglich 09:40 Uhr (nach dem Unfathomd-Upload um 09:10 Uhr, der Mac ist ab 08:55 Uhr wach)
 - **Auftrag:**
 
-> Tagesproduktion für heute starten. Erst `git pull`. Folge dem Skill `tagesproduktion` Schritt für Schritt, wir sind auf dem Mac. ANZAHL = 5 Shorts, gemischt aus deutschen und englischen Streamern, inklusive YouTube-Streams von IShowSpeed. Gibt es keine Clips zum Spiel, nicht auf ein anderes Spiel ausweichen: kurz melden und beenden. Danach alle neuen Shorts nach `.claude/skills/tagesproduktion/upload-mac.md` auf YouTube privat und bei TikTok als Entwurf hochladen, Sendeplätze zuordnen, committen, pushen und mir die Liste schicken. Nichts veröffentlichen, bevor ich Ja sage.
+> Tagesproduktion für heute starten. Erst `git pull`. Folge dem Skill `tagesproduktion` Schritt für Schritt, wir sind auf dem Mac. ANZAHL = 10 Shorts zur Auswahl, etwa 7 englische und 3 deutsche, inklusive YouTube-Streams von IShowSpeed. Gibt es keine Clips zum Spiel, nicht auf ein anderes Spiel ausweichen: kurz melden und beenden. Danach alle neuen Shorts nach `.claude/skills/tagesproduktion/upload-mac.md` auf YouTube privat hochladen, YouTube- und TikTok-Sendeplätze zuordnen, committen, pushen und mir die Liste mit den TikTok-Texten schicken. Zu TikTok morgens nichts hochladen: jeder TikTok-Short wird nach meinem Ja einzeln zu seinem Sendeplatz hochgeladen und sofort gepostet. Jeder TikTok-Text und jede Hashtag-Kombination muss sich von den anderen unterscheiden, kein #fyp oder #viral. Nichts veröffentlichen, bevor ich Ja sage.
 
 Den Weck-Zeitplan nicht neu setzen: `pmset repeat` kennt nur einen Termin, und der um 08:55 Uhr reicht für beide Agenten.
 
@@ -82,7 +82,7 @@ Nach dem Lauf meldet sich Claude mit der Liste. Du antwortest in der Sitzung des
 
 (alle wie geplant), oder `Ja, 1 3 4` (nur diese), oder `Ja, 2 sofort`.
 
-Dann plant Claude die Shorts in YouTube Studio und TikTok auf ihre Sendeplätze ein (Standard 18:00 bis 20:00 Uhr im 30-Minuten-Takt).
+Dann plant Claude die Shorts in YouTube Studio ein (Standard 18:00 bis 20:00 Uhr im 30-Minuten-Takt) und legt für jeden TikTok-Short eine einmalige Aufgabe zu seinem TikTok-Sendeplatz an (Standard 13, 15, 17, 19, 21 Uhr). Die lädt den Short dann hoch und postet ihn sofort.
 
 ## Checkliste
 

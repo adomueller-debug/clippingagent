@@ -75,7 +75,7 @@ Wähle `ANZAHL` Clips aus (Standard 5, steht im Auftrag des Laufs). Grundlage is
 - **Pointe ans Ende:** Der Short endet auf dem lustigsten Moment oder direkt danach („The ENDING 😂“: 7,4 Mio.). Kein Ausklingen. Das sorgt dafür, dass man bis zum Schluss schaut und neu startet.
 
 - **10 Shorts pro Lauf als Auswahl.** Der Nutzer entscheidet, was hochgeht. Manuelle Läufe kommen obendrauf, Nummerierung im Tagesordner fortsetzen. Am Ende eine Empfehlung geben: die besten 3–5 für den Upload (TikTok verteilt den Testtopf sonst auf zu viele Videos), mit Sendeplätzen.
-- **TikTok-Sicherheit (Zahlen vom 22.11.):** Shorts mit Stripclub, Bett-/Sexszene, sichtbarem Blut, Gewalt gegen Frauen oder Unbeteiligte oder NPCs von Brücken werfen bekommen in `upload.md` die Zeile `- Plattform: nur YouTube` und kommen nie in die TikTok-Empfehlung. Empfehlung für TikTok: höchstens 3 pro Tag, mindestens 3 Stunden Abstand (Sendeplätze z. B. 12:00, 17:00, 21:00). Mindestens 7 der 10 Shorts sollen TikTok-tauglich sein.
+- **TikTok-Sicherheit (Zahlen vom 22.11.):** Shorts mit Stripclub, Bett-/Sexszene, sichtbarem Blut, Gewalt gegen Frauen oder Unbeteiligte oder NPCs von Brücken werfen bekommen in `upload.md` die Zeile `- Plattform: nur YouTube` und kommen nie in die TikTok-Empfehlung. Empfehlung für TikTok: höchstens 3 pro Tag, mindestens 3 Stunden Abstand (`upload.tiktok_sendeplaetze`: 12:00, 17:00, 21:00), jeder einzeln zum Sendeplatz hochgeladen und sofort gepostet. Mindestens 7 der 10 Shorts sollen TikTok-tauglich sein.
 - Höchstens 2 Clips pro Streamer und Tag. Lieber Abwechslung als nur der Clip mit den meisten Views.
 - Sprachen: etwa 7 englische, 3 deutsche Shorts. Englische Streamer haben die größere Reichweite; die US-Liste in `config/kanal.json` ist dafür erweitert (Marlon, JasonTheWeen, CaseOh, Stable Ronaldo, Jynxzi, RayAsianBoy, Agent 00, N3on, PlaqueBoyMax).
 - Kick-Titel sind oft Tastatur-Gebrabbel. Dann zählen nur Views und das Quellbild.
@@ -174,12 +174,21 @@ Bei einem Fehler: korrigieren und neu schneiden. Nach 2 Fehlversuchen den Clip v
 <kommagetrennt>
 
 ## TikTok
-<2–6 Wörter, Ich-Form oder „Bro …“, macht neugierig statt die Pointe zu verraten><2–3 Emoji> #fyp #viral #<streamer> #gta6 #<thema>
+<2–8 Wörter, Sprache des Clips, macht neugierig statt die Pointe zu verraten, jedes Mal anders gebaut> <0–2 Emoji, wechselnd> <3–5 Hashtags nach den TikTok-Regeln>
 ```
 
-Kein Beschreibungstext und kein Credit-Satz („mit Erlaubnis“), weder auf YouTube noch auf TikTok. Beispiele für TikTok: „I didn't mean to😢💔 #fyp #viral #lacy #gta6 #dog“, „Er musste es einfach tun😭💥 #fyp #viral #papaplatte #gta6 #explosion“.
+Kein Beschreibungstext und kein Credit-Satz („mit Erlaubnis“), weder auf YouTube noch auf TikTok. Beispiele für TikTok (absichtlich verschieden gebaut): „Why did Lacy bring the dog 😢 #gtavi #lacy #gta6funny“, „Monte sieht die Granate zu spät #gta6 #montanablack #twitchde #explosion“, „wait for the landing… #grandtheftauto6 #jynxzi #gta6fails“.
 
 Titelregeln stehen in `docs/kanal-regeln.md`.
+
+### TikTok-Text: jeder anders
+
+TikTok drosselt Konten, deren Beiträge gleich aussehen (gleiches Satzmuster, gleiche Emojis, gleiche Hashtags). Am 21.11. bekamen 9 Clips mit „<Satz>😭💥 #fyp #viral #<streamer> #gta6 #…“ fast keine Aufrufe. Deshalb:
+
+1. Vorher die TikTok-Abschnitte aller `upload.md` der letzten 14 Tage lesen (`ausgabe/*/*/upload.md`). Der neue Text darf keinem davon im Aufbau ähneln.
+2. **Text:** beschreibt genau diesen Clip (wer, was passiert, worauf man achten soll). Den Satzbau abwechseln: Frage, Aussage, Zitat aus dem Clip, Ansage an den Zuschauer („Achte auf die Ampel …“). Nicht mit demselben Wort anfangen wie ein anderer Short des Tages. 0–2 Emoji, nicht bei jedem Short dieselben, manche Shorts ganz ohne. Kein „😭“-am-Satzende-Schema.
+3. **Hashtags:** 3–5 Stück, nach `docs/kanal-regeln.md` → „TikTok-Hashtags“. Nie `#fyp`, `#foryou`, `#viral`, `#fürdich`. Keine zwei Shorts des Tages mit derselben Hashtag-Kombination.
+4. Gegenprobe: alle TikTok-Texte des Tages untereinander schreiben. Wenn sie wie aus einer Vorlage aussehen, umschreiben.
 
 ## 6. Abschluss
 
@@ -188,5 +197,5 @@ Titelregeln stehen in `docs/kanal-regeln.md`.
 3. `upload.md`, `worte.json`, `pruefung/` und die Datenänderungen committen und pushen. Videos werden nicht committed (`.gitignore`).
 4. Dem Nutzer jeden `short.mp4` mit `SendUserFile` schicken (`status: proactive`). Die Caption enthält Nummer, Streamer und Titel. Danach eine Nachricht mit allen Titeln, Beschreibungen und Hashtags zum Kopieren.
 5. **Cloud:** Hochladen macht der Nutzer selbst. Die Cloud-Session lädt nichts hoch.
-   **Mac:** Statt `SendUserFile` direkt weiter mit `upload-mac.md` (privat bzw. Entwurf, veröffentlicht wird erst nach dem Ja des Nutzers).
+   **Mac:** Statt `SendUserFile` direkt weiter mit `upload-mac.md` (YouTube privat, TikTok erst zum Sendeplatz einzeln hochladen und sofort posten; veröffentlicht wird erst nach dem Ja des Nutzers).
 6. Meldet der Nutzer etwas zurück (Short abgelehnt, Untertitel falsch), korrigieren, neu schicken und den Status in `daten/log.tsv` setzen.
