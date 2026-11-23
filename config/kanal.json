@@ -183,7 +183,8 @@
     "upload": "Kanalname und TikTok-Konto eintragen, sobald der Name feststeht. Solange null, lädt der Mac nichts hoch (Schutz gegen Upload auf den falschen Kanal, z. B. Unfathomd). tiktok_sendeplaetze: jeder TikTok-Short wird zu seinem Platz einzeln hochgeladen und sofort gepostet, höchstens 3 am Tag, mindestens 3 h Abstand (siehe docs/kanal-regeln.md).",
     "tiktok": "Offizielle TikTok-Profile der Streamer. Nur als Signal für pipeline/tiktok_signal.py, nie als Videoquelle. Handles nicht alle geprüft: liefert eins nichts Passendes, prüfen.",
     "clip_kanaele_youtube": "Große YouTube-Clip-Kanäle. pipeline/tiktok_signal.py liest ihre neuesten Shorts mit, damit wir keine Momente posten, die es dort schon gibt, und um zu sehen, was läuft.",
-    "neue_us_streamer": "Am 21.11. ergänzt nach GTA-6-Clip-Views der letzten 7 Tage. Erlaubnis bzw. Clipping-Kampagne für diese Streamer vor dem Hochladen klären. TikTok-Handles nicht alle geprüft."
+    "neue_us_streamer": "Am 21.11. ergänzt nach GTA-6-Clip-Views der letzten 7 Tage. Erlaubnis bzw. Clipping-Kampagne für diese Streamer vor dem Hochladen klären. TikTok-Handles nicht alle geprüft.",
+    "konkurrenz_tiktok": "Andere Clip-Konten mit gleichem Thema/Namen. tiktok_signal.py liest sie für die Doppel-Prüfung mit."
   },
   "upload": {
     "youtube_kanalname": null,
@@ -223,5 +224,9 @@
       "name": "Daily xQc Clips",
       "id": "UCSsvRiJr8IWOUsjLTwsDp0Q"
     }
+  ],
+  "konkurrenz_tiktok": [
+    "chatwentcrazyy",
+    "chatwentcrazy"
   ]
 }

@@ -43,6 +43,7 @@ def main():
     grenze = datetime.now(timezone.utc) - timedelta(days=a.tage)
     muster = re.compile(a.muster, re.I) if a.muster else None
     streamer = [s for s in cfg["streamer"] if s.get("tiktok")]
+    streamer += [{"name": f"Konkurrenz @{h}", "sprache": None, "tiktok": h} for h in cfg.get("konkurrenz_tiktok", [])]
 
     posts = []
     with ThreadPoolExecutor(3) as pool:
