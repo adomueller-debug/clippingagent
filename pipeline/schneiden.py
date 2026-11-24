@@ -11,6 +11,7 @@ Ergebnis im Ordner: short.mp4, quelle.mp4, worte.json, untertitel.ass, pruefung/
 """
 import argparse
 import json
+import re
 import os
 import shutil
 import subprocess
@@ -98,6 +99,14 @@ def ts(t):
     return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
 
 
+SCHIMPF = re.compile(r"fuck|shit|bitch|nigg|pussy|fotze|hurens|schlampe|wichser", re.I)
+
+
+def maskiert(wort):
+    """Flüche in den eingebrannten Untertiteln mit * maskieren (TikTok drosselt sonst eher)."""
+    return re.sub(r"[A-Za-zÄÖÜäöüß]", "*", wort) if SCHIMPF.search(wort) else wort
+
+
 def ass_datei(worte, y, pfad, hook=None, hook_y=None, dauer=0.0):
     """Wort-Untertitel und optional eine Hook-Zeile (weiße Box, schwarze Schrift, ganze Länge)."""
     kopf = f"""[Script Info]
@@ -127,7 +136,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         for i, w in enumerate(b):
             ende = b[i + 1]["s"] if i + 1 < len(b) else max(w["e"], w["s"] + 0.25)
             text = " ".join(
-                ("{\\c&H00E5FF&}" + x["w"].upper() + "{\\c&HFFFFFF&}") if j == i else x["w"].upper()
+                ("{\\c&H00E5FF&}" + maskiert(x["w"]).upper() + "{\\c&HFFFFFF&}") if j == i else maskiert(x["w"]).upper()
                 for j, x in enumerate(b))
             zeilen.append(f"Dialogue: 0,{ts(w['s'])},{ts(ende)},Sub,,0,0,0,,{{\\pos({W // 2},{y})}}{text}")
     pfad.write_text(kopf + "\n".join(zeilen) + "\n")

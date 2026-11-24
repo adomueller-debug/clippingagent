@@ -1,0 +1,54 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:24.00,Hook,,0,0,0,,{\pos(540,580)}Adin wore his seatbelt
+Dialogue: 0,0:00:00.00,0:00:00.02,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DO{\c&HFFFFFF&} THIS FLYING
+Dialogue: 0,0:00:00.02,0:00:00.10,Sub,,0,0,0,,{\pos(540,1360)}DO {\c&H00E5FF&}THIS{\c&HFFFFFF&} FLYING
+Dialogue: 0,0:00:00.10,0:00:00.38,Sub,,0,0,0,,{\pos(540,1360)}DO THIS {\c&H00E5FF&}FLYING{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.38,0:00:00.60,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}****{\c&HFFFFFF&} FIRST.
+Dialogue: 0,0:00:00.60,0:00:00.86,Sub,,0,0,0,,{\pos(540,1360)}**** {\c&H00E5FF&}FIRST.{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.24,0:00:01.68,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}OH,{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.20,0:00:03.66,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BRO.{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.98,0:00:04.42,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}THAT{\c&HFFFFFF&} IS SO
+Dialogue: 0,0:00:04.42,0:00:04.58,Sub,,0,0,0,,{\pos(540,1360)}THAT {\c&H00E5FF&}IS{\c&HFFFFFF&} SO
+Dialogue: 0,0:00:04.58,0:00:04.88,Sub,,0,0,0,,{\pos(540,1360)}THAT IS {\c&H00E5FF&}SO{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.88,0:00:05.42,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}UNREALISTIC,{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.76,0:00:06.18,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DUDE{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.46,0:00:07.90,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}THAT{\c&HFFFFFF&} IS SO
+Dialogue: 0,0:00:07.90,0:00:08.10,Sub,,0,0,0,,{\pos(540,1360)}THAT {\c&H00E5FF&}IS{\c&HFFFFFF&} SO
+Dialogue: 0,0:00:08.10,0:00:08.38,Sub,,0,0,0,,{\pos(540,1360)}THAT IS {\c&H00E5FF&}SO{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.38,0:00:08.94,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}*********{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.94,0:00:09.24,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}REALISTIC,{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.48,0:00:09.73,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BRO.{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.92,0:00:10.36,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}THAT{\c&HFFFFFF&} IS SO
+Dialogue: 0,0:00:10.36,0:00:10.52,Sub,,0,0,0,,{\pos(540,1360)}THAT {\c&H00E5FF&}IS{\c&HFFFFFF&} SO
+Dialogue: 0,0:00:10.52,0:00:11.00,Sub,,0,0,0,,{\pos(540,1360)}THAT IS {\c&H00E5FF&}SO{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.00,0:00:11.58,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ON{\c&HFFFFFF&} A
+Dialogue: 0,0:00:11.58,0:00:12.40,Sub,,0,0,0,,{\pos(540,1360)}ON {\c&H00E5FF&}A{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.40,0:00:12.72,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}PLAYSTATION.{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.12,0:00:13.56,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}OH{\c&HFFFFFF&} MY GOD,
+Dialogue: 0,0:00:13.56,0:00:13.70,Sub,,0,0,0,,{\pos(540,1360)}OH {\c&H00E5FF&}MY{\c&HFFFFFF&} GOD,
+Dialogue: 0,0:00:13.70,0:00:13.95,Sub,,0,0,0,,{\pos(540,1360)}OH MY {\c&H00E5FF&}GOD,{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.94,0:00:14.18,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BRO{\c&HFFFFFF&} **** WHAT'S
+Dialogue: 0,0:00:14.18,0:00:14.50,Sub,,0,0,0,,{\pos(540,1360)}BRO {\c&H00E5FF&}****{\c&HFFFFFF&} WHAT'S
+Dialogue: 0,0:00:14.50,0:00:14.88,Sub,,0,0,0,,{\pos(540,1360)}BRO **** {\c&H00E5FF&}WHAT'S{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.88,0:00:14.98,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}GOING{\c&HFFFFFF&} ON,
+Dialogue: 0,0:00:14.98,0:00:15.23,Sub,,0,0,0,,{\pos(540,1360)}GOING {\c&H00E5FF&}ON,{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.24,0:00:15.49,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DUDE?{\c&HFFFFFF&}
+Dialogue: 0,0:00:21.40,0:00:21.58,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}THAT{\c&HFFFFFF&} IS SO
+Dialogue: 0,0:00:21.58,0:00:21.68,Sub,,0,0,0,,{\pos(540,1360)}THAT {\c&H00E5FF&}IS{\c&HFFFFFF&} SO
+Dialogue: 0,0:00:21.68,0:00:22.02,Sub,,0,0,0,,{\pos(540,1360)}THAT IS {\c&H00E5FF&}SO{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.02,0:00:22.44,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}UNREALISTIC,{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.70,0:00:23.04,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BRO.{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.54,0:00:23.98,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}IF{\c&HFFFFFF&} I'M
+Dialogue: 0,0:00:23.98,0:00:24.23,Sub,,0,0,0,,{\pos(540,1360)}IF {\c&H00E5FF&}I'M{\c&HFFFFFF&}

@@ -1,0 +1,38 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:23.00,Hook,,0,0,0,,{\pos(540,760)}Aliens helfen Monte
+Dialogue: 0,0:00:01.62,0:00:02.26,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}OH{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.95,0:00:04.59,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}MEIN{\c&HFFFFFF&} GOTT,
+Dialogue: 0,0:00:04.59,0:00:04.91,Sub,,0,0,0,,{\pos(540,1360)}MEIN {\c&H00E5FF&}GOTT,{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.11,0:00:05.69,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DIE{\c&HFFFFFF&} HELFEN MIR.
+Dialogue: 0,0:00:05.69,0:00:06.01,Sub,,0,0,0,,{\pos(540,1360)}DIE {\c&H00E5FF&}HELFEN{\c&HFFFFFF&} MIR.
+Dialogue: 0,0:00:06.01,0:00:06.33,Sub,,0,0,0,,{\pos(540,1360)}DIE HELFEN {\c&H00E5FF&}MIR.{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.65,0:00:09.29,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}OH{\c&HFFFFFF&} MEIN GOTT.
+Dialogue: 0,0:00:09.29,0:00:09.57,Sub,,0,0,0,,{\pos(540,1360)}OH {\c&H00E5FF&}MEIN{\c&HFFFFFF&} GOTT.
+Dialogue: 0,0:00:09.57,0:00:10.03,Sub,,0,0,0,,{\pos(540,1360)}OH MEIN {\c&H00E5FF&}GOTT.{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.56,0:00:12.81,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}MOMENT,{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.86,0:00:13.11,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}MOMENT,{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.18,0:00:13.60,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ICH{\c&HFFFFFF&} MUSS
+Dialogue: 0,0:00:13.60,0:00:15.34,Sub,,0,0,0,,{\pos(540,1360)}ICH {\c&H00E5FF&}MUSS{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.34,0:00:15.59,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}SCHNELL.{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.34,0:00:16.60,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ICH{\c&HFFFFFF&} BIN
+Dialogue: 0,0:00:16.60,0:00:17.10,Sub,,0,0,0,,{\pos(540,1360)}ICH {\c&H00E5FF&}BIN{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.10,0:00:17.64,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}AUFGEREGT.{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.84,0:00:18.98,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}ICH{\c&HFFFFFF&} HABE FALSCHE
+Dialogue: 0,0:00:18.98,0:00:19.08,Sub,,0,0,0,,{\pos(540,1360)}ICH {\c&H00E5FF&}HABE{\c&HFFFFFF&} FALSCHE
+Dialogue: 0,0:00:19.08,0:00:19.40,Sub,,0,0,0,,{\pos(540,1360)}ICH HABE {\c&H00E5FF&}FALSCHE{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.40,0:00:19.66,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}FOTOS{\c&HFFFFFF&} GEMACHT.
+Dialogue: 0,0:00:19.66,0:00:19.91,Sub,,0,0,0,,{\pos(540,1360)}FOTOS {\c&H00E5FF&}GEMACHT.{\c&HFFFFFF&}
+Dialogue: 0,0:00:20.86,0:00:21.11,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}STELL,{\c&HFFFFFF&}
+Dialogue: 0,0:00:21.66,0:00:21.91,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}JA.{\c&HFFFFFF&}
