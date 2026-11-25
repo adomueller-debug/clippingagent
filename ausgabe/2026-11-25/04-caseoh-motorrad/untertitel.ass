@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:20.00,Hook,,0,0,0,,{\pos(540,606)}CaseOh shows\Noff his new bike
+Dialogue: 0,0:00:00.00,0:00:00.02,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}AROUND{\c&HFFFFFF&} A MOTEL,
+Dialogue: 0,0:00:00.02,0:00:00.16,Sub,,0,0,0,,{\pos(540,1360)}AROUND {\c&H00E5FF&}A{\c&HFFFFFF&} MOTEL,
+Dialogue: 0,0:00:00.16,0:00:00.48,Sub,,0,0,0,,{\pos(540,1360)}AROUND A {\c&H00E5FF&}MOTEL,{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.74,0:00:00.74,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}LOOK{\c&HFFFFFF&} WHAT I'M
+Dialogue: 0,0:00:00.74,0:00:00.88,Sub,,0,0,0,,{\pos(540,1360)}LOOK {\c&H00E5FF&}WHAT{\c&HFFFFFF&} I'M
+Dialogue: 0,0:00:00.88,0:00:01.13,Sub,,0,0,0,,{\pos(540,1360)}LOOK WHAT {\c&H00E5FF&}I'M{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.04,0:00:01.14,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}GONNA{\c&HFFFFFF&} DO TO
+Dialogue: 0,0:00:01.14,0:00:01.24,Sub,,0,0,0,,{\pos(540,1360)}GONNA {\c&H00E5FF&}DO{\c&HFFFFFF&} TO
+Dialogue: 0,0:00:01.24,0:00:01.49,Sub,,0,0,0,,{\pos(540,1360)}GONNA DO {\c&H00E5FF&}TO{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.34,0:00:01.54,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}THIS{\c&HFFFFFF&} GOOBER!
+Dialogue: 0,0:00:01.54,0:00:01.92,Sub,,0,0,0,,{\pos(540,1360)}THIS {\c&H00E5FF&}GOOBER!{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.74,0:00:02.99,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}HEY,{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.96,0:00:03.08,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}HOW{\c&HFFFFFF&} MUCH THAT
+Dialogue: 0,0:00:03.08,0:00:03.18,Sub,,0,0,0,,{\pos(540,1360)}HOW {\c&H00E5FF&}MUCH{\c&HFFFFFF&} THAT
+Dialogue: 0,0:00:03.18,0:00:03.43,Sub,,0,0,0,,{\pos(540,1360)}HOW MUCH {\c&H00E5FF&}THAT{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.42,0:00:03.70,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BIKE{\c&HFFFFFF&} COST?
+Dialogue: 0,0:00:03.70,0:00:04.10,Sub,,0,0,0,,{\pos(540,1360)}BIKE {\c&H00E5FF&}COST?{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.38,0:00:04.58,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}NOT{\c&HFFFFFF&} EVEN HALF
+Dialogue: 0,0:00:04.58,0:00:04.70,Sub,,0,0,0,,{\pos(540,1360)}NOT {\c&H00E5FF&}EVEN{\c&HFFFFFF&} HALF
+Dialogue: 0,0:00:04.70,0:00:05.06,Sub,,0,0,0,,{\pos(540,1360)}NOT EVEN {\c&H00E5FF&}HALF{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.06,0:00:05.26,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}A{\c&HFFFFFF&} MILE!
+Dialogue: 0,0:00:05.26,0:00:05.51,Sub,,0,0,0,,{\pos(540,1360)}A {\c&H00E5FF&}MILE!{\c&HFFFFFF&}

@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:16.67,Hook,,0,0,0,,{\pos(540,584)}Adin Ross vs one truck
+Dialogue: 0,0:00:00.00,0:00:00.38,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}WHAT{\c&HFFFFFF&} I GOTTA
+Dialogue: 0,0:00:00.38,0:00:00.48,Sub,,0,0,0,,{\pos(540,1360)}WHAT {\c&H00E5FF&}I{\c&HFFFFFF&} GOTTA
+Dialogue: 0,0:00:00.48,0:00:00.73,Sub,,0,0,0,,{\pos(540,1360)}WHAT I {\c&H00E5FF&}GOTTA{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.58,0:00:00.83,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}DO{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.12,0:00:11.54,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}NO,{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.66,0:00:11.76,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}I'M{\c&HFFFFFF&} DEAD WHAT
+Dialogue: 0,0:00:11.76,0:00:11.98,Sub,,0,0,0,,{\pos(540,1360)}I'M {\c&H00E5FF&}DEAD{\c&HFFFFFF&} WHAT
+Dialogue: 0,0:00:11.98,0:00:13.34,Sub,,0,0,0,,{\pos(540,1360)}I'M DEAD {\c&H00E5FF&}WHAT{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.34,0:00:14.12,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}THIS{\c&HFFFFFF&} GAVE ME
+Dialogue: 0,0:00:14.12,0:00:14.30,Sub,,0,0,0,,{\pos(540,1360)}THIS {\c&H00E5FF&}GAVE{\c&HFFFFFF&} ME
+Dialogue: 0,0:00:14.30,0:00:14.55,Sub,,0,0,0,,{\pos(540,1360)}THIS GAVE {\c&H00E5FF&}ME{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.38,0:00:14.48,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}SO{\c&HFFFFFF&} *******
+Dialogue: 0,0:00:14.48,0:00:14.80,Sub,,0,0,0,,{\pos(540,1360)}SO {\c&H00E5FF&}*******{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.80,0:00:15.14,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}UNREALISTIC,{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.34,0:00:15.59,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BRO.{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.94,0:00:16.36,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}THERE'S{\c&HFFFFFF&} NO
+Dialogue: 0,0:00:16.36,0:00:16.61,Sub,,0,0,0,,{\pos(540,1360)}THERE'S {\c&H00E5FF&}NO{\c&HFFFFFF&}
