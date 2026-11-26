@@ -12,4 +12,4 @@
 Speed deleted his GTA 6 save
 
 ## TikTok
-bro pressed delete on 52 hours 💀 #gta6 #ishowspeed #gta6fails
+one wrong button and the save is gone 💀 #gta6 #ishowspeed #gta6fails
