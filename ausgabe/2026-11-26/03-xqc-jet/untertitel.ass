@@ -1,0 +1,40 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:20.01,Hook,,0,0,0,,{\pos(540,760)}xQc tries a new\Nair combat strat
+Dialogue: 0,0:00:13.33,0:00:13.59,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}I{\c&HFFFFFF&} MIGHT BE
+Dialogue: 0,0:00:13.59,0:00:13.77,Sub,,0,0,0,,{\pos(540,1360)}I {\c&H00E5FF&}MIGHT{\c&HFFFFFF&} BE
+Dialogue: 0,0:00:13.77,0:00:14.02,Sub,,0,0,0,,{\pos(540,1360)}I MIGHT {\c&H00E5FF&}BE{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.89,0:00:14.03,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BRAND{\c&HFFFFFF&} NEW TO
+Dialogue: 0,0:00:14.03,0:00:14.15,Sub,,0,0,0,,{\pos(540,1360)}BRAND {\c&H00E5FF&}NEW{\c&HFFFFFF&} TO
+Dialogue: 0,0:00:14.15,0:00:14.40,Sub,,0,0,0,,{\pos(540,1360)}BRAND NEW {\c&H00E5FF&}TO{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.23,0:00:14.85,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}IT.{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.37,0:00:17.62,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}NO,{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.71,0:00:17.75,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}I'LL{\c&HFFFFFF&} JUST FORGET
+Dialogue: 0,0:00:17.75,0:00:17.81,Sub,,0,0,0,,{\pos(540,1360)}I'LL {\c&H00E5FF&}JUST{\c&HFFFFFF&} FORGET
+Dialogue: 0,0:00:17.81,0:00:18.06,Sub,,0,0,0,,{\pos(540,1360)}I'LL JUST {\c&H00E5FF&}FORGET{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.95,0:00:18.20,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}IT.{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.21,0:00:18.31,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}I'M{\c&HFFFFFF&} A LITTLE
+Dialogue: 0,0:00:18.31,0:00:18.33,Sub,,0,0,0,,{\pos(540,1360)}I'M {\c&H00E5FF&}A{\c&HFFFFFF&} LITTLE
+Dialogue: 0,0:00:18.33,0:00:18.58,Sub,,0,0,0,,{\pos(540,1360)}I'M A {\c&H00E5FF&}LITTLE{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.41,0:00:18.66,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BETTER.{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.67,0:00:18.67,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}I'M{\c&HFFFFFF&} A LITTLE
+Dialogue: 0,0:00:18.67,0:00:18.73,Sub,,0,0,0,,{\pos(540,1360)}I'M {\c&H00E5FF&}A{\c&HFFFFFF&} LITTLE
+Dialogue: 0,0:00:18.73,0:00:18.98,Sub,,0,0,0,,{\pos(540,1360)}I'M A {\c&H00E5FF&}LITTLE{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.77,0:00:19.02,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}BETTER.{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.29,0:00:19.51,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}I'VE{\c&HFFFFFF&} HAD ENOUGH.
+Dialogue: 0,0:00:19.51,0:00:19.57,Sub,,0,0,0,,{\pos(540,1360)}I'VE {\c&H00E5FF&}HAD{\c&HFFFFFF&} ENOUGH.
+Dialogue: 0,0:00:19.57,0:00:19.82,Sub,,0,0,0,,{\pos(540,1360)}I'VE HAD {\c&H00E5FF&}ENOUGH.{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.81,0:00:19.83,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}I'VE{\c&HFFFFFF&} HAD ENOUGH.
+Dialogue: 0,0:00:19.83,0:00:19.89,Sub,,0,0,0,,{\pos(540,1360)}I'VE {\c&H00E5FF&}HAD{\c&HFFFFFF&} ENOUGH.
+Dialogue: 0,0:00:19.89,0:00:20.14,Sub,,0,0,0,,{\pos(540,1360)}I'VE HAD {\c&H00E5FF&}ENOUGH.{\c&HFFFFFF&}
