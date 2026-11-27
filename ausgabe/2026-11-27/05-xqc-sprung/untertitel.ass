@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,124,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,9,4,5,50,50,0,1
+Style: Hook,Montserrat ExtraBold,80,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,5,110,110,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:24.01,Hook,,0,0,0,,{\pos(540,760)}xQc tries a\Nrooftop shortcut
+Dialogue: 0,0:00:03.28,0:00:03.86,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}OKAY,{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.90,0:00:04.00,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}HOLD{\c&HFFFFFF&} ON I
+Dialogue: 0,0:00:04.00,0:00:04.16,Sub,,0,0,0,,{\pos(540,1360)}HOLD {\c&H00E5FF&}ON{\c&HFFFFFF&} I
+Dialogue: 0,0:00:04.16,0:00:05.32,Sub,,0,0,0,,{\pos(540,1360)}HOLD ON {\c&H00E5FF&}I{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.32,0:00:05.46,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}GUESS{\c&HFFFFFF&} I CAN
+Dialogue: 0,0:00:05.46,0:00:05.60,Sub,,0,0,0,,{\pos(540,1360)}GUESS {\c&H00E5FF&}I{\c&HFFFFFF&} CAN
+Dialogue: 0,0:00:05.60,0:00:05.85,Sub,,0,0,0,,{\pos(540,1360)}GUESS I {\c&H00E5FF&}CAN{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.68,0:00:05.84,Sub,,0,0,0,,{\pos(540,1360)}{\c&H00E5FF&}TRY{\c&HFFFFFF&} SOME BUM
+Dialogue: 0,0:00:05.84,0:00:06.00,Sub,,0,0,0,,{\pos(540,1360)}TRY {\c&H00E5FF&}SOME{\c&HFFFFFF&} BUM
+Dialogue: 0,0:00:06.00,0:00:06.25,Sub,,0,0,0,,{\pos(540,1360)}TRY SOME {\c&H00E5FF&}BUM{\c&HFFFFFF&}
